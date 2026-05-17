@@ -8,6 +8,8 @@
 
 cd $SLURM_SUBMIT_DIR
 
+module load python/3.10-miniforge3
+
 THREADS=(1 2 3 4 6 8 12 16 24 32)
 FORMATS=("csr" "ell8" "ell7" "tiled")
 SIZES=("50 50 50" "100 100 100" "150 150 150" "200 200 200" "250 250 250" "300 300 300")
@@ -42,7 +44,7 @@ for sz in "${SIZES[@]}"; do
             echo "STARTING: Format=$fmt, Threads=$t, Size=$sz"
 
             perf record -o "$PERF_FILE" -g \
-                -e cycles,instructions,L1-dcache-load-misses,LLC-load-misses \
+                -e cycles,instructions,L1-dcache-load-misses,cache-misses \
                 $EXEC_PATH $sz $fmt
 
             if [ -f "$PERF_FILE" ]; then

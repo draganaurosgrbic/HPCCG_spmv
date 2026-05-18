@@ -135,4 +135,4 @@ test:
 	@echo "Not implemented yet..."
 
 clean:
-	@rm -f *.o *.s *.ii *~ $(TARGET) $(TARGET).exe test_HPCPCG
+	@rm -f *.o *.s *.ii *.bc *~ $(TARGET) $(TARGET).exe test_HPCPCG

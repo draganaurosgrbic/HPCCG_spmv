@@ -4,7 +4,7 @@
 #SBATCH -A csc617
 #SBATCH -p batch
 #SBATCH -N 1
-#SBATCH -t 60:00
+#SBATCH -t 30:00
 
 cd $SLURM_SUBMIT_DIR
 

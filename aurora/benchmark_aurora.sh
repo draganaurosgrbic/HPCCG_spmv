@@ -4,7 +4,7 @@
 #PBS -j oe
 #PBS -l select=1
 #PBS -l filesystems=home:flare
-#PBS -l walltime=01:00:00
+#PBS -l walltime=00:20:00
 #PBS -A Tools
 #PBS -q debug
 
@@ -12,6 +12,7 @@ THREADS=(1 2 3 4 6 8 12 16 24 32)
 FORMATS=("csr" "ell8" "ell7" "tiled")
 SIZES=("50 50 50" "100 100 100" "150 150 150" "200 200 200" "250 250 250" "300 300 300")
 
+cd $PBS_O_WORKDIR
 EXEC_PATH="$(pwd)/test_HPCCG"
 
 export OMP_PROC_BIND=spread

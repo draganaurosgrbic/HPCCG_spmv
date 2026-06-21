@@ -307,6 +307,7 @@ __global__ void ellpack7_spmv_kernel(const Ellpack7* __restrict__ A, const doubl
 
     if (row < A->nrows) {
         double sum = 0.0;
+        #pragma unroll 7
         for (size_t i = 0; i < 7; ++i) {
             const double* __restrict__ nz_i = A->nz[i];
             const int* __restrict__ col_ind_i = A->col_ind[i];

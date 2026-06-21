@@ -10,6 +10,7 @@
 #include <stdio.h>
 
 const int PADDING_VALUE = 0;
+constexpr size_t SLICE_SIZE = 256; // must match the slice_size used by sliced_ellpack_spmv_kernel
 
 #define CHECK_CUDA(call) \
     do { \
@@ -328,11 +329,11 @@ __global__ void sliced_ellpack_spmv_kernel(
         const int* __restrict__ row_map = A->row_map;
 
         double sum = 0;
-        int slice_index = row / A->slice_size;
-        int row_in_slice = row % A->slice_size;
+        int slice_index = row / SLICE_SIZE;
+        int row_in_slice = row % SLICE_SIZE;
         int max_elements_in_this_slice = slice_ptr[slice_index + 1] - slice_ptr[slice_index];
-        int rows_in_this_slice = (slice_index * A->slice_size + A->slice_size) > A->nrows ?
-                                 (A->nrows - slice_index * A->slice_size) : A->slice_size;
+        int rows_in_this_slice = (slice_index * SLICE_SIZE + SLICE_SIZE) > A->nrows ?
+                                 (A->nrows - slice_index * SLICE_SIZE) : SLICE_SIZE;
         int max_columns_in_this_slice = max_elements_in_this_slice / rows_in_this_slice;
         int slice_base_index = slice_ptr[slice_index] + row_in_slice;
 
@@ -400,7 +401,7 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
 
     const size_t block_size = 256;
     const size_t grid_size = (N + block_size - 1) / block_size;
-    const size_t slice_size = 256;
+    const size_t slice_size = SLICE_SIZE;
 
     int64_t nnz = h_nz_vec.size();
 

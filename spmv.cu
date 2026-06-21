@@ -225,67 +225,81 @@ void sliced_ellpack_host_fill(const std::vector<size_t>& row_in, const std::vect
     }
 }
 
-__global__ void csr_spmv_kernel(const Csr* A, const double* x, double* y) {
+__global__ void csr_spmv_kernel(const Csr* __restrict__ A, const double* __restrict__ x, double* __restrict__ y) {
     size_t row = blockIdx.x * blockDim.x + threadIdx.x;
 
     if (row < A->nrows) {
+        const int* __restrict__ row_ptr = A->row_ptr;
+        const int* __restrict__ col_ind = A->col_ind;
+        const double* __restrict__ nz = A->nz;
+
         double sum = 0.0;
-        for (size_t i = A->row_ptr[row]; i < A->row_ptr[row + 1]; ++i) {
-            sum += A->nz[i] * x[A->col_ind[i]];
+        for (size_t i = row_ptr[row]; i < row_ptr[row + 1]; ++i) {
+            sum += nz[i] * x[col_ind[i]];
         }
         y[row] = sum;
     }
 }
 
-__global__ void ellpack8_spmv_kernel(const Ellpack8* A, const double* x, double* y) {
+__global__ void ellpack8_spmv_kernel(const Ellpack8* __restrict__ A, const double* __restrict__ x, double* __restrict__ y) {
     size_t row = blockIdx.x * blockDim.x + threadIdx.x;
 
     if (row < A->nrows) {
+        const int* __restrict__ col_ind = A->col_ind;
+        const double* __restrict__ nz = A->nz;
+
         double sum = 0.0;
         for (size_t i = 0; i < A->max_row_nnz; ++i) {
             size_t idx = row * A->max_row_nnz + i;
-            sum += A->nz[idx] * x[A->col_ind[idx]];
+            sum += nz[idx] * x[col_ind[idx]];
         }
         y[row] = sum;
     }
 }
 
-__global__ void ellpack7_spmv_kernel(const Ellpack7* A, const double* x, double* y) {
+__global__ void ellpack7_spmv_kernel(const Ellpack7* __restrict__ A, const double* __restrict__ x, double* __restrict__ y) {
     size_t row = blockIdx.x * blockDim.x + threadIdx.x;
 
     if (row < A->nrows) {
         double sum = 0.0;
         for (size_t i = 0; i < 7; ++i) {
-            sum += A->nz[i][row] * x[A->col_ind[i][row]];
+            const double* __restrict__ nz_i = A->nz[i];
+            const int* __restrict__ col_ind_i = A->col_ind[i];
+            sum += nz_i[row] * x[col_ind_i[row]];
         }
         y[row] = sum;
     }
 }
 
 __global__ void sliced_ellpack_spmv_kernel(
-    const SlicedEllpack* A,
-    const double* x,
-    double* y) {
+    const SlicedEllpack* __restrict__ A,
+    const double* __restrict__ x,
+    double* __restrict__ y) {
     int row = blockIdx.x * blockDim.x + threadIdx.x;
 
     if (row < A->nrows) {
+        const int* __restrict__ slice_ptr = A->slice_ptr;
+        const int* __restrict__ col_ind = A->col_ind;
+        const double* __restrict__ nz = A->nz;
+        const int* __restrict__ row_map = A->row_map;
+
         double sum = 0;
         int slice_index = row / A->slice_size;
         int row_in_slice = row % A->slice_size;
-        int max_elements_in_this_slice = A->slice_ptr[slice_index + 1] - A->slice_ptr[slice_index];
+        int max_elements_in_this_slice = slice_ptr[slice_index + 1] - slice_ptr[slice_index];
         int rows_in_this_slice = (slice_index * A->slice_size + A->slice_size) > A->nrows ?
                                  (A->nrows - slice_index * A->slice_size) : A->slice_size;
         int max_columns_in_this_slice = max_elements_in_this_slice / rows_in_this_slice;
-        int slice_base_index = A->slice_ptr[slice_index] + row_in_slice;
+        int slice_base_index = slice_ptr[slice_index] + row_in_slice;
 
         for (int i = 0; i < max_columns_in_this_slice; ++i) {
             int index = slice_base_index + i * rows_in_this_slice;
-            int col = A->col_ind[index];
-            sum += A->nz[index] * x[col];
+            int col = col_ind[index];
+            sum += nz[index] * x[col];
         }
         // 'row' is a position in sorted (slice) order, not the original row
         // index, so the result must be scattered back via row_map.
-        y[A->row_map[row]] = sum;
+        y[row_map[row]] = sum;
     }
 }
 
@@ -498,7 +512,7 @@ void run_test(size_t N) {
     check_correctness("ELLPACK7", N, d_y_cusparse, d_y_ell7);
     check_correctness("SlicedELLPACK", N, d_y_cusparse, d_y_sell);
 
-    printf("%lu,%.6f,%.6f,%.6f,%.6f,%.6f\n", N, time_cusparse, time_csr, time_ell8, time_ell7, time_sell);
+    printf("%lu,%.6f,%.6f,%.6f,%.6f,%.6f\n", N, time_cusparse, time_csr, time_ell8, time_sell, time_ell7);
 
     delete[] h_csr.col_ind; delete[] h_csr.row_ptr; delete[] h_csr.nz;
     for (int i = 0; i < 7; ++i) {
@@ -543,7 +557,7 @@ void run_test(size_t N) {
 }
 
 int main(int argc, char** argv) {
-    std::cout << "N,cusparse,csr,ellpack8,ellpack7,sell" << std::endl;
+    std::cout << "N,cusparse,csr,ell8,sell,ell7" << std::endl;
     std::vector<size_t> sizes = {100, 1000, 10000, 100000, 1000000, 10000000};
     for (size_t size : sizes) {
         run_test(size);

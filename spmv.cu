@@ -10,7 +10,6 @@
 #include <stdio.h>
 
 const int PADDING_VALUE = 0;
-constexpr size_t SLICE_SIZE = 256; // must match the slice_size used by sliced_ellpack_spmv_kernel
 
 #define CHECK_CUDA(call) \
     do { \
@@ -58,16 +57,6 @@ struct Ellpack7 {
     size_t nrows_padded;
     int* col_ind[7];
     double* nz[7];
-};
-
-struct SlicedEllpack {
-    size_t nrows;
-    size_t ncols;
-    size_t slice_size;
-    int* slice_ptr;
-    int* col_ind;
-    double* nz;
-    int* row_map; // row_map[sorted_position] = original_row_index
 };
 
 // Loads a matrix dumped by dump_matrix (binary CSR: nrows, ncols, nnz header
@@ -192,80 +181,6 @@ void ellpack7_host_fill(const std::vector<size_t>& row_in, const std::vector<siz
     }
 }
 
-void sliced_ellpack_host_fill(const std::vector<size_t>& row_in, const std::vector<size_t>& col_in, const std::vector<double>& nz_in, size_t nrows, size_t ncols, SlicedEllpack& host_sell, const size_t slice_size) {
-    host_sell.nrows = nrows;
-    host_sell.ncols = ncols;
-    host_sell.slice_size = slice_size;
-
-    std::vector<std::vector<std::pair<int, double>>> rows_data(nrows);
-    std::vector<std::pair<size_t, size_t>> row_metadata(nrows);
-
-    for (size_t i = 0; i < nz_in.size(); ++i) {
-        size_t r = row_in[i];
-        rows_data[r].push_back({static_cast<int>(col_in[i]), nz_in[i]});
-    }
-
-    for (size_t i = 0; i < nrows; ++i) {
-        row_metadata[i] = {i, rows_data[i].size()};
-    }
-
-    std::sort(row_metadata.begin(), row_metadata.end(), [](const auto& a, const auto& b) {
-        return a.second > b.second;
-    });
-
-    // row_map[sorted position] = original row index. The kernel processes
-    // rows in sorted (slice) order, so this map is required to scatter each
-    // computed result back to its row's original position in y.
-    host_sell.row_map = new int[nrows];
-    for (size_t i = 0; i < nrows; ++i) {
-        host_sell.row_map[i] = static_cast<int>(row_metadata[i].first);
-    }
-
-    size_t num_slices = (nrows + slice_size - 1) / slice_size;
-    host_sell.slice_ptr = new int[num_slices + 1];
-    host_sell.slice_ptr[0] = 0;
-    size_t current_padded_nnz = 0;
-
-    for (size_t i = 0; i < num_slices; ++i) {
-        size_t current_slice_size = std::min(slice_size, nrows - i * slice_size);
-        size_t max_nnz_in_slice = 0;
-
-        for (size_t j = 0; j < current_slice_size; ++j) {
-            size_t original_row_idx = row_metadata[i * slice_size + j].first;
-            max_nnz_in_slice = std::max(max_nnz_in_slice, rows_data[original_row_idx].size());
-        }
-
-        current_padded_nnz += current_slice_size * max_nnz_in_slice;
-        host_sell.slice_ptr[i + 1] = current_padded_nnz;
-    }
-
-    host_sell.col_ind = new int[current_padded_nnz];
-    host_sell.nz = new double[current_padded_nnz];
-
-    for (size_t i = 0; i < num_slices; ++i) {
-        size_t current_slice_size = std::min(slice_size, nrows - i * slice_size);
-        size_t max_nnz_in_slice = (host_sell.slice_ptr[i+1] - host_sell.slice_ptr[i]) / current_slice_size;
-        size_t slice_base_idx = host_sell.slice_ptr[i];
-
-        for (size_t j = 0; j < current_slice_size; ++j) {
-            size_t row_idx_in_slice = j;
-            size_t original_row_idx = row_metadata[i * slice_size + j].first;
-            const auto& row_data = rows_data[original_row_idx];
-
-            for (size_t k = 0; k < max_nnz_in_slice; ++k) {
-                size_t padded_idx = slice_base_idx + k * current_slice_size + row_idx_in_slice;
-                if (k < row_data.size()) {
-                    host_sell.col_ind[padded_idx] = row_data[k].first;
-                    host_sell.nz[padded_idx] = row_data[k].second;
-                } else {
-                    host_sell.col_ind[padded_idx] = PADDING_VALUE;
-                    host_sell.nz[padded_idx] = 0.0;
-                }
-            }
-        }
-    }
-}
-
 __global__ void csr_spmv_kernel(const Csr* __restrict__ A, const double* __restrict__ x, double* __restrict__ y) {
     size_t row = blockIdx.x * blockDim.x + threadIdx.x;
 
@@ -314,38 +229,6 @@ __global__ void ellpack7_spmv_kernel(const Ellpack7* __restrict__ A, const doubl
             sum += nz_i[row] * x[col_ind_i[row]];
         }
         y[row] = sum;
-    }
-}
-
-__global__ void sliced_ellpack_spmv_kernel(
-    const SlicedEllpack* __restrict__ A,
-    const double* __restrict__ x,
-    double* __restrict__ y) {
-    int row = blockIdx.x * blockDim.x + threadIdx.x;
-
-    if (row < A->nrows) {
-        const int* __restrict__ slice_ptr = A->slice_ptr;
-        const int* __restrict__ col_ind = A->col_ind;
-        const double* __restrict__ nz = A->nz;
-        const int* __restrict__ row_map = A->row_map;
-
-        double sum = 0;
-        int slice_index = row / SLICE_SIZE;
-        int row_in_slice = row % SLICE_SIZE;
-        int max_elements_in_this_slice = slice_ptr[slice_index + 1] - slice_ptr[slice_index];
-        int rows_in_this_slice = (slice_index * SLICE_SIZE + SLICE_SIZE) > A->nrows ?
-                                 (A->nrows - slice_index * SLICE_SIZE) : SLICE_SIZE;
-        int max_columns_in_this_slice = max_elements_in_this_slice / rows_in_this_slice;
-        int slice_base_index = slice_ptr[slice_index] + row_in_slice;
-
-        for (int i = 0; i < max_columns_in_this_slice; ++i) {
-            int index = slice_base_index + i * rows_in_this_slice;
-            int col = col_ind[index];
-            sum += nz[index] * x[col];
-        }
-        // 'row' is a position in sorted (slice) order, not the original row
-        // index, so the result must be scattered back via row_map.
-        y[row_map[row]] = sum;
     }
 }
 
@@ -402,7 +285,6 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
 
     const size_t block_size = 256;
     const size_t grid_size = (N + block_size - 1) / block_size;
-    const size_t slice_size = SLICE_SIZE;
 
     int64_t nnz = h_nz_vec.size();
 
@@ -412,9 +294,6 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
     ellpack8_host_fill(h_row_vec, h_col_vec, h_nz_vec, N, N, h_ell8);
     Ellpack7 h_ell7;
     ellpack7_host_fill(h_row_vec, h_col_vec, h_nz_vec, N, N, h_ell7);
-
-    SlicedEllpack h_sell;
-    sliced_ellpack_host_fill(h_row_vec, h_col_vec, h_nz_vec, N, N, h_sell, slice_size);
 
     Vector h_x;
     h_x.length = N;
@@ -446,26 +325,12 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
         CHECK_CUDA(cudaMalloc(&d_ell7_nz[i], h_ell7.nrows_padded * sizeof(double)));
     }
 
-    SlicedEllpack *d_sell;
-    CHECK_CUDA(cudaMalloc(&d_sell, sizeof(SlicedEllpack)));
-    size_t num_slices = (N + slice_size - 1) / slice_size;
-    int total_padded_nnz = h_sell.slice_ptr[num_slices];
-    int *d_sell_slice_ptr;
-    int *d_sell_col_ind;
-    double *d_sell_nz;
-    int *d_sell_row_map;
-    CHECK_CUDA(cudaMalloc(&d_sell_slice_ptr, (num_slices + 1) * sizeof(int)));
-    CHECK_CUDA(cudaMalloc(&d_sell_col_ind, total_padded_nnz * sizeof(int)));
-    CHECK_CUDA(cudaMalloc(&d_sell_nz, total_padded_nnz * sizeof(double)));
-    CHECK_CUDA(cudaMalloc(&d_sell_row_map, N * sizeof(int)));
-
-    double *d_x, *d_y_csr, *d_y_ell8, *d_y_ell7, *d_y_cusparse, *d_y_sell;
+    double *d_x, *d_y_csr, *d_y_ell8, *d_y_ell7, *d_y_cusparse;
     CHECK_CUDA(cudaMalloc(&d_x, N * sizeof(double)));
     CHECK_CUDA(cudaMalloc(&d_y_csr, N * sizeof(double)));
     CHECK_CUDA(cudaMalloc(&d_y_ell8, N * sizeof(double)));
     CHECK_CUDA(cudaMalloc(&d_y_ell7, N * sizeof(double)));
     CHECK_CUDA(cudaMalloc(&d_y_cusparse, N * sizeof(double)));
-    CHECK_CUDA(cudaMalloc(&d_y_sell, N * sizeof(double)));
     CHECK_CUDA(cudaMemcpy(d_csr_col_ind, h_csr.col_ind, nnz * sizeof(int), cudaMemcpyHostToDevice));
     CHECK_CUDA(cudaMemcpy(d_csr_row_ptr, h_csr.row_ptr, (N + 1) * sizeof(int), cudaMemcpyHostToDevice));
     CHECK_CUDA(cudaMemcpy(d_csr_nz, h_csr.nz, nnz * sizeof(double), cudaMemcpyHostToDevice));
@@ -500,20 +365,6 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
         h_d_ell7.nz[i] = d_ell7_nz[i];
     }
     CHECK_CUDA(cudaMemcpy(d_ell7, &h_d_ell7, sizeof(Ellpack7), cudaMemcpyHostToDevice));
-    CHECK_CUDA(cudaMemcpy(d_sell_slice_ptr, h_sell.slice_ptr, (num_slices + 1) * sizeof(int), cudaMemcpyHostToDevice));
-    CHECK_CUDA(cudaMemcpy(d_sell_col_ind, h_sell.col_ind, total_padded_nnz * sizeof(int), cudaMemcpyHostToDevice));
-    CHECK_CUDA(cudaMemcpy(d_sell_nz, h_sell.nz, total_padded_nnz * sizeof(double), cudaMemcpyHostToDevice));
-    CHECK_CUDA(cudaMemcpy(d_sell_row_map, h_sell.row_map, N * sizeof(int), cudaMemcpyHostToDevice));
-
-    SlicedEllpack h_d_sell;
-    h_d_sell.nrows = h_sell.nrows;
-    h_d_sell.ncols = h_sell.ncols;
-    h_d_sell.slice_size = h_sell.slice_size;
-    h_d_sell.slice_ptr = d_sell_slice_ptr;
-    h_d_sell.col_ind = d_sell_col_ind;
-    h_d_sell.nz = d_sell_nz;
-    h_d_sell.row_map = d_sell_row_map;
-    CHECK_CUDA(cudaMemcpy(d_sell, &h_d_sell, sizeof(SlicedEllpack), cudaMemcpyHostToDevice));
     CHECK_CUDA(cudaMemcpy(d_x, h_x.vals, N * sizeof(double), cudaMemcpyHostToDevice));
 
     float time_csr = time_kernel([&]() {
@@ -526,10 +377,6 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
 
     float time_ell7 = time_kernel([&]() {
         ellpack7_spmv_kernel<<<grid_size, block_size>>>(d_ell7, d_x, d_y_ell7);
-    });
-
-    float time_sell = time_kernel([&]() {
-        sliced_ellpack_spmv_kernel<<<grid_size, block_size>>>(d_sell, d_x, d_y_sell);
     });
 
     cusparseHandle_t cusparse_handle = NULL;
@@ -563,9 +410,8 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
     check_correctness("CSR", N, d_y_cusparse, d_y_csr);
     check_correctness("ELLPACK8", N, d_y_cusparse, d_y_ell8);
     check_correctness("ELLPACK7", N, d_y_cusparse, d_y_ell7);
-    check_correctness("SlicedELLPACK", N, d_y_cusparse, d_y_sell);
 
-    printf("%lu,%.6f,%.6f,%.6f,%.6f,%.6f\n", N, time_cusparse, time_csr, time_ell8, time_sell, time_ell7);
+    printf("%lu,%.6f,%.6f,%.6f,%.6f\n", N, time_cusparse, time_csr, time_ell8, time_ell7);
 
     delete[] h_csr.col_ind; delete[] h_csr.row_ptr; delete[] h_csr.nz;
     for (int i = 0; i < 7; ++i) {
@@ -573,7 +419,6 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
         delete[] h_ell7.nz[i];
     }
     delete[] h_ell8.col_ind; delete[] h_ell8.nz;
-    delete[] h_sell.slice_ptr; delete[] h_sell.col_ind; delete[] h_sell.nz; delete[] h_sell.row_map;
     delete[] h_x.vals;
 
     CHECK_CUDA(cudaFree(d_csr));
@@ -589,18 +434,12 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
     CHECK_CUDA(cudaFree(d_ell8));
     CHECK_CUDA(cudaFree(d_ell8_col_ind));
     CHECK_CUDA(cudaFree(d_ell8_nz));
-    CHECK_CUDA(cudaFree(d_sell));
-    CHECK_CUDA(cudaFree(d_sell_slice_ptr));
-    CHECK_CUDA(cudaFree(d_sell_col_ind));
-    CHECK_CUDA(cudaFree(d_sell_nz));
-    CHECK_CUDA(cudaFree(d_sell_row_map));
 
     CHECK_CUDA(cudaFree(d_x));
     CHECK_CUDA(cudaFree(d_y_csr));
     CHECK_CUDA(cudaFree(d_y_ell7));
     CHECK_CUDA(cudaFree(d_y_ell8));
     CHECK_CUDA(cudaFree(d_y_cusparse));
-    CHECK_CUDA(cudaFree(d_y_sell));
     CHECK_CUDA(cudaFree(d_buffer));
 
     CHECK_CUSPARSE(cusparseDestroySpMat(matA_desc));
@@ -610,7 +449,7 @@ void run_test(size_t N, const char* matrix_file = nullptr) {
 }
 
 int main(int argc, char** argv) {
-    std::cout << "N,cusparse,csr,ell8,sell,ell7" << std::endl;
+    std::cout << "N,cusparse,csr,ell8,ell7" << std::endl;
 
     if (argc > 1) {
         // Each argument is a path to a matrix dumped by dump_matrix.

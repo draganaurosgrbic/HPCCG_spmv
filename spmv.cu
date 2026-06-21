@@ -287,12 +287,16 @@ __global__ void ellpack8_spmv_kernel(const Ellpack8* __restrict__ A, const doubl
     if (row < A->nrows) {
         const int* __restrict__ col_ind = A->col_ind;
         const double* __restrict__ nz = A->nz;
+        size_t base = row * 8;
 
-        double sum = 0.0;
-        for (size_t i = 0; i < A->max_row_nnz; ++i) {
-            size_t idx = row * A->max_row_nnz + i;
-            sum += nz[idx] * x[col_ind[idx]];
-        }
+        double sum = nz[base + 0] * x[col_ind[base + 0]] +
+                     nz[base + 1] * x[col_ind[base + 1]] +
+                     nz[base + 2] * x[col_ind[base + 2]] +
+                     nz[base + 3] * x[col_ind[base + 3]] +
+                     nz[base + 4] * x[col_ind[base + 4]] +
+                     nz[base + 5] * x[col_ind[base + 5]] +
+                     nz[base + 6] * x[col_ind[base + 6]] +
+                     nz[base + 7] * x[col_ind[base + 7]];
         y[row] = sum;
     }
 }

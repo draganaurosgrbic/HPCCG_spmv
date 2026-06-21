@@ -69,6 +69,46 @@ struct SlicedEllpack {
     int* row_map; // row_map[sorted_position] = original_row_index
 };
 
+// Loads a matrix dumped by dump_matrix (binary CSR: nrows, ncols, nnz header
+// followed by row_ptr/col_ind/nz arrays) and expands it into the same
+// (row, col, nz) triplet form banded_matrix_fill produces, so none of the
+// host_fill functions below need to know where the matrix came from.
+void load_csr_matrix(const char* path, std::vector<size_t>& row, std::vector<size_t>& col, std::vector<double>& nz, size_t& nrows, size_t& ncols) {
+    FILE* f = fopen(path, "rb");
+    if (!f) {
+        fprintf(stderr, "Error: could not open matrix file %s\n", path);
+        exit(1);
+    }
+
+    int64_t file_nrows, file_ncols, file_nnz;
+    fread(&file_nrows, sizeof(int64_t), 1, f);
+    fread(&file_ncols, sizeof(int64_t), 1, f);
+    fread(&file_nnz, sizeof(int64_t), 1, f);
+
+    std::vector<int64_t> row_ptr(file_nrows + 1);
+    std::vector<int64_t> col_ind(file_nnz);
+    std::vector<double> values(file_nnz);
+
+    fread(row_ptr.data(), sizeof(int64_t), file_nrows + 1, f);
+    fread(col_ind.data(), sizeof(int64_t), file_nnz, f);
+    fread(values.data(), sizeof(double), file_nnz, f);
+    fclose(f);
+
+    nrows = static_cast<size_t>(file_nrows);
+    ncols = static_cast<size_t>(file_ncols);
+
+    row.resize(file_nnz);
+    col.resize(file_nnz);
+    nz.resize(file_nnz);
+    for (int64_t r = 0; r < file_nrows; ++r) {
+        for (int64_t j = row_ptr[r]; j < row_ptr[r + 1]; ++j) {
+            row[j] = static_cast<size_t>(r);
+            col[j] = static_cast<size_t>(col_ind[j]);
+            nz[j] = values[j];
+        }
+    }
+}
+
 void banded_matrix_fill(size_t nrows, size_t ncols, std::vector<size_t>& row, std::vector<size_t>& col, std::vector<double>& nz) {
     row.reserve(8 * nrows);
     col.reserve(8 * nrows);
@@ -343,14 +383,21 @@ float time_kernel(F&& launch, int warmup_iters = 3, int timed_iters = 10) {
     return ms / timed_iters;
 }
 
-void run_test(size_t N) {
+void run_test(size_t N, const char* matrix_file = nullptr) {
+    std::vector<size_t> h_row_vec, h_col_vec;
+    std::vector<double> h_nz_vec;
+
+    if (matrix_file != nullptr) {
+        size_t file_ncols;
+        load_csr_matrix(matrix_file, h_row_vec, h_col_vec, h_nz_vec, N, file_ncols);
+    } else {
+        banded_matrix_fill(N, N, h_row_vec, h_col_vec, h_nz_vec);
+    }
+
     const size_t block_size = 256;
     const size_t grid_size = (N + block_size - 1) / block_size;
     const size_t slice_size = 256;
 
-    std::vector<size_t> h_row_vec, h_col_vec;
-    std::vector<double> h_nz_vec;
-    banded_matrix_fill(N, N, h_row_vec, h_col_vec, h_nz_vec);
     int64_t nnz = h_nz_vec.size();
 
     Csr h_csr;
@@ -558,9 +605,18 @@ void run_test(size_t N) {
 
 int main(int argc, char** argv) {
     std::cout << "N,cusparse,csr,ell8,sell,ell7" << std::endl;
-    std::vector<size_t> sizes = {100, 1000, 10000, 100000, 1000000, 10000000};
-    for (size_t size : sizes) {
-        run_test(size);
+
+    if (argc > 1) {
+        // Each argument is a path to a matrix dumped by dump_matrix.
+        for (int i = 1; i < argc; ++i) {
+            run_test(0, argv[i]);
+        }
+    } else {
+        // No matrix files given: fall back to the synthetic banded matrix.
+        std::vector<size_t> sizes = {100, 1000, 10000, 100000, 1000000, 10000000};
+        for (size_t size : sizes) {
+            run_test(size);
+        }
     }
     return 0;
 }

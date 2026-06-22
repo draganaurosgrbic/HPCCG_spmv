@@ -1,0 +1,8 @@
+cd /lus/flare/projects/Tools/draganagrbic/chapter_4/HPCCG_spmv/aurora
+./build_aurora.sh
+
+cd /lus/flare/projects/Tools/draganagrbic/chapter_4/HPCCG_spmv/aurora
+qsub benchmark_aurora.sh
+
+qstat -u draganagrbic
+

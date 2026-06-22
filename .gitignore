@@ -1,8 +1,11 @@
 *.bin
 *.o
-a.out
-*.ii
 *.s
-!aurora/HPC_sparsemv.s
+*.ii
+a.out
+
 test_HPCCG
 dump_matrix
+
+!aurora/HPC_sparsemv.s
+!polaris/HPC_sparsemv.s

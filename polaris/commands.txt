@@ -1,0 +1,22 @@
+cd /lus/eagle/projects/Tools/draganagrbic/chapter_4/HPCCG_spmv
+module load gcc-native/14.2
+make dump_matrix OMP_FLAGS=-fopenmp
+
+cd /lus/eagle/projects/Tools/draganagrbic/chapter_4/HPCCG_spmv/polaris
+qsub dump_matrices.sh
+qstat -u draganagrbic
+
+qsub -I -l select=1 -l walltime=01:00:00 -q debug -A Tools -l filesystems=home:grand:eagle
+cd /lus/eagle/projects/Tools/draganagrbic/chapter_4/HPCCG_spmv
+module load cuda/11.8
+nvcc spmv.cu -lcusparse -L/opt/nvidia/hpc_sdk/Linux_x86_64/25.5/math_libs/11.8/targets/x86_64-linux/lib
+./a.out ./polaris/matrix_50_50_50.bin ./polaris/matrix_100_100_100.bin ./polaris/matrix_150_150_150.bin ./polaris/matrix_200_200_200.bin ./polaris/matrix_250_250_250.bin ./polaris/matrix_300_300_300.bin
+
+
+cd /lus/eagle/projects/Tools/draganagrbic/chapter_4/HPCCG_spmv/polaris
+./build_polaris.sh
+
+cd /lus/eagle/projects/Tools/draganagrbic/chapter_4/HPCCG_spmv/polaris
+qsub benchmark_polaris.sh
+qstat -u draganagrbic
+

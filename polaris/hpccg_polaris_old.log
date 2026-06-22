@@ -26,20 +26,20 @@ Number of iterations: 149
 Final residual: 1.34364e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.113909
-  DDOT    : 0.030289
-  WAXPBY  : 0.015107
-  SPARSEMV: 0.067934
+  Total   : 0.112762
+  DDOT    : 0.030253
+  WAXPBY  : 0.014573
+  SPARSEMV: 0.067351
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 10464.5
-  DDOT    : 2459.64
-  WAXPBY  : 7397.23
-  SPARSEMV: 14804.8
+  Total   : 10570.9
+  DDOT    : 2462.57
+  WAXPBY  : 7668.29
+  SPARSEMV: 14933
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=2, Size=50 50 50
 Initial Residual = 7468.01
@@ -66,20 +66,20 @@ Number of iterations: 149
 Final residual: 2.01276e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.060797
-  DDOT    : 0.015911
-  WAXPBY  : 0.009973
-  SPARSEMV: 0.034301
+  Total   : 0.060378
+  DDOT    : 0.015821
+  WAXPBY  : 0.010024
+  SPARSEMV: 0.033969
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 19606.2
-  DDOT    : 4682.3
-  WAXPBY  : 11205.3
-  SPARSEMV: 29321.3
+  Total   : 19742.3
+  DDOT    : 4708.93
+  WAXPBY  : 11148.2
+  SPARSEMV: 29607.9
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=3, Size=50 50 50
 Initial Residual = 7468.01
@@ -91,8 +91,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55512e-112
-Iteration = 135   Residual = 4.90434e-127
-Iteration = 149   Residual = 1.73965e-140
+Iteration = 135   Residual = 4.90413e-127
+Iteration = 149   Residual = 1.71088e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -103,23 +103,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.73965e-140
+Final residual: 1.71088e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.042997
-  DDOT    : 0.010896
-  WAXPBY  : 0.007996
-  SPARSEMV: 0.023511
+  Total   : 0.042878
+  DDOT    : 0.010823
+  WAXPBY  : 0.007956
+  SPARSEMV: 0.023493
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 27722.9
-  DDOT    : 6837.37
-  WAXPBY  : 13975.7
-  SPARSEMV: 42777.8
+  Total   : 27799.8
+  DDOT    : 6883.49
+  WAXPBY  : 14046
+  SPARSEMV: 42810.6
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=4, Size=50 50 50
 Initial Residual = 7468.01
@@ -131,8 +131,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55512e-112
-Iteration = 135   Residual = 4.90429e-127
-Iteration = 149   Residual = 1.73274e-140
+Iteration = 135   Residual = 4.90434e-127
+Iteration = 149   Residual = 1.7405e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -143,23 +143,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.73274e-140
+Final residual: 1.7405e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.033303
-  DDOT    : 0.00867
-  WAXPBY  : 0.006361
-  SPARSEMV: 0.017621
+  Total   : 0.033634
+  DDOT    : 0.008678
+  WAXPBY  : 0.006571
+  SPARSEMV: 0.017738
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 35792.6
-  DDOT    : 8592.85
-  WAXPBY  : 17568
-  SPARSEMV: 57076.8
+  Total   : 35440.3
+  DDOT    : 8584.93
+  WAXPBY  : 17006.5
+  SPARSEMV: 56700.3
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=6, Size=50 50 50
 Initial Residual = 7468.01
@@ -172,7 +172,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.9029e-127
-Iteration = 149   Residual = 1.3213e-140
+Iteration = 149   Residual = 1.32094e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -183,23 +183,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.3213e-140
+Final residual: 1.32094e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.024471
-  DDOT    : 0.006343
-  WAXPBY  : 0.005338
-  SPARSEMV: 0.012221
+  Total   : 0.024918
+  DDOT    : 0.00631
+  WAXPBY  : 0.005575
+  SPARSEMV: 0.012285
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 48710.7
-  DDOT    : 11745.2
-  WAXPBY  : 20934.8
-  SPARSEMV: 82296.9
+  Total   : 47836.9
+  DDOT    : 11806.7
+  WAXPBY  : 20044.8
+  SPARSEMV: 81868.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=8, Size=50 50 50
 Initial Residual = 7468.01
@@ -212,7 +212,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.3129e-140
+Iteration = 149   Residual = 1.31386e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -223,23 +223,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.3129e-140
+Final residual: 1.31386e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.020807
-  DDOT    : 0.005213
-  WAXPBY  : 0.00513
-  SPARSEMV: 0.009755
+  Total   : 0.020343
+  DDOT    : 0.005137
+  WAXPBY  : 0.004942
+  SPARSEMV: 0.009696
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 57288.4
-  DDOT    : 14291.2
-  WAXPBY  : 21783.6
-  SPARSEMV: 103101
+  Total   : 58595.1
+  DDOT    : 14502.6
+  WAXPBY  : 22612.3
+  SPARSEMV: 103728
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=12, Size=50 50 50
 Initial Residual = 7468.01
@@ -251,8 +251,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90292e-127
-Iteration = 149   Residual = 1.33546e-140
+Iteration = 135   Residual = 4.90293e-127
+Iteration = 149   Residual = 1.34131e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -263,23 +263,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.33546e-140
+Final residual: 1.34131e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.015693
-  DDOT    : 0.00369
-  WAXPBY  : 0.003715
-  SPARSEMV: 0.007698
+  Total   : 0.015786
+  DDOT    : 0.003691
+  WAXPBY  : 0.003792
+  SPARSEMV: 0.00772
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 75957.4
-  DDOT    : 20189.7
-  WAXPBY  : 30080.8
-  SPARSEMV: 130651
+  Total   : 75509.9
+  DDOT    : 20184.2
+  WAXPBY  : 29469.9
+  SPARSEMV: 130278
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=16, Size=50 50 50
 Initial Residual = 7468.01
@@ -291,8 +291,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90299e-127
-Iteration = 149   Residual = 1.37791e-140
+Iteration = 135   Residual = 4.903e-127
+Iteration = 149   Residual = 1.38489e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -303,23 +303,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.37791e-140
+Final residual: 1.38489e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.013585
-  DDOT    : 0.003189
-  WAXPBY  : 0.003717
-  SPARSEMV: 0.00599
+  Total   : 0.013757
+  DDOT    : 0.003248
+  WAXPBY  : 0.0039
+  SPARSEMV: 0.005999
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 87743.8
-  DDOT    : 23361.6
-  WAXPBY  : 30064.6
-  SPARSEMV: 167905
+  Total   : 86646.8
+  DDOT    : 22937.2
+  WAXPBY  : 28653.8
+  SPARSEMV: 167653
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=24, Size=50 50 50
 Initial Residual = 7468.01
@@ -332,7 +332,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.31297e-140
+Iteration = 149   Residual = 1.31769e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -343,23 +343,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.31297e-140
+Final residual: 1.31769e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.012936
-  DDOT    : 0.002549
-  WAXPBY  : 0.00359
-  SPARSEMV: 0.006182
+  Total   : 0.013067
+  DDOT    : 0.002584
+  WAXPBY  : 0.003551
+  SPARSEMV: 0.006325
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 92145.9
-  DDOT    : 29227.1
-  WAXPBY  : 31128.1
-  SPARSEMV: 162690
+  Total   : 91222.2
+  DDOT    : 28831.3
+  WAXPBY  : 31470
+  SPARSEMV: 159012
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=32, Size=50 50 50
 Initial Residual = 7468.01
@@ -372,7 +372,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.31599e-140
+Iteration = 149   Residual = 1.31676e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -383,23 +383,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.31599e-140
+Final residual: 1.31676e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.011251
-  DDOT    : 0.002529
-  WAXPBY  : 0.003396
-  SPARSEMV: 0.004708
+  Total   : 0.011123
+  DDOT    : 0.002514
+  WAXPBY  : 0.003476
+  SPARSEMV: 0.004535
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 105946
-  DDOT    : 29458.3
-  WAXPBY  : 32906.4
-  SPARSEMV: 213626
+  Total   : 107165
+  DDOT    : 29634
+  WAXPBY  : 32149
+  SPARSEMV: 221775
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=1, Size=50 50 50
 Initial Residual = 7468.01
@@ -426,20 +426,20 @@ Number of iterations: 149
 Final residual: 2.00876e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.100683
-  DDOT    : 0.030871
-  WAXPBY  : 0.012416
-  SPARSEMV: 0.056767
+  Total   : 0.100268
+  DDOT    : 0.030813
+  WAXPBY  : 0.012513
+  SPARSEMV: 0.056325
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 11839.1
-  DDOT    : 2413.27
-  WAXPBY  : 9000.48
-  SPARSEMV: 17717.2
+  Total   : 11888.1
+  DDOT    : 2417.81
+  WAXPBY  : 8930.71
+  SPARSEMV: 17856.2
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=2, Size=50 50 50
 Initial Residual = 7468.01
@@ -466,20 +466,20 @@ Number of iterations: 149
 Final residual: 2.01607e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.054327
-  DDOT    : 0.015977
-  WAXPBY  : 0.009437
-  SPARSEMV: 0.028245
+  Total   : 0.054038
+  DDOT    : 0.016025
+  WAXPBY  : 0.009034
+  SPARSEMV: 0.028321
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 21941.2
-  DDOT    : 4662.95
-  WAXPBY  : 11841.7
-  SPARSEMV: 35608.1
+  Total   : 22058.6
+  DDOT    : 4648.99
+  WAXPBY  : 12369.9
+  SPARSEMV: 35512.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=3, Size=50 50 50
 Initial Residual = 7468.01
@@ -491,8 +491,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55512e-112
-Iteration = 135   Residual = 4.90422e-127
-Iteration = 149   Residual = 1.72359e-140
+Iteration = 135   Residual = 4.90423e-127
+Iteration = 149   Residual = 1.72492e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -503,23 +503,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.72359e-140
+Final residual: 1.72492e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.038614
-  DDOT    : 0.010897
-  WAXPBY  : 0.007884
-  SPARSEMV: 0.019228
+  Total   : 0.038709
+  DDOT    : 0.010967
+  WAXPBY  : 0.007907
+  SPARSEMV: 0.019217
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 30869.6
-  DDOT    : 6836.74
-  WAXPBY  : 14174.3
-  SPARSEMV: 52306.5
+  Total   : 30793.9
+  DDOT    : 6793.11
+  WAXPBY  : 14133
+  SPARSEMV: 52336.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=4, Size=50 50 50
 Initial Residual = 7468.01
@@ -531,8 +531,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55512e-112
-Iteration = 135   Residual = 4.90446e-127
-Iteration = 149   Residual = 1.75541e-140
+Iteration = 135   Residual = 4.90445e-127
+Iteration = 149   Residual = 1.75332e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -543,23 +543,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.75541e-140
+Final residual: 1.75332e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.030472
-  DDOT    : 0.008609
-  WAXPBY  : 0.006698
-  SPARSEMV: 0.014533
+  Total   : 0.030083
+  DDOT    : 0.008622
+  WAXPBY  : 0.006265
+  SPARSEMV: 0.014628
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 39117.9
-  DDOT    : 8653.73
-  WAXPBY  : 16684.1
-  SPARSEMV: 69204.6
+  Total   : 39623.7
+  DDOT    : 8640.69
+  WAXPBY  : 17837.2
+  SPARSEMV: 68755.1
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=6, Size=50 50 50
 Initial Residual = 7468.01
@@ -571,8 +571,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90294e-127
-Iteration = 149   Residual = 1.34503e-140
+Iteration = 135   Residual = 4.90291e-127
+Iteration = 149   Residual = 1.32654e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -583,23 +583,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.34503e-140
+Final residual: 1.32654e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.022668
-  DDOT    : 0.006406
-  WAXPBY  : 0.005408
-  SPARSEMV: 0.010269
+  Total   : 0.022477
+  DDOT    : 0.00633
+  WAXPBY  : 0.005327
+  SPARSEMV: 0.010229
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 52585.1
-  DDOT    : 11629.7
-  WAXPBY  : 20663.8
-  SPARSEMV: 97940.4
+  Total   : 53032
+  DDOT    : 11769.4
+  WAXPBY  : 20978
+  SPARSEMV: 98323.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=8, Size=50 50 50
 Initial Residual = 7468.01
@@ -612,7 +612,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.31285e-140
+Iteration = 149   Residual = 1.31687e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -623,23 +623,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.31285e-140
+Final residual: 1.31687e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.018972
-  DDOT    : 0.005219
-  WAXPBY  : 0.005149
-  SPARSEMV: 0.00802
+  Total   : 0.019018
+  DDOT    : 0.005209
+  WAXPBY  : 0.005203
+  SPARSEMV: 0.008029
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 62829.4
-  DDOT    : 14274.8
-  WAXPBY  : 21703.2
-  SPARSEMV: 125405
+  Total   : 62677.5
+  DDOT    : 14302.2
+  WAXPBY  : 21478
+  SPARSEMV: 125265
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=12, Size=50 50 50
 Initial Residual = 7468.01
@@ -651,8 +651,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90297e-127
-Iteration = 149   Residual = 1.36787e-140
+Iteration = 135   Residual = 4.90298e-127
+Iteration = 149   Residual = 1.37074e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -663,23 +663,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.36787e-140
+Final residual: 1.37074e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.015902
-  DDOT    : 0.003696
-  WAXPBY  : 0.003902
-  SPARSEMV: 0.007709
+  Total   : 0.015983
+  DDOT    : 0.003701
+  WAXPBY  : 0.003818
+  SPARSEMV: 0.007858
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 74959.1
-  DDOT    : 20156.9
-  WAXPBY  : 28639.2
-  SPARSEMV: 130464
+  Total   : 74579.2
+  DDOT    : 20129.7
+  WAXPBY  : 29269.3
+  SPARSEMV: 127991
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=16, Size=50 50 50
 Initial Residual = 7468.01
@@ -691,8 +691,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90298e-127
-Iteration = 149   Residual = 1.37227e-140
+Iteration = 135   Residual = 4.90299e-127
+Iteration = 149   Residual = 1.37568e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -703,23 +703,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.37227e-140
+Final residual: 1.37568e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.014053
-  DDOT    : 0.003209
-  WAXPBY  : 0.003823
-  SPARSEMV: 0.006435
+  Total   : 0.014161
+  DDOT    : 0.003238
+  WAXPBY  : 0.003904
+  SPARSEMV: 0.006409
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 84821.7
-  DDOT    : 23216
-  WAXPBY  : 29231
-  SPARSEMV: 156294
+  Total   : 84174.8
+  DDOT    : 23008
+  WAXPBY  : 28624.5
+  SPARSEMV: 156928
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=24, Size=50 50 50
 Initial Residual = 7468.01
@@ -732,7 +732,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.3129e-140
+Iteration = 149   Residual = 1.31357e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -743,23 +743,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.3129e-140
+Final residual: 1.31357e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.013003
-  DDOT    : 0.002572
-  WAXPBY  : 0.003522
-  SPARSEMV: 0.006275
+  Total   : 0.013198
+  DDOT    : 0.00251
+  WAXPBY  : 0.003404
+  SPARSEMV: 0.006671
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 91671.2
-  DDOT    : 28965.8
-  WAXPBY  : 31729.1
-  SPARSEMV: 160279
+  Total   : 90316.7
+  DDOT    : 29681.3
+  WAXPBY  : 32829
+  SPARSEMV: 150765
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=32, Size=50 50 50
 Initial Residual = 7468.01
@@ -772,7 +772,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.31677e-140
+Iteration = 149   Residual = 1.31293e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -783,23 +783,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.31677e-140
+Final residual: 1.31293e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.011748
-  DDOT    : 0.002517
-  WAXPBY  : 0.003526
-  SPARSEMV: 0.005095
+  Total   : 0.011671
+  DDOT    : 0.002445
+  WAXPBY  : 0.003415
+  SPARSEMV: 0.005225
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 101464
-  DDOT    : 29598.7
-  WAXPBY  : 31693.1
-  SPARSEMV: 197399
+  Total   : 102133
+  DDOT    : 30470.3
+  WAXPBY  : 32723.3
+  SPARSEMV: 192488
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=1, Size=50 50 50
 Initial Residual = 7468.01
@@ -826,20 +826,20 @@ Number of iterations: 149
 Final residual: 2.00876e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.250021
-  DDOT    : 0.030583
-  WAXPBY  : 0.014585
-  SPARSEMV: 0.204211
+  Total   : 0.247257
+  DDOT    : 0.030529
+  WAXPBY  : 0.014344
+  SPARSEMV: 0.201749
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 4767.6
-  DDOT    : 2435.99
-  WAXPBY  : 7661.98
-  SPARSEMV: 4925.05
+  Total   : 4820.89
+  DDOT    : 2440.3
+  WAXPBY  : 7790.71
+  SPARSEMV: 4985.15
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=2, Size=50 50 50
 Initial Residual = 7468.01
@@ -866,20 +866,20 @@ Number of iterations: 149
 Final residual: 2.01607e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.127379
-  DDOT    : 0.016039
-  WAXPBY  : 0.010107
-  SPARSEMV: 0.100573
+  Total   : 0.127178
+  DDOT    : 0.01595
+  WAXPBY  : 0.009817
+  SPARSEMV: 0.100766
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 9357.9
-  DDOT    : 4644.93
-  WAXPBY  : 11056.7
-  SPARSEMV: 10000.2
+  Total   : 9372.69
+  DDOT    : 4670.85
+  WAXPBY  : 11383.3
+  SPARSEMV: 9981.05
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=3, Size=50 50 50
 Initial Residual = 7468.01
@@ -891,8 +891,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55512e-112
-Iteration = 135   Residual = 4.90431e-127
-Iteration = 149   Residual = 1.73571e-140
+Iteration = 135   Residual = 4.9042e-127
+Iteration = 149   Residual = 1.72009e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -903,23 +903,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.73571e-140
+Final residual: 1.72009e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.086928
-  DDOT    : 0.010865
-  WAXPBY  : 0.007886
-  SPARSEMV: 0.067509
+  Total   : 0.086967
+  DDOT    : 0.010879
+  WAXPBY  : 0.007901
+  SPARSEMV: 0.067584
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 13712.5
-  DDOT    : 6856.88
-  WAXPBY  : 14170.7
-  SPARSEMV: 14898
+  Total   : 13706.3
+  DDOT    : 6848.06
+  WAXPBY  : 14143.8
+  SPARSEMV: 14881.5
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=4, Size=50 50 50
 Initial Residual = 7468.01
@@ -931,8 +931,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55512e-112
-Iteration = 135   Residual = 4.90477e-127
-Iteration = 149   Residual = 1.78845e-140
+Iteration = 135   Residual = 4.90517e-127
+Iteration = 149   Residual = 1.82232e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -943,23 +943,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.78845e-140
+Final residual: 1.82232e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.066977
-  DDOT    : 0.008679
-  WAXPBY  : 0.006431
-  SPARSEMV: 0.051222
+  Total   : 0.066528
+  DDOT    : 0.008677
+  WAXPBY  : 0.006503
+  SPARSEMV: 0.050721
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 17797.2
-  DDOT    : 8583.94
-  WAXPBY  : 17376.8
-  SPARSEMV: 19635.1
+  Total   : 17917.3
+  DDOT    : 8585.92
+  WAXPBY  : 17184.4
+  SPARSEMV: 19829.1
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=6, Size=50 50 50
 Initial Residual = 7468.01
@@ -971,8 +971,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90291e-127
-Iteration = 149   Residual = 1.32656e-140
+Iteration = 135   Residual = 4.90293e-127
+Iteration = 149   Residual = 1.34074e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -983,23 +983,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.32656e-140
+Final residual: 1.34074e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.048576
-  DDOT    : 0.006449
-  WAXPBY  : 0.005341
-  SPARSEMV: 0.036114
+  Total   : 0.047524
+  DDOT    : 0.006339
+  WAXPBY  : 0.005292
+  SPARSEMV: 0.035302
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 24538.9
-  DDOT    : 11552.2
-  WAXPBY  : 20923
-  SPARSEMV: 27849.3
+  Total   : 25082.1
+  DDOT    : 11752.6
+  WAXPBY  : 21116.8
+  SPARSEMV: 28489.9
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=8, Size=50 50 50
 Initial Residual = 7468.01
@@ -1012,7 +1012,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.31509e-140
+Iteration = 149   Residual = 1.31289e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1023,23 +1023,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.31509e-140
+Final residual: 1.31289e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.03794
-  DDOT    : 0.005263
-  WAXPBY  : 0.005014
-  SPARSEMV: 0.027056
+  Total   : 0.03781
+  DDOT    : 0.005209
+  WAXPBY  : 0.004929
+  SPARSEMV: 0.02708
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 31418
-  DDOT    : 14155.4
-  WAXPBY  : 22287.6
-  SPARSEMV: 37172.9
+  Total   : 31526.1
+  DDOT    : 14302.2
+  WAXPBY  : 22671.9
+  SPARSEMV: 37140
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=12, Size=50 50 50
 Initial Residual = 7468.01
@@ -1051,8 +1051,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90296e-127
-Iteration = 149   Residual = 1.35989e-140
+Iteration = 135   Residual = 4.90297e-127
+Iteration = 149   Residual = 1.36818e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1063,23 +1063,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.35989e-140
+Final residual: 1.36818e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.026269
-  DDOT    : 0.003712
-  WAXPBY  : 0.00388
-  SPARSEMV: 0.018051
+  Total   : 0.02648
+  DDOT    : 0.003757
+  WAXPBY  : 0.003982
+  SPARSEMV: 0.01816
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 45376.7
-  DDOT    : 20070
-  WAXPBY  : 28801.5
-  SPARSEMV: 55717.1
+  Total   : 45015.1
+  DDOT    : 19829.7
+  WAXPBY  : 28063.8
+  SPARSEMV: 55382.7
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=16, Size=50 50 50
 Initial Residual = 7468.01
@@ -1091,8 +1091,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90299e-127
-Iteration = 149   Residual = 1.37898e-140
+Iteration = 135   Residual = 4.90293e-127
+Iteration = 149   Residual = 1.33931e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1103,23 +1103,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.37898e-140
+Final residual: 1.33931e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.022577
-  DDOT    : 0.003313
-  WAXPBY  : 0.003867
-  SPARSEMV: 0.014644
+  Total   : 0.021459
+  DDOT    : 0.00323
+  WAXPBY  : 0.00377
+  SPARSEMV: 0.013846
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 52797.1
-  DDOT    : 22487.2
-  WAXPBY  : 28898.4
-  SPARSEMV: 68680
+  Total   : 55547.8
+  DDOT    : 23065
+  WAXPBY  : 29641.9
+  SPARSEMV: 72638.3
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=24, Size=50 50 50
 Initial Residual = 7468.01
@@ -1131,8 +1131,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.9029e-127
-Iteration = 149   Residual = 1.32139e-140
+Iteration = 135   Residual = 4.90289e-127
+Iteration = 149   Residual = 1.31284e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1143,23 +1143,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.32139e-140
+Final residual: 1.31284e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.017318
-  DDOT    : 0.002589
-  WAXPBY  : 0.003723
-  SPARSEMV: 0.010391
+  Total   : 0.017304
+  DDOT    : 0.002593
+  WAXPBY  : 0.003706
+  SPARSEMV: 0.010365
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 68830.1
-  DDOT    : 28775.6
-  WAXPBY  : 30016.1
-  SPARSEMV: 96790.5
+  Total   : 68885.8
+  DDOT    : 28731.2
+  WAXPBY  : 30153.8
+  SPARSEMV: 97033.3
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=32, Size=50 50 50
 Initial Residual = 7468.01
@@ -1171,8 +1171,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.31732e-140
+Iteration = 135   Residual = 4.9029e-127
+Iteration = 149   Residual = 1.32189e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1183,23 +1183,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.31732e-140
+Final residual: 1.32189e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.014151
-  DDOT    : 0.002494
-  WAXPBY  : 0.003399
-  SPARSEMV: 0.007591
+  Total   : 0.014067
+  DDOT    : 0.002465
+  WAXPBY  : 0.00348
+  SPARSEMV: 0.007434
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 84234.3
-  DDOT    : 29871.7
-  WAXPBY  : 32877.3
-  SPARSEMV: 132492
+  Total   : 84737.3
+  DDOT    : 30223.1
+  WAXPBY  : 32112.1
+  SPARSEMV: 135291
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=1, Size=50 50 50
 Initial Residual = 7468.01
@@ -1226,20 +1226,20 @@ Number of iterations: 149
 Final residual: 2.00876e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.098753
-  DDOT    : 0.031192
-  WAXPBY  : 0.013663
-  SPARSEMV: 0.05329
+  Total   : 0.097673
+  DDOT    : 0.031066
+  WAXPBY  : 0.014021
+  SPARSEMV: 0.051988
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 12070.5
-  DDOT    : 2388.43
-  WAXPBY  : 8179.02
-  SPARSEMV: 18873.1
+  Total   : 12204
+  DDOT    : 2398.12
+  WAXPBY  : 7970.19
+  SPARSEMV: 19345.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=2, Size=50 50 50
 Initial Residual = 7468.01
@@ -1266,20 +1266,20 @@ Number of iterations: 149
 Final residual: 2.01607e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.051787
-  DDOT    : 0.015947
-  WAXPBY  : 0.009447
-  SPARSEMV: 0.02575
+  Total   : 0.051818
+  DDOT    : 0.015921
+  WAXPBY  : 0.009289
+  SPARSEMV: 0.025987
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 23017.4
-  DDOT    : 4671.73
-  WAXPBY  : 11829.2
-  SPARSEMV: 39058.3
+  Total   : 23003.6
+  DDOT    : 4679.35
+  WAXPBY  : 12030.4
+  SPARSEMV: 38702
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=3, Size=50 50 50
 Initial Residual = 7468.01
@@ -1291,8 +1291,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55512e-112
-Iteration = 135   Residual = 4.90403e-127
-Iteration = 149   Residual = 1.69394e-140
+Iteration = 135   Residual = 4.90419e-127
+Iteration = 149   Residual = 1.7191e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1303,23 +1303,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.69394e-140
+Final residual: 1.7191e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.037043
-  DDOT    : 0.01105
-  WAXPBY  : 0.007753
-  SPARSEMV: 0.017643
+  Total   : 0.037023
+  DDOT    : 0.010884
+  WAXPBY  : 0.008018
+  SPARSEMV: 0.017527
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 32178.8
-  DDOT    : 6742.08
-  WAXPBY  : 14413.8
-  SPARSEMV: 57005.6
+  Total   : 32196.2
+  DDOT    : 6844.91
+  WAXPBY  : 13937.4
+  SPARSEMV: 57382.9
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=4, Size=50 50 50
 Initial Residual = 7468.01
@@ -1331,8 +1331,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55512e-112
-Iteration = 135   Residual = 4.90458e-127
-Iteration = 149   Residual = 1.76909e-140
+Iteration = 135   Residual = 4.9052e-127
+Iteration = 149   Residual = 1.82471e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1343,23 +1343,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.76909e-140
+Final residual: 1.82471e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.029303
-  DDOT    : 0.008694
-  WAXPBY  : 0.006535
-  SPARSEMV: 0.013497
+  Total   : 0.02905
+  DDOT    : 0.008653
+  WAXPBY  : 0.006419
+  SPARSEMV: 0.013402
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 40678.4
-  DDOT    : 8569.13
-  WAXPBY  : 17100.2
-  SPARSEMV: 74516.6
+  Total   : 41032.7
+  DDOT    : 8609.73
+  WAXPBY  : 17409.3
+  SPARSEMV: 75044.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=6, Size=50 50 50
 Initial Residual = 7468.01
@@ -1371,8 +1371,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90291e-127
-Iteration = 149   Residual = 1.32547e-140
+Iteration = 135   Residual = 4.90293e-127
+Iteration = 149   Residual = 1.3407e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1383,23 +1383,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.32547e-140
+Final residual: 1.3407e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.021969
-  DDOT    : 0.00648
-  WAXPBY  : 0.005367
-  SPARSEMV: 0.009526
+  Total   : 0.022074
+  DDOT    : 0.006429
+  WAXPBY  : 0.005433
+  SPARSEMV: 0.009613
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 54258.3
-  DDOT    : 11496.9
-  WAXPBY  : 20821.7
-  SPARSEMV: 105579
+  Total   : 54000.2
+  DDOT    : 11588.1
+  WAXPBY  : 20568.7
+  SPARSEMV: 104624
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=8, Size=50 50 50
 Initial Residual = 7468.01
@@ -1412,7 +1412,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.31387e-140
+Iteration = 149   Residual = 1.31279e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1423,23 +1423,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.31387e-140
+Final residual: 1.31279e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.018046
-  DDOT    : 0.005165
-  WAXPBY  : 0.004877
-  SPARSEMV: 0.00742
+  Total   : 0.018271
+  DDOT    : 0.005195
+  WAXPBY  : 0.005007
+  SPARSEMV: 0.007466
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 66053.4
-  DDOT    : 14424
-  WAXPBY  : 22913.7
-  SPARSEMV: 135546
+  Total   : 65240
+  DDOT    : 14340.7
+  WAXPBY  : 22318.8
+  SPARSEMV: 134711
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=12, Size=50 50 50
 Initial Residual = 7468.01
@@ -1451,8 +1451,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90294e-127
-Iteration = 149   Residual = 1.35016e-140
+Iteration = 135   Residual = 4.90296e-127
+Iteration = 149   Residual = 1.3591e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1463,23 +1463,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.35016e-140
+Final residual: 1.3591e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.015371
-  DDOT    : 0.003759
-  WAXPBY  : 0.003854
-  SPARSEMV: 0.007169
+  Total   : 0.015439
+  DDOT    : 0.003732
+  WAXPBY  : 0.003744
+  SPARSEMV: 0.007326
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 77548.6
-  DDOT    : 19819.1
-  WAXPBY  : 28995.8
-  SPARSEMV: 140292
+  Total   : 77207.1
+  DDOT    : 19962.5
+  WAXPBY  : 29847.8
+  SPARSEMV: 137285
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=16, Size=50 50 50
 Initial Residual = 7468.01
@@ -1491,8 +1491,8 @@ Iteration = 75   Residual = 2.82787e-69
 Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
-Iteration = 135   Residual = 4.90297e-127
-Iteration = 149   Residual = 1.36438e-140
+Iteration = 135   Residual = 4.903e-127
+Iteration = 149   Residual = 1.38266e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1503,23 +1503,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.36438e-140
+Final residual: 1.38266e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.013278
-  DDOT    : 0.003203
-  WAXPBY  : 0.003697
-  SPARSEMV: 0.005765
+  Total   : 0.013184
+  DDOT    : 0.00318
+  WAXPBY  : 0.003734
+  SPARSEMV: 0.005662
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 89772.6
-  DDOT    : 23259.4
-  WAXPBY  : 30227.2
-  SPARSEMV: 174458
+  Total   : 90412.6
+  DDOT    : 23427.7
+  WAXPBY  : 29927.7
+  SPARSEMV: 177632
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=24, Size=50 50 50
 Initial Residual = 7468.01
@@ -1532,7 +1532,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.3128e-140
+Iteration = 149   Residual = 1.31442e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1543,23 +1543,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.3128e-140
+Final residual: 1.31442e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.012787
-  DDOT    : 0.002609
-  WAXPBY  : 0.003543
-  SPARSEMV: 0.006003
+  Total   : 0.01287
+  DDOT    : 0.002594
+  WAXPBY  : 0.003561
+  SPARSEMV: 0.006114
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 93219.7
-  DDOT    : 28555
-  WAXPBY  : 31541.1
-  SPARSEMV: 167541
+  Total   : 92618.5
+  DDOT    : 28720.1
+  WAXPBY  : 31381.6
+  SPARSEMV: 164500
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=32, Size=50 50 50
 Initial Residual = 7468.01
@@ -1572,7 +1572,7 @@ Iteration = 90   Residual = 1.10626e-83
 Iteration = 105   Residual = 4.11688e-98
 Iteration = 120   Residual = 1.55511e-112
 Iteration = 135   Residual = 4.90289e-127
-Iteration = 149   Residual = 1.31631e-140
+Iteration = 149   Residual = 1.31675e-140
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1583,23 +1583,23 @@ Dimensions:
   ny: 50
   nz: 50
 Number of iterations: 149
-Final residual: 1.31631e-140
+Final residual: 1.31675e-140
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.01059
-  DDOT    : 0.002496
-  WAXPBY  : 0.003513
-  SPARSEMV: 0.00397
+  Total   : 0.01082
+  DDOT    : 0.00246
+  WAXPBY  : 0.003568
+  SPARSEMV: 0.004124
 FLOPS Summary: 
   Total   : 1.192e+09
   DDOT    : 7.45e+07
   WAXPBY  : 1.1175e+08
   SPARSEMV: 1.00575e+09
 MFLOPS Summary: 
-  Total   : 112559
-  DDOT    : 29847.8
-  WAXPBY  : 31810.4
-  SPARSEMV: 253338
+  Total   : 110166
+  DDOT    : 30284.6
+  WAXPBY  : 31320.1
+  SPARSEMV: 243877
 ----------------------------------------------------------
 ==========================================================
 MATRIX SIZE: 100 100 100
@@ -1629,20 +1629,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.00113
-  DDOT    : 0.246038
-  WAXPBY  : 0.151899
-  SPARSEMV: 0.601806
+  Total   : 1.00996
+  DDOT    : 0.24689
+  WAXPBY  : 0.154452
+  SPARSEMV: 0.607235
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 9525.21
-  DDOT    : 2422.39
-  WAXPBY  : 5885.49
-  SPARSEMV: 13369.8
+  Total   : 9441.94
+  DDOT    : 2414.03
+  WAXPBY  : 5788.21
+  SPARSEMV: 13250.2
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=2, Size=100 100 100
 Initial Residual = 21061.4
@@ -1669,20 +1669,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.535494
-  DDOT    : 0.12388
-  WAXPBY  : 0.107134
-  SPARSEMV: 0.30305
+  Total   : 0.549024
+  DDOT    : 0.124013
+  WAXPBY  : 0.122568
+  SPARSEMV: 0.300918
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 17807.9
-  DDOT    : 4811.11
-  WAXPBY  : 8344.69
-  SPARSEMV: 26550.1
+  Total   : 17369
+  DDOT    : 4805.95
+  WAXPBY  : 7293.91
+  SPARSEMV: 26738.2
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=3, Size=100 100 100
 Initial Residual = 21061.4
@@ -1709,20 +1709,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.335237
-  DDOT    : 0.083117
-  WAXPBY  : 0.051482
-  SPARSEMV: 0.198978
+  Total   : 0.33689
+  DDOT    : 0.083037
+  WAXPBY  : 0.053336
+  SPARSEMV: 0.198935
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 28445.5
-  DDOT    : 7170.61
-  WAXPBY  : 17365.3
-  SPARSEMV: 40436.6
+  Total   : 28306
+  DDOT    : 7177.52
+  WAXPBY  : 16761.7
+  SPARSEMV: 40445.4
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=4, Size=100 100 100
 Initial Residual = 21061.4
@@ -1749,20 +1749,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.249871
-  DDOT    : 0.062619
-  WAXPBY  : 0.040916
-  SPARSEMV: 0.144682
+  Total   : 0.250808
+  DDOT    : 0.062702
+  WAXPBY  : 0.042378
+  SPARSEMV: 0.144189
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 38163.7
-  DDOT    : 9517.88
-  WAXPBY  : 21849.6
-  SPARSEMV: 55611.6
+  Total   : 38021.1
+  DDOT    : 9505.28
+  WAXPBY  : 21095.9
+  SPARSEMV: 55801.8
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=6, Size=100 100 100
 Initial Residual = 21061.4
@@ -1789,20 +1789,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.165008
-  DDOT    : 0.042653
-  WAXPBY  : 0.028419
-  SPARSEMV: 0.092777
+  Total   : 0.164208
+  DDOT    : 0.042446
+  WAXPBY  : 0.028895
+  SPARSEMV: 0.091671
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 57791.1
-  DDOT    : 13973.2
-  WAXPBY  : 31457.8
-  SPARSEMV: 86724.1
+  Total   : 58072.7
+  DDOT    : 14041.4
+  WAXPBY  : 30939.6
+  SPARSEMV: 87770.4
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=8, Size=100 100 100
 Initial Residual = 21061.4
@@ -1829,20 +1829,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.128817
-  DDOT    : 0.03304
-  WAXPBY  : 0.023908
-  SPARSEMV: 0.070815
+  Total   : 0.129124
+  DDOT    : 0.033094
+  WAXPBY  : 0.023936
+  SPARSEMV: 0.071064
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 74027.5
-  DDOT    : 18038.7
-  WAXPBY  : 37393.3
-  SPARSEMV: 113620
+  Total   : 73851.5
+  DDOT    : 18009.3
+  WAXPBY  : 37349.6
+  SPARSEMV: 113222
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=12, Size=100 100 100
 Initial Residual = 21061.4
@@ -1869,20 +1869,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.092669
-  DDOT    : 0.022495
-  WAXPBY  : 0.018635
-  SPARSEMV: 0.050533
+  Total   : 0.093616
+  DDOT    : 0.022453
+  WAXPBY  : 0.018761
+  SPARSEMV: 0.051392
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 102904
-  DDOT    : 26494.8
-  WAXPBY  : 47974.2
-  SPARSEMV: 159223
+  Total   : 101863
+  DDOT    : 26544.3
+  WAXPBY  : 47652
+  SPARSEMV: 156561
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=16, Size=100 100 100
 Initial Residual = 21061.4
@@ -1909,20 +1909,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.072653
-  DDOT    : 0.01725
-  WAXPBY  : 0.015459
-  SPARSEMV: 0.038878
+  Total   : 0.073654
+  DDOT    : 0.017301
+  WAXPBY  : 0.015596
+  SPARSEMV: 0.039776
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 131254
-  DDOT    : 34550.7
-  WAXPBY  : 57830.4
-  SPARSEMV: 206955
+  Total   : 129470
+  DDOT    : 34448.9
+  WAXPBY  : 57322.4
+  SPARSEMV: 202283
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=24, Size=100 100 100
 Initial Residual = 21061.4
@@ -1949,20 +1949,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.059956
-  DDOT    : 0.012729
-  WAXPBY  : 0.013751
-  SPARSEMV: 0.032231
+  Total   : 0.061739
+  DDOT    : 0.012608
+  WAXPBY  : 0.013917
+  SPARSEMV: 0.033949
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 159050
-  DDOT    : 46822.2
-  WAXPBY  : 65013.5
-  SPARSEMV: 249635
+  Total   : 154457
+  DDOT    : 47271.6
+  WAXPBY  : 64238
+  SPARSEMV: 237003
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=32, Size=100 100 100
 Initial Residual = 21061.4
@@ -1989,20 +1989,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.059477
-  DDOT    : 0.010855
-  WAXPBY  : 0.013156
-  SPARSEMV: 0.034198
+  Total   : 0.058997
+  DDOT    : 0.010749
+  WAXPBY  : 0.013063
+  SPARSEMV: 0.033905
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 160331
-  DDOT    : 54905.6
-  WAXPBY  : 67953.8
-  SPARSEMV: 235277
+  Total   : 161635
+  DDOT    : 55447
+  WAXPBY  : 68437.6
+  SPARSEMV: 237310
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=1, Size=100 100 100
 Initial Residual = 21061.4
@@ -2029,20 +2029,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.0254
-  DDOT    : 0.247454
-  WAXPBY  : 0.161298
-  SPARSEMV: 0.615175
+  Total   : 1.00258
+  DDOT    : 0.247037
+  WAXPBY  : 0.154528
+  SPARSEMV: 0.599559
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 9299.75
-  DDOT    : 2408.53
-  WAXPBY  : 5542.54
-  SPARSEMV: 13079.2
+  Total   : 9511.44
+  DDOT    : 2412.59
+  WAXPBY  : 5785.36
+  SPARSEMV: 13419.9
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=2, Size=100 100 100
 Initial Residual = 21061.4
@@ -2069,20 +2069,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.549147
-  DDOT    : 0.123805
-  WAXPBY  : 0.122895
-  SPARSEMV: 0.301063
+  Total   : 0.54895
+  DDOT    : 0.123901
+  WAXPBY  : 0.122609
+  SPARSEMV: 0.301039
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 17365.1
-  DDOT    : 4814.02
-  WAXPBY  : 7274.5
-  SPARSEMV: 26725.3
+  Total   : 17371.3
+  DDOT    : 4810.29
+  WAXPBY  : 7291.47
+  SPARSEMV: 26727.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=3, Size=100 100 100
 Initial Residual = 21061.4
@@ -2109,20 +2109,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.340955
-  DDOT    : 0.083341
-  WAXPBY  : 0.056322
-  SPARSEMV: 0.199685
+  Total   : 0.341409
+  DDOT    : 0.083279
+  WAXPBY  : 0.055671
+  SPARSEMV: 0.200815
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 27968.5
-  DDOT    : 7151.34
-  WAXPBY  : 15873
-  SPARSEMV: 40293.5
+  Total   : 27931.3
+  DDOT    : 7156.67
+  WAXPBY  : 16058.6
+  SPARSEMV: 40066.7
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=4, Size=100 100 100
 Initial Residual = 21061.4
@@ -2149,20 +2149,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.24027
-  DDOT    : 0.062747
-  WAXPBY  : 0.039658
-  SPARSEMV: 0.136426
+  Total   : 0.266177
+  DDOT    : 0.062741
+  WAXPBY  : 0.065592
+  SPARSEMV: 0.136142
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 39688.7
-  DDOT    : 9498.46
-  WAXPBY  : 22542.7
-  SPARSEMV: 58977
+  Total   : 35825.8
+  DDOT    : 9499.37
+  WAXPBY  : 13629.7
+  SPARSEMV: 59100.1
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=6, Size=100 100 100
 Initial Residual = 21061.4
@@ -2189,20 +2189,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.152171
-  DDOT    : 0.042742
-  WAXPBY  : 0.027709
-  SPARSEMV: 0.080327
+  Total   : 0.150951
+  DDOT    : 0.042497
+  WAXPBY  : 0.027959
+  SPARSEMV: 0.07937
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 62666.3
-  DDOT    : 13944.1
-  WAXPBY  : 32263.9
-  SPARSEMV: 100166
+  Total   : 63172.8
+  DDOT    : 14024.5
+  WAXPBY  : 31975.4
+  SPARSEMV: 101373
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=8, Size=100 100 100
 Initial Residual = 21061.4
@@ -2229,20 +2229,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.117892
-  DDOT    : 0.033119
-  WAXPBY  : 0.023
-  SPARSEMV: 0.060845
+  Total   : 0.132341
+  DDOT    : 0.03305
+  WAXPBY  : 0.037481
+  SPARSEMV: 0.060793
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 80887.6
-  DDOT    : 17995.7
-  WAXPBY  : 38869.6
-  SPARSEMV: 132238
+  Total   : 72056.3
+  DDOT    : 18033.3
+  WAXPBY  : 23852.1
+  SPARSEMV: 132351
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=12, Size=100 100 100
 Initial Residual = 21061.4
@@ -2269,20 +2269,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.08531
-  DDOT    : 0.022432
-  WAXPBY  : 0.016887
-  SPARSEMV: 0.044842
+  Total   : 0.08659
+  DDOT    : 0.022446
+  WAXPBY  : 0.017373
+  SPARSEMV: 0.045597
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 111781
-  DDOT    : 26569.2
-  WAXPBY  : 52940.1
-  SPARSEMV: 179430
+  Total   : 110128
+  DDOT    : 26552.6
+  WAXPBY  : 51459.2
+  SPARSEMV: 176459
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=16, Size=100 100 100
 Initial Residual = 21061.4
@@ -2309,20 +2309,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.068024
-  DDOT    : 0.017275
-  WAXPBY  : 0.014422
-  SPARSEMV: 0.035407
+  Total   : 0.070043
+  DDOT    : 0.017343
+  WAXPBY  : 0.01478
+  SPARSEMV: 0.036793
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 140186
-  DDOT    : 34500.7
-  WAXPBY  : 61988.6
-  SPARSEMV: 227243
+  Total   : 136145
+  DDOT    : 34365.5
+  WAXPBY  : 60487.1
+  SPARSEMV: 218683
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=24, Size=100 100 100
 Initial Residual = 21061.4
@@ -2349,20 +2349,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.056448
-  DDOT    : 0.012666
-  WAXPBY  : 0.013173
-  SPARSEMV: 0.029287
+  Total   : 0.05721
+  DDOT    : 0.012626
+  WAXPBY  : 0.012925
+  SPARSEMV: 0.030379
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 168934
-  DDOT    : 47055.1
-  WAXPBY  : 67866.1
-  SPARSEMV: 274729
+  Total   : 166684
+  DDOT    : 47204.2
+  WAXPBY  : 69168.3
+  SPARSEMV: 264854
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=32, Size=100 100 100
 Initial Residual = 21061.4
@@ -2389,20 +2389,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.055963
-  DDOT    : 0.010778
-  WAXPBY  : 0.012717
-  SPARSEMV: 0.031142
+  Total   : 0.053409
+  DDOT    : 0.010757
+  WAXPBY  : 0.012095
+  SPARSEMV: 0.029268
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 170398
-  DDOT    : 55297.8
-  WAXPBY  : 70299.6
-  SPARSEMV: 258365
+  Total   : 178547
+  DDOT    : 55405.8
+  WAXPBY  : 73914.8
+  SPARSEMV: 274908
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=1, Size=100 100 100
 Initial Residual = 21061.4
@@ -2429,20 +2429,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.0235
-  DDOT    : 0.246771
-  WAXPBY  : 0.154482
-  SPARSEMV: 1.62074
+  Total   : 2.01925
+  DDOT    : 0.247166
+  WAXPBY  : 0.152559
+  SPARSEMV: 1.61805
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 4712.62
-  DDOT    : 2415.19
-  WAXPBY  : 5787.08
-  SPARSEMV: 4964.4
+  Total   : 4722.55
+  DDOT    : 2411.33
+  WAXPBY  : 5860.03
+  SPARSEMV: 4972.66
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=2, Size=100 100 100
 Initial Residual = 21061.4
@@ -2469,20 +2469,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.04409
-  DDOT    : 0.124212
-  WAXPBY  : 0.110135
-  SPARSEMV: 0.808169
+  Total   : 1.04609
+  DDOT    : 0.124081
+  WAXPBY  : 0.10931
+  SPARSEMV: 0.811233
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 9133.31
-  DDOT    : 4798.25
-  WAXPBY  : 8117.31
-  SPARSEMV: 9955.84
+  Total   : 9115.89
+  DDOT    : 4803.31
+  WAXPBY  : 8178.57
+  SPARSEMV: 9918.24
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=3, Size=100 100 100
 Initial Residual = 21061.4
@@ -2509,20 +2509,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.699617
-  DDOT    : 0.083701
-  WAXPBY  : 0.075022
-  SPARSEMV: 0.539248
+  Total   : 0.689739
+  DDOT    : 0.083812
+  WAXPBY  : 0.061602
+  SPARSEMV: 0.542842
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 13630.3
-  DDOT    : 7120.58
-  WAXPBY  : 11916.5
-  SPARSEMV: 14920.8
+  Total   : 13825.5
+  DDOT    : 7111.15
+  WAXPBY  : 14512.5
+  SPARSEMV: 14822
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=4, Size=100 100 100
 Initial Residual = 21061.4
@@ -2549,20 +2549,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.516309
-  DDOT    : 0.062868
-  WAXPBY  : 0.04371
-  SPARSEMV: 0.407861
+  Total   : 0.541915
+  DDOT    : 0.062856
+  WAXPBY  : 0.068034
+  SPARSEMV: 0.409356
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 18469.6
-  DDOT    : 9480.18
-  WAXPBY  : 20453
-  SPARSEMV: 19727.3
+  Total   : 17596.9
+  DDOT    : 9481.99
+  WAXPBY  : 13140.5
+  SPARSEMV: 19655.3
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=6, Size=100 100 100
 Initial Residual = 21061.4
@@ -2589,20 +2589,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.348224
-  DDOT    : 0.042445
-  WAXPBY  : 0.029245
-  SPARSEMV: 0.275254
+  Total   : 0.349271
+  DDOT    : 0.042513
+  WAXPBY  : 0.029357
+  SPARSEMV: 0.276101
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 27384.7
-  DDOT    : 14041.7
-  WAXPBY  : 30569.3
-  SPARSEMV: 29231.2
+  Total   : 27302.6
+  DDOT    : 14019.2
+  WAXPBY  : 30452.7
+  SPARSEMV: 29141.5
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=8, Size=100 100 100
 Initial Residual = 21061.4
@@ -2629,20 +2629,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.265278
-  DDOT    : 0.032714
-  WAXPBY  : 0.023828
-  SPARSEMV: 0.207642
+  Total   : 0.267865
+  DDOT    : 0.032696
+  WAXPBY  : 0.023736
+  SPARSEMV: 0.210186
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 35947.2
-  DDOT    : 18218.5
-  WAXPBY  : 37518.9
-  SPARSEMV: 38749.4
+  Total   : 35600
+  DDOT    : 18228.5
+  WAXPBY  : 37664.3
+  SPARSEMV: 38280.4
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=12, Size=100 100 100
 Initial Residual = 21061.4
@@ -2669,20 +2669,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.190197
-  DDOT    : 0.02259
-  WAXPBY  : 0.023222
-  SPARSEMV: 0.143092
+  Total   : 0.197632
+  DDOT    : 0.02257
+  WAXPBY  : 0.03104
+  SPARSEMV: 0.142781
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 50137.5
-  DDOT    : 26383.4
-  WAXPBY  : 38498
-  SPARSEMV: 56229.6
+  Total   : 48251.3
+  DDOT    : 26406.7
+  WAXPBY  : 28801.5
+  SPARSEMV: 56352
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=16, Size=100 100 100
 Initial Residual = 21061.4
@@ -2709,20 +2709,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.150205
-  DDOT    : 0.017342
-  WAXPBY  : 0.023841
-  SPARSEMV: 0.107867
+  Total   : 0.146038
+  DDOT    : 0.017335
+  WAXPBY  : 0.019612
+  SPARSEMV: 0.107916
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 63486.6
-  DDOT    : 34367.4
-  WAXPBY  : 37498.4
-  SPARSEMV: 74591.9
+  Total   : 65298.1
+  DDOT    : 34381.3
+  WAXPBY  : 45584.3
+  SPARSEMV: 74558
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=24, Size=100 100 100
 Initial Residual = 21061.4
@@ -2749,20 +2749,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.107886
-  DDOT    : 0.012359
-  WAXPBY  : 0.018908
-  SPARSEMV: 0.075334
+  Total   : 0.107961
+  DDOT    : 0.012397
+  WAXPBY  : 0.019181
+  SPARSEMV: 0.075006
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 88389.6
-  DDOT    : 48224
-  WAXPBY  : 47281.6
-  SPARSEMV: 106804
+  Total   : 88328.2
+  DDOT    : 48076.1
+  WAXPBY  : 46608.6
+  SPARSEMV: 107271
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=32, Size=100 100 100
 Initial Residual = 21061.4
@@ -2789,20 +2789,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.088674
-  DDOT    : 0.010672
-  WAXPBY  : 0.015765
-  SPARSEMV: 0.060916
+  Total   : 0.088251
+  DDOT    : 0.010632
+  WAXPBY  : 0.015751
+  SPARSEMV: 0.060584
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 107540
-  DDOT    : 55847.1
-  WAXPBY  : 56707.9
-  SPARSEMV: 132084
+  Total   : 108055
+  DDOT    : 56057.2
+  WAXPBY  : 56758.3
+  SPARSEMV: 132807
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=1, Size=100 100 100
 Initial Residual = 21061.4
@@ -2829,20 +2829,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.95109
-  DDOT    : 0.24715
-  WAXPBY  : 0.152775
-  SPARSEMV: 0.549826
+  Total   : 0.947521
+  DDOT    : 0.247066
+  WAXPBY  : 0.15398
+  SPARSEMV: 0.545119
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 10026.4
-  DDOT    : 2411.49
-  WAXPBY  : 5851.74
-  SPARSEMV: 14633.7
+  Total   : 10064.2
+  DDOT    : 2412.31
+  WAXPBY  : 5805.95
+  SPARSEMV: 14760.1
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=2, Size=100 100 100
 Initial Residual = 21061.4
@@ -2869,20 +2869,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.525041
-  DDOT    : 0.123908
-  WAXPBY  : 0.128862
-  SPARSEMV: 0.270815
+  Total   : 0.52497
+  DDOT    : 0.123999
+  WAXPBY  : 0.129986
+  SPARSEMV: 0.269577
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 18162.4
-  DDOT    : 4810.02
-  WAXPBY  : 6937.65
-  SPARSEMV: 29710.3
+  Total   : 18164.8
+  DDOT    : 4806.49
+  WAXPBY  : 6877.66
+  SPARSEMV: 29846.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=3, Size=100 100 100
 Initial Residual = 21061.4
@@ -2909,20 +2909,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.311203
-  DDOT    : 0.083326
-  WAXPBY  : 0.050454
-  SPARSEMV: 0.175792
+  Total   : 0.312279
+  DDOT    : 0.083145
+  WAXPBY  : 0.052971
+  SPARSEMV: 0.174575
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 30642.4
-  DDOT    : 7152.63
-  WAXPBY  : 17719.1
-  SPARSEMV: 45770
+  Total   : 30536.8
+  DDOT    : 7168.2
+  WAXPBY  : 16877.2
+  SPARSEMV: 46089.1
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=4, Size=100 100 100
 Initial Residual = 21061.4
@@ -2949,20 +2949,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.217138
-  DDOT    : 0.062508
-  WAXPBY  : 0.038973
-  SPARSEMV: 0.114189
+  Total   : 0.217549
+  DDOT    : 0.062537
+  WAXPBY  : 0.038315
+  SPARSEMV: 0.115421
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 43916.8
-  DDOT    : 9534.78
-  WAXPBY  : 22939
-  SPARSEMV: 70462.1
+  Total   : 43833.8
+  DDOT    : 9530.36
+  WAXPBY  : 23332.9
+  SPARSEMV: 69710
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=6, Size=100 100 100
 Initial Residual = 21061.4
@@ -2989,20 +2989,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.153917
-  DDOT    : 0.042802
-  WAXPBY  : 0.040135
-  SPARSEMV: 0.069842
+  Total   : 0.149755
+  DDOT    : 0.043662
+  WAXPBY  : 0.028659
+  SPARSEMV: 0.076296
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 61955.5
-  DDOT    : 13924.6
-  WAXPBY  : 22274.8
-  SPARSEMV: 115203
+  Total   : 63677.3
+  DDOT    : 13650.3
+  WAXPBY  : 31194.4
+  SPARSEMV: 105458
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=8, Size=100 100 100
 Initial Residual = 21061.4
@@ -3029,20 +3029,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.110813
-  DDOT    : 0.033152
-  WAXPBY  : 0.023164
-  SPARSEMV: 0.053484
+  Total   : 0.110406
+  DDOT    : 0.033208
+  WAXPBY  : 0.022697
+  SPARSEMV: 0.053592
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 86054.9
-  DDOT    : 17977.8
-  WAXPBY  : 38594.4
-  SPARSEMV: 150438
+  Total   : 86372.1
+  DDOT    : 17947.5
+  WAXPBY  : 39388.5
+  SPARSEMV: 150134
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=12, Size=100 100 100
 Initial Residual = 21061.4
@@ -3069,20 +3069,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.079093
-  DDOT    : 0.022433
-  WAXPBY  : 0.016961
-  SPARSEMV: 0.038588
+  Total   : 0.07909
+  DDOT    : 0.022437
+  WAXPBY  : 0.016786
+  SPARSEMV: 0.03888
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 120567
-  DDOT    : 26568
-  WAXPBY  : 52709.2
-  SPARSEMV: 208510
+  Total   : 120572
+  DDOT    : 26563.3
+  WAXPBY  : 53258.7
+  SPARSEMV: 206944
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=16, Size=100 100 100
 Initial Residual = 21061.4
@@ -3109,20 +3109,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.064478
-  DDOT    : 0.017274
-  WAXPBY  : 0.014788
-  SPARSEMV: 0.031412
+  Total   : 0.066087
+  DDOT    : 0.017347
+  WAXPBY  : 0.014946
+  SPARSEMV: 0.032748
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 147895
-  DDOT    : 34502.7
-  WAXPBY  : 60454.4
-  SPARSEMV: 256144
+  Total   : 144295
+  DDOT    : 34357.5
+  WAXPBY  : 59815.3
+  SPARSEMV: 245694
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=24, Size=100 100 100
 Initial Residual = 21061.4
@@ -3149,20 +3149,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.052891
-  DDOT    : 0.012641
-  WAXPBY  : 0.012928
-  SPARSEMV: 0.026102
+  Total   : 0.056839
+  DDOT    : 0.012555
+  WAXPBY  : 0.013447
+  SPARSEMV: 0.029621
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 180295
-  DDOT    : 47148.2
-  WAXPBY  : 69152.2
-  SPARSEMV: 308252
+  Total   : 167772
+  DDOT    : 47471.1
+  WAXPBY  : 66483.2
+  SPARSEMV: 271632
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=32, Size=100 100 100
 Initial Residual = 21061.4
@@ -3189,20 +3189,20 @@ Number of iterations: 149
 Final residual: 3.29848e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.051664
-  DDOT    : 0.01075
-  WAXPBY  : 0.01212
-  SPARSEMV: 0.027447
+  Total   : 0.052797
+  DDOT    : 0.010766
+  WAXPBY  : 0.012628
+  SPARSEMV: 0.028113
 FLOPS Summary: 
   Total   : 9.536e+09
   DDOT    : 5.96e+08
   WAXPBY  : 8.94e+08
   SPARSEMV: 8.046e+09
 MFLOPS Summary: 
-  Total   : 184577
-  DDOT    : 55441.9
-  WAXPBY  : 73762.4
-  SPARSEMV: 293147
+  Total   : 180616
+  DDOT    : 55359.5
+  WAXPBY  : 70795.1
+  SPARSEMV: 286202
 ----------------------------------------------------------
 ==========================================================
 MATRIX SIZE: 150 150 150
@@ -3232,20 +3232,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.8526
-  DDOT    : 0.841226
-  WAXPBY  : 0.726409
-  SPARSEMV: 2.28325
+  Total   : 3.86505
+  DDOT    : 0.841602
+  WAXPBY  : 0.741188
+  SPARSEMV: 2.28061
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 8353.83
-  DDOT    : 2391.15
-  WAXPBY  : 4153.65
-  SPARSEMV: 11893.2
+  Total   : 8326.93
+  DDOT    : 2390.08
+  WAXPBY  : 4070.83
+  SPARSEMV: 11907
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=2, Size=150 150 150
 Initial Residual = 38654.7
@@ -3272,20 +3272,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.9437
-  DDOT    : 0.42287
-  WAXPBY  : 0.35117
-  SPARSEMV: 1.16782
+  Total   : 1.94677
+  DDOT    : 0.423535
+  WAXPBY  : 0.356292
+  SPARSEMV: 1.16521
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 16558.1
-  DDOT    : 4756.78
-  WAXPBY  : 8591.99
-  SPARSEMV: 23253
+  Total   : 16532
+  DDOT    : 4749.31
+  WAXPBY  : 8468.48
+  SPARSEMV: 23305.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=3, Size=150 150 150
 Initial Residual = 38654.7
@@ -3312,20 +3312,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.2589
-  DDOT    : 0.282811
-  WAXPBY  : 0.21725
-  SPARSEMV: 0.756851
+  Total   : 1.27262
+  DDOT    : 0.283305
+  WAXPBY  : 0.220594
+  SPARSEMV: 0.766784
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 25565.2
-  DDOT    : 7112.52
-  WAXPBY  : 13888.4
-  SPARSEMV: 35879.3
+  Total   : 25289.6
+  DDOT    : 7100.12
+  WAXPBY  : 13677.8
+  SPARSEMV: 35414.5
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=4, Size=150 150 150
 Initial Residual = 38654.7
@@ -3352,20 +3352,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.94724
-  DDOT    : 0.211692
-  WAXPBY  : 0.14303
-  SPARSEMV: 0.543032
+  Total   : 0.897702
+  DDOT    : 0.211502
+  WAXPBY  : 0.142423
+  SPARSEMV: 0.541892
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 33976.6
-  DDOT    : 9502.01
-  WAXPBY  : 21095.2
-  SPARSEMV: 50006.7
+  Total   : 35851.5
+  DDOT    : 9510.55
+  WAXPBY  : 21185.1
+  SPARSEMV: 50111.9
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=6, Size=150 150 150
 Initial Residual = 38654.7
@@ -3392,20 +3392,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.719573
-  DDOT    : 0.142082
-  WAXPBY  : 0.107326
-  SPARSEMV: 0.468108
+  Total   : 0.718158
+  DDOT    : 0.141855
+  WAXPBY  : 0.102481
+  SPARSEMV: 0.472028
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 44726.5
-  DDOT    : 14157.3
-  WAXPBY  : 28112.9
-  SPARSEMV: 58010.7
+  Total   : 44814.7
+  DDOT    : 14180
+  WAXPBY  : 29442
+  SPARSEMV: 57528.9
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=8, Size=150 150 150
 Initial Residual = 38654.7
@@ -3432,20 +3432,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.525084
-  DDOT    : 0.107585
-  WAXPBY  : 0.080142
-  SPARSEMV: 0.335552
+  Total   : 0.521998
+  DDOT    : 0.107592
+  WAXPBY  : 0.07922
+  SPARSEMV: 0.333332
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 61293.1
-  DDOT    : 18696.8
-  WAXPBY  : 37648.8
-  SPARSEMV: 80927.1
+  Total   : 61655.4
+  DDOT    : 18695.6
+  WAXPBY  : 38087
+  SPARSEMV: 81466.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=12, Size=150 150 150
 Initial Residual = 38654.7
@@ -3472,20 +3472,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.606815
-  DDOT    : 0.074954
-  WAXPBY  : 0.087023
-  SPARSEMV: 0.442846
+  Total   : 0.613243
+  DDOT    : 0.075066
+  WAXPBY  : 0.091373
+  SPARSEMV: 0.444985
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 53037.6
-  DDOT    : 26836.5
-  WAXPBY  : 34671.9
-  SPARSEMV: 61319.8
+  Total   : 52481.6
+  DDOT    : 26796.4
+  WAXPBY  : 33021.2
+  SPARSEMV: 61025.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=16, Size=150 150 150
 Initial Residual = 38654.7
@@ -3512,20 +3512,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.421186
-  DDOT    : 0.056938
-  WAXPBY  : 0.063844
-  SPARSEMV: 0.298479
+  Total   : 0.425532
+  DDOT    : 0.056923
+  WAXPBY  : 0.064421
+  SPARSEMV: 0.302392
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 76412.8
-  DDOT    : 35327.9
-  WAXPBY  : 47259.7
-  SPARSEMV: 90978.8
+  Total   : 75632.4
+  DDOT    : 35337.2
+  WAXPBY  : 46836.4
+  SPARSEMV: 89801.5
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=24, Size=150 150 150
 Initial Residual = 38654.7
@@ -3552,20 +3552,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.577905
-  DDOT    : 0.039689
-  WAXPBY  : 0.074333
-  SPARSEMV: 0.461919
+  Total   : 0.578181
+  DDOT    : 0.039599
+  WAXPBY  : 0.074063
+  SPARSEMV: 0.462579
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 55690.8
-  DDOT    : 50681.5
-  WAXPBY  : 40591
-  SPARSEMV: 58787.9
+  Total   : 55664.2
+  DDOT    : 50796.7
+  WAXPBY  : 40739
+  SPARSEMV: 58704
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=32, Size=150 150 150
 Initial Residual = 38654.7
@@ -3592,20 +3592,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.395974
-  DDOT    : 0.030865
-  WAXPBY  : 0.062037
-  SPARSEMV: 0.301135
+  Total   : 0.395948
+  DDOT    : 0.030906
+  WAXPBY  : 0.062724
+  SPARSEMV: 0.300321
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 81278.1
-  DDOT    : 65170.9
-  WAXPBY  : 48636.3
-  SPARSEMV: 90176.3
+  Total   : 81283.4
+  DDOT    : 65084.4
+  WAXPBY  : 48103.6
+  SPARSEMV: 90420.7
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=1, Size=150 150 150
 Initial Residual = 38654.7
@@ -3632,20 +3632,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.915
-  DDOT    : 0.846781
-  WAXPBY  : 0.732166
-  SPARSEMV: 2.33435
+  Total   : 3.95795
+  DDOT    : 0.840008
+  WAXPBY  : 0.720319
+  SPARSEMV: 2.3959
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 8220.7
-  DDOT    : 2375.47
-  WAXPBY  : 4120.99
-  SPARSEMV: 11632.9
+  Total   : 8131.48
+  DDOT    : 2394.62
+  WAXPBY  : 4188.77
+  SPARSEMV: 11334.1
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=2, Size=150 150 150
 Initial Residual = 38654.7
@@ -3672,20 +3672,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.94864
-  DDOT    : 0.422944
-  WAXPBY  : 0.350546
-  SPARSEMV: 1.17205
+  Total   : 1.96075
+  DDOT    : 0.422704
+  WAXPBY  : 0.353196
+  SPARSEMV: 1.18318
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 16516.1
-  DDOT    : 4755.95
-  WAXPBY  : 8607.29
-  SPARSEMV: 23168.9
+  Total   : 16414.1
+  DDOT    : 4758.65
+  WAXPBY  : 8542.71
+  SPARSEMV: 22951.2
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=3, Size=150 150 150
 Initial Residual = 38654.7
@@ -3712,20 +3712,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.20388
-  DDOT    : 0.281808
-  WAXPBY  : 0.197531
-  SPARSEMV: 0.722691
+  Total   : 1.24968
+  DDOT    : 0.283132
+  WAXPBY  : 0.209446
+  SPARSEMV: 0.755177
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 26733.6
-  DDOT    : 7137.84
-  WAXPBY  : 15274.8
-  SPARSEMV: 37575.2
+  Total   : 25753.9
+  DDOT    : 7104.46
+  WAXPBY  : 14405.9
+  SPARSEMV: 35958.8
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=4, Size=150 150 150
 Initial Residual = 38654.7
@@ -3752,20 +3752,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.872462
-  DDOT    : 0.210743
-  WAXPBY  : 0.137816
-  SPARSEMV: 0.52185
+  Total   : 0.866406
+  DDOT    : 0.210693
+  WAXPBY  : 0.133995
+  SPARSEMV: 0.519872
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 36888.7
-  DDOT    : 9544.8
-  WAXPBY  : 21893.3
-  SPARSEMV: 52036.5
+  Total   : 37146.6
+  DDOT    : 9547.07
+  WAXPBY  : 22517.6
+  SPARSEMV: 52234.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=6, Size=150 150 150
 Initial Residual = 38654.7
@@ -3792,20 +3792,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.716402
-  DDOT    : 0.141384
-  WAXPBY  : 0.095898
-  SPARSEMV: 0.477227
+  Total   : 0.710921
+  DDOT    : 0.141697
+  WAXPBY  : 0.096807
+  SPARSEMV: 0.470565
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 44924.5
-  DDOT    : 14227.2
-  WAXPBY  : 31463.1
-  SPARSEMV: 56902.2
+  Total   : 45270.9
+  DDOT    : 14195.8
+  WAXPBY  : 31167.7
+  SPARSEMV: 57707.8
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=8, Size=150 150 150
 Initial Residual = 38654.7
@@ -3832,20 +3832,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.51932
-  DDOT    : 0.107223
-  WAXPBY  : 0.073083
-  SPARSEMV: 0.337225
+  Total   : 0.522531
+  DDOT    : 0.108021
+  WAXPBY  : 0.076372
+  SPARSEMV: 0.336323
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 61973.3
-  DDOT    : 18760
-  WAXPBY  : 41285.3
-  SPARSEMV: 80525.6
+  Total   : 61592.5
+  DDOT    : 18621.4
+  WAXPBY  : 39507.3
+  SPARSEMV: 80741.6
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=12, Size=150 150 150
 Initial Residual = 38654.7
@@ -3872,20 +3872,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.614051
-  DDOT    : 0.074865
-  WAXPBY  : 0.081323
-  SPARSEMV: 0.455935
+  Total   : 0.611304
+  DDOT    : 0.074935
+  WAXPBY  : 0.083038
+  SPARSEMV: 0.451493
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 52412.6
-  DDOT    : 26868.4
-  WAXPBY  : 37102
-  SPARSEMV: 59559.5
+  Total   : 52648.1
+  DDOT    : 26843.3
+  WAXPBY  : 36335.8
+  SPARSEMV: 60145.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=16, Size=150 150 150
 Initial Residual = 38654.7
@@ -3912,20 +3912,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.414849
-  DDOT    : 0.056771
-  WAXPBY  : 0.05992
-  SPARSEMV: 0.296309
+  Total   : 0.416772
+  DDOT    : 0.056756
+  WAXPBY  : 0.063069
+  SPARSEMV: 0.295032
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 77580
-  DDOT    : 35431.8
-  WAXPBY  : 50354.6
-  SPARSEMV: 91645
+  Total   : 77222.1
+  DDOT    : 35441.2
+  WAXPBY  : 47840.5
+  SPARSEMV: 92041.7
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=24, Size=150 150 150
 Initial Residual = 38654.7
@@ -3952,20 +3952,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.573158
-  DDOT    : 0.039097
-  WAXPBY  : 0.075023
-  SPARSEMV: 0.457075
+  Total   : 0.573923
+  DDOT    : 0.039036
+  WAXPBY  : 0.074
+  SPARSEMV: 0.458962
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 56152.1
-  DDOT    : 51449
-  WAXPBY  : 40217.7
-  SPARSEMV: 59410.9
+  Total   : 56077.2
+  DDOT    : 51529.4
+  WAXPBY  : 40773.6
+  SPARSEMV: 59166.7
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=32, Size=150 150 150
 Initial Residual = 38654.7
@@ -3992,20 +3992,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.391833
-  DDOT    : 0.0299
-  WAXPBY  : 0.065213
-  SPARSEMV: 0.29478
+  Total   : 0.39166
+  DDOT    : 0.029909
+  WAXPBY  : 0.063726
+  SPARSEMV: 0.296088
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 82137
-  DDOT    : 67274.2
-  WAXPBY  : 46267.6
-  SPARSEMV: 92120.4
+  Total   : 82173.3
+  DDOT    : 67254
+  WAXPBY  : 47347.2
+  SPARSEMV: 91713.4
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=1, Size=150 150 150
 Initial Residual = 38654.7
@@ -4032,20 +4032,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.37445
-  DDOT    : 0.84084
-  WAXPBY  : 0.803962
-  SPARSEMV: 5.72794
+  Total   : 7.38356
+  DDOT    : 0.840493
+  WAXPBY  : 0.811293
+  SPARSEMV: 5.73004
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 4364.26
-  DDOT    : 2392.25
-  WAXPBY  : 3752.98
-  SPARSEMV: 4740.84
+  Total   : 4358.87
+  DDOT    : 2393.24
+  WAXPBY  : 3719.06
+  SPARSEMV: 4739.1
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=2, Size=150 150 150
 Initial Residual = 38654.7
@@ -4072,20 +4072,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.62826
-  DDOT    : 0.421573
-  WAXPBY  : 0.325772
-  SPARSEMV: 2.8791
+  Total   : 3.63183
+  DDOT    : 0.421686
+  WAXPBY  : 0.325301
+  SPARSEMV: 2.88306
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 8870.36
-  DDOT    : 4771.42
-  WAXPBY  : 9261.85
-  SPARSEMV: 9431.85
+  Total   : 8861.66
+  DDOT    : 4770.14
+  WAXPBY  : 9275.26
+  SPARSEMV: 9418.89
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=3, Size=150 150 150
 Initial Residual = 38654.7
@@ -4112,20 +4112,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.40105
-  DDOT    : 0.281558
-  WAXPBY  : 0.20042
-  SPARSEMV: 1.91716
+  Total   : 2.41484
+  DDOT    : 0.281025
+  WAXPBY  : 0.200021
+  SPARSEMV: 1.93183
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 13404.2
-  DDOT    : 7144.18
-  WAXPBY  : 15054.6
-  SPARSEMV: 14164.3
+  Total   : 13327.6
+  DDOT    : 7157.73
+  WAXPBY  : 15084.7
+  SPARSEMV: 14056.8
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=4, Size=150 150 150
 Initial Residual = 38654.7
@@ -4152,20 +4152,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.79169
-  DDOT    : 0.211687
-  WAXPBY  : 0.13798
-  SPARSEMV: 1.43999
+  Total   : 1.80132
+  DDOT    : 0.212055
+  WAXPBY  : 0.13961
+  SPARSEMV: 1.44759
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 17962.9
-  DDOT    : 9502.24
-  WAXPBY  : 21867.3
-  SPARSEMV: 18857.9
+  Total   : 17866.9
+  DDOT    : 9485.75
+  WAXPBY  : 21612
+  SPARSEMV: 18759
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=6, Size=150 150 150
 Initial Residual = 38654.7
@@ -4192,20 +4192,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.22378
-  DDOT    : 0.144014
-  WAXPBY  : 0.100372
-  SPARSEMV: 0.977162
+  Total   : 1.21413
+  DDOT    : 0.143888
+  WAXPBY  : 0.100352
+  SPARSEMV: 0.967932
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 26298.8
-  DDOT    : 13967.4
-  WAXPBY  : 30060.7
-  SPARSEMV: 27789.9
+  Total   : 26507.8
+  DDOT    : 13979.6
+  WAXPBY  : 30066.7
+  SPARSEMV: 28054.9
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=8, Size=150 150 150
 Initial Residual = 38654.7
@@ -4232,20 +4232,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.962674
-  DDOT    : 0.108267
-  WAXPBY  : 0.088775
-  SPARSEMV: 0.763697
+  Total   : 0.955073
+  DDOT    : 0.108499
+  WAXPBY  : 0.08979
+  SPARSEMV: 0.754937
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 33431.9
-  DDOT    : 18579.1
-  WAXPBY  : 33987.6
-  SPARSEMV: 35557.6
+  Total   : 33697.9
+  DDOT    : 18539.3
+  WAXPBY  : 33603.4
+  SPARSEMV: 35970.2
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=12, Size=150 150 150
 Initial Residual = 38654.7
@@ -4272,20 +4272,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.926016
-  DDOT    : 0.088052
-  WAXPBY  : 0.103254
-  SPARSEMV: 0.732729
+  Total   : 0.912103
+  DDOT    : 0.085762
+  WAXPBY  : 0.102666
+  SPARSEMV: 0.721739
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 34755.3
-  DDOT    : 22844.5
-  WAXPBY  : 29221.6
-  SPARSEMV: 37060.4
+  Total   : 35285.5
+  DDOT    : 23454.4
+  WAXPBY  : 29389
+  SPARSEMV: 37624.8
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=16, Size=150 150 150
 Initial Residual = 38654.7
@@ -4312,20 +4312,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.647751
-  DDOT    : 0.059998
-  WAXPBY  : 0.091038
-  SPARSEMV: 0.494812
+  Total   : 0.640841
+  DDOT    : 0.05937
+  WAXPBY  : 0.093567
+  SPARSEMV: 0.486013
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 49685.8
-  DDOT    : 33526.1
-  WAXPBY  : 33142.8
-  SPARSEMV: 54879.9
+  Total   : 50221.5
+  DDOT    : 33880.7
+  WAXPBY  : 32246.9
+  SPARSEMV: 55873.5
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=24, Size=150 150 150
 Initial Residual = 38654.7
@@ -4352,20 +4352,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.828849
-  DDOT    : 0.052119
-  WAXPBY  : 0.105444
-  SPARSEMV: 0.669232
+  Total   : 0.827605
+  DDOT    : 0.052488
+  WAXPBY  : 0.104573
+  SPARSEMV: 0.668559
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 38829.8
-  DDOT    : 38594.4
-  WAXPBY  : 28614.7
-  SPARSEMV: 40576.7
+  Total   : 38888.1
+  DDOT    : 38323
+  WAXPBY  : 28853.1
+  SPARSEMV: 40617.6
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=32, Size=150 150 150
 Initial Residual = 38654.7
@@ -4392,20 +4392,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.538071
-  DDOT    : 0.035084
-  WAXPBY  : 0.099714
-  SPARSEMV: 0.40108
+  Total   : 0.543563
+  DDOT    : 0.035032
+  WAXPBY  : 0.097425
+  SPARSEMV: 0.40914
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 59813.7
-  DDOT    : 57333.8
-  WAXPBY  : 30259
-  SPARSEMV: 67705.3
+  Total   : 59209.3
+  DDOT    : 57418.9
+  WAXPBY  : 30970
+  SPARSEMV: 66371.5
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=1, Size=150 150 150
 Initial Residual = 38654.7
@@ -4432,20 +4432,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.69052
-  DDOT    : 0.841692
-  WAXPBY  : 0.732354
-  SPARSEMV: 2.11485
+  Total   : 3.71405
+  DDOT    : 0.83968
+  WAXPBY  : 0.717328
+  SPARSEMV: 2.15539
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 8720.72
-  DDOT    : 2389.83
-  WAXPBY  : 4119.93
-  SPARSEMV: 12840.3
+  Total   : 8665.46
+  DDOT    : 2395.56
+  WAXPBY  : 4206.23
+  SPARSEMV: 12598.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=2, Size=150 150 150
 Initial Residual = 38654.7
@@ -4472,20 +4472,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.86207
-  DDOT    : 0.42243
-  WAXPBY  : 0.341381
-  SPARSEMV: 1.09652
+  Total   : 1.89468
+  DDOT    : 0.423722
+  WAXPBY  : 0.346901
+  SPARSEMV: 1.12232
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 17284
-  DDOT    : 4761.74
-  WAXPBY  : 8838.37
-  SPARSEMV: 24764.9
+  Total   : 16986.5
+  DDOT    : 4747.22
+  WAXPBY  : 8697.73
+  SPARSEMV: 24195.7
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=3, Size=150 150 150
 Initial Residual = 38654.7
@@ -4512,20 +4512,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.17672
-  DDOT    : 0.282435
-  WAXPBY  : 0.209916
-  SPARSEMV: 0.682445
+  Total   : 1.21077
+  DDOT    : 0.282888
+  WAXPBY  : 0.213827
+  SPARSEMV: 0.712273
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 27350.7
-  DDOT    : 7121.99
-  WAXPBY  : 14373.6
-  SPARSEMV: 39791.1
+  Total   : 26581.4
+  DDOT    : 7110.59
+  WAXPBY  : 14110.7
+  SPARSEMV: 38124.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=4, Size=150 150 150
 Initial Residual = 38654.7
@@ -4552,20 +4552,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.83728
-  DDOT    : 0.211166
-  WAXPBY  : 0.140371
-  SPARSEMV: 0.483777
+  Total   : 0.844592
+  DDOT    : 0.211181
+  WAXPBY  : 0.140734
+  SPARSEMV: 0.490821
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 38438.8
-  DDOT    : 9525.68
-  WAXPBY  : 21494.8
-  SPARSEMV: 56131.8
+  Total   : 38106
+  DDOT    : 9525
+  WAXPBY  : 21439.4
+  SPARSEMV: 55326.2
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=6, Size=150 150 150
 Initial Residual = 38654.7
@@ -4592,20 +4592,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.662134
-  DDOT    : 0.142115
-  WAXPBY  : 0.104913
-  SPARSEMV: 0.413249
+  Total   : 0.667192
+  DDOT    : 0.14198
+  WAXPBY  : 0.115955
+  SPARSEMV: 0.407508
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 48606.5
-  DDOT    : 14154
-  WAXPBY  : 28759.5
-  SPARSEMV: 65711.6
+  Total   : 48238
+  DDOT    : 14167.5
+  WAXPBY  : 26020.9
+  SPARSEMV: 66637.3
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=8, Size=150 150 150
 Initial Residual = 38654.7
@@ -4632,20 +4632,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.486545
-  DDOT    : 0.107718
-  WAXPBY  : 0.082621
-  SPARSEMV: 0.294437
+  Total   : 0.492195
+  DDOT    : 0.111014
+  WAXPBY  : 0.082384
+  SPARSEMV: 0.296931
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 66148
-  DDOT    : 18673.8
-  WAXPBY  : 36519.2
-  SPARSEMV: 92227.7
+  Total   : 65388.7
+  DDOT    : 18119.3
+  WAXPBY  : 36624.2
+  SPARSEMV: 91453.1
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=12, Size=150 150 150
 Initial Residual = 38654.7
@@ -4672,20 +4672,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.559526
-  DDOT    : 0.075019
-  WAXPBY  : 0.095341
-  SPARSEMV: 0.387159
+  Total   : 0.563127
+  DDOT    : 0.075097
+  WAXPBY  : 0.094383
+  SPARSEMV: 0.391723
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 57520.1
-  DDOT    : 26813.2
-  WAXPBY  : 31646.9
-  SPARSEMV: 70139.8
+  Total   : 57152.3
+  DDOT    : 26785.4
+  WAXPBY  : 31968.2
+  SPARSEMV: 69322.6
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=16, Size=150 150 150
 Initial Residual = 38654.7
@@ -4712,20 +4712,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.371606
-  DDOT    : 0.056886
-  WAXPBY  : 0.065968
-  SPARSEMV: 0.246731
+  Total   : 0.37372
+  DDOT    : 0.057063
+  WAXPBY  : 0.064966
+  SPARSEMV: 0.249797
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 86607.9
-  DDOT    : 35360.2
-  WAXPBY  : 45738.1
-  SPARSEMV: 110060
+  Total   : 86117.9
+  DDOT    : 35250.5
+  WAXPBY  : 46443.5
+  SPARSEMV: 108709
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=24, Size=150 150 150
 Initial Residual = 38654.7
@@ -4752,20 +4752,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.506329
-  DDOT    : 0.038941
-  WAXPBY  : 0.074423
-  SPARSEMV: 0.391084
+  Total   : 0.507714
+  DDOT    : 0.039053
+  WAXPBY  : 0.075953
+  SPARSEMV: 0.390819
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 63563.4
-  DDOT    : 51655.1
-  WAXPBY  : 40541.9
-  SPARSEMV: 69435.9
+  Total   : 63390
+  DDOT    : 51506.9
+  WAXPBY  : 39725.2
+  SPARSEMV: 69482.9
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=32, Size=150 150 150
 Initial Residual = 38654.7
@@ -4792,20 +4792,20 @@ Number of iterations: 149
 Final residual: 5.86103e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.334123
-  DDOT    : 0.030018
-  WAXPBY  : 0.059979
-  SPARSEMV: 0.242274
+  Total   : 0.337274
+  DDOT    : 0.0301
+  WAXPBY  : 0.06059
+  SPARSEMV: 0.244692
 FLOPS Summary: 
   Total   : 3.2184e+10
   DDOT    : 2.0115e+09
   WAXPBY  : 3.01725e+09
   SPARSEMV: 2.71552e+10
 MFLOPS Summary: 
-  Total   : 96323.8
-  DDOT    : 67009.8
-  WAXPBY  : 50305.1
-  SPARSEMV: 112085
+  Total   : 95423.9
+  DDOT    : 66827.2
+  WAXPBY  : 49797.8
+  SPARSEMV: 110977
 ----------------------------------------------------------
 ==========================================================
 MATRIX SIZE: 200 200 200
@@ -4835,20 +4835,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 9.18388
-  DDOT    : 1.99835
-  WAXPBY  : 2.03347
-  SPARSEMV: 5.14991
+  Total   : 9.19731
+  DDOT    : 1.99577
+  WAXPBY  : 2.02285
+  SPARSEMV: 5.17652
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 8306.73
-  DDOT    : 2385.97
-  WAXPBY  : 3517.15
-  SPARSEMV: 12498.9
+  Total   : 8294.6
+  DDOT    : 2389.05
+  WAXPBY  : 3535.61
+  SPARSEMV: 12434.6
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=2, Size=200 200 200
 Initial Residual = 59483.8
@@ -4875,20 +4875,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.68502
-  DDOT    : 1.00997
-  WAXPBY  : 0.94153
-  SPARSEMV: 2.73124
+  Total   : 4.70405
+  DDOT    : 1.00522
+  WAXPBY  : 0.939716
+  SPARSEMV: 2.75693
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 16283.4
-  DDOT    : 4720.91
-  WAXPBY  : 7596.15
-  SPARSEMV: 23567.3
+  Total   : 16217.5
+  DDOT    : 4743.24
+  WAXPBY  : 7610.81
+  SPARSEMV: 23347.7
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=3, Size=200 200 200
 Initial Residual = 59483.8
@@ -4915,20 +4915,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.11842
-  DDOT    : 0.674446
-  WAXPBY  : 0.591494
-  SPARSEMV: 1.8503
+  Total   : 3.10751
+  DDOT    : 0.673534
+  WAXPBY  : 0.59054
+  SPARSEMV: 1.84136
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 24463.7
-  DDOT    : 7069.51
-  WAXPBY  : 12091.4
-  SPARSEMV: 34787.9
+  Total   : 24549.5
+  DDOT    : 7079.08
+  WAXPBY  : 12110.9
+  SPARSEMV: 34956.8
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=4, Size=200 200 200
 Initial Residual = 59483.8
@@ -4955,20 +4955,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.38262
-  DDOT    : 0.506949
-  WAXPBY  : 0.436319
-  SPARSEMV: 1.43715
+  Total   : 2.3985
+  DDOT    : 0.506636
+  WAXPBY  : 0.454616
+  SPARSEMV: 1.43513
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 32018.5
-  DDOT    : 9405.29
-  WAXPBY  : 16391.7
-  SPARSEMV: 44788.7
+  Total   : 31806.5
+  DDOT    : 9411.1
+  WAXPBY  : 15732
+  SPARSEMV: 44851.6
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=6, Size=200 200 200
 Initial Residual = 59483.8
@@ -4995,20 +4995,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.2843
-  DDOT    : 0.340238
-  WAXPBY  : 0.416267
-  SPARSEMV: 1.52559
+  Total   : 2.27181
+  DDOT    : 0.342919
+  WAXPBY  : 0.396255
+  SPARSEMV: 1.53059
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 33396.6
-  DDOT    : 14013.7
-  WAXPBY  : 17181.3
-  SPARSEMV: 42192.1
+  Total   : 33580.3
+  DDOT    : 13904.2
+  WAXPBY  : 18049
+  SPARSEMV: 42054.5
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=8, Size=200 200 200
 Initial Residual = 59483.8
@@ -5035,20 +5035,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.48801
-  DDOT    : 0.255
-  WAXPBY  : 0.225481
-  SPARSEMV: 1.00563
+  Total   : 1.49112
+  DDOT    : 0.254761
+  WAXPBY  : 0.225353
+  SPARSEMV: 1.00908
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 51268.5
-  DDOT    : 18698
-  WAXPBY  : 31718.9
-  SPARSEMV: 64007.6
+  Total   : 51161.6
+  DDOT    : 18715.6
+  WAXPBY  : 31736.9
+  SPARSEMV: 63789.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=12, Size=200 200 200
 Initial Residual = 59483.8
@@ -5075,20 +5075,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.00828
-  DDOT    : 0.185505
-  WAXPBY  : 0.380417
-  SPARSEMV: 1.44016
+  Total   : 2.04149
+  DDOT    : 0.186939
+  WAXPBY  : 0.386929
+  SPARSEMV: 1.46558
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 37986.7
-  DDOT    : 25702.8
-  WAXPBY  : 18800.4
-  SPARSEMV: 44695
+  Total   : 37368.7
+  DDOT    : 25505.6
+  WAXPBY  : 18484
+  SPARSEMV: 43919.8
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=16, Size=200 200 200
 Initial Residual = 59483.8
@@ -5115,20 +5115,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.37143
-  DDOT    : 0.135715
-  WAXPBY  : 0.212584
-  SPARSEMV: 1.02102
+  Total   : 1.37327
+  DDOT    : 0.135174
+  WAXPBY  : 0.212818
+  SPARSEMV: 1.0232
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 55626.4
-  DDOT    : 35132.4
-  WAXPBY  : 33643.2
-  SPARSEMV: 63043.1
+  Total   : 55552.1
+  DDOT    : 35273.1
+  WAXPBY  : 33606.2
+  SPARSEMV: 62908.2
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=24, Size=200 200 200
 Initial Residual = 59483.8
@@ -5155,20 +5155,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.94013
-  DDOT    : 0.142683
-  WAXPBY  : 0.36938
-  SPARSEMV: 1.42587
+  Total   : 2.01539
+  DDOT    : 0.157021
+  WAXPBY  : 0.383025
+  SPARSEMV: 1.4732
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 39321.1
-  DDOT    : 33416.7
-  WAXPBY  : 19362.2
-  SPARSEMV: 45142.9
+  Total   : 37852.8
+  DDOT    : 30365.4
+  WAXPBY  : 18672.4
+  SPARSEMV: 43692.8
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=32, Size=200 200 200
 Initial Residual = 59483.8
@@ -5195,20 +5195,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.28773
-  DDOT    : 0.072512
-  WAXPBY  : 0.192923
-  SPARSEMV: 1.02002
+  Total   : 1.29148
+  DDOT    : 0.072428
+  WAXPBY  : 0.191172
+  SPARSEMV: 1.02577
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 59242.1
-  DDOT    : 65754.6
-  WAXPBY  : 37071.8
-  SPARSEMV: 63104.3
+  Total   : 59070.1
+  DDOT    : 65830.9
+  WAXPBY  : 37411.3
+  SPARSEMV: 62751
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=1, Size=200 200 200
 Initial Residual = 59483.8
@@ -5235,20 +5235,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 9.36071
-  DDOT    : 1.99606
-  WAXPBY  : 2.03166
-  SPARSEMV: 5.33071
+  Total   : 9.58105
+  DDOT    : 1.99568
+  WAXPBY  : 1.97968
+  SPARSEMV: 5.60287
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 8149.81
-  DDOT    : 2388.71
-  WAXPBY  : 3520.28
-  SPARSEMV: 12074.9
+  Total   : 7962.39
+  DDOT    : 2389.16
+  WAXPBY  : 3612.71
+  SPARSEMV: 11488.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=2, Size=200 200 200
 Initial Residual = 59483.8
@@ -5275,20 +5275,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.78673
-  DDOT    : 1.00467
-  WAXPBY  : 0.932909
-  SPARSEMV: 2.847
+  Total   : 4.79545
+  DDOT    : 1.00427
+  WAXPBY  : 0.932358
+  SPARSEMV: 2.8567
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 15937.4
-  DDOT    : 4745.82
-  WAXPBY  : 7666.34
-  SPARSEMV: 22609.1
+  Total   : 15908.4
+  DDOT    : 4747.72
+  WAXPBY  : 7670.87
+  SPARSEMV: 22532.3
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=3, Size=200 200 200
 Initial Residual = 59483.8
@@ -5315,20 +5315,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.15293
-  DDOT    : 0.672416
-  WAXPBY  : 0.599542
-  SPARSEMV: 1.87896
+  Total   : 3.19511
+  DDOT    : 0.673976
+  WAXPBY  : 0.601169
+  SPARSEMV: 1.91796
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 24195.9
-  DDOT    : 7090.85
-  WAXPBY  : 11929.1
-  SPARSEMV: 34257.2
+  Total   : 23876.5
+  DDOT    : 7074.44
+  WAXPBY  : 11896.8
+  SPARSEMV: 33560.7
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=4, Size=200 200 200
 Initial Residual = 59483.8
@@ -5355,20 +5355,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.38913
-  DDOT    : 0.507132
-  WAXPBY  : 0.452063
-  SPARSEMV: 1.42782
+  Total   : 2.42618
+  DDOT    : 0.506665
+  WAXPBY  : 0.455252
+  SPARSEMV: 1.46227
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 31931.3
-  DDOT    : 9401.89
-  WAXPBY  : 15820.8
-  SPARSEMV: 45081.4
+  Total   : 31443.6
+  DDOT    : 9410.56
+  WAXPBY  : 15710
+  SPARSEMV: 44019.1
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=6, Size=200 200 200
 Initial Residual = 59483.8
@@ -5395,20 +5395,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.25373
-  DDOT    : 0.339244
-  WAXPBY  : 0.425945
-  SPARSEMV: 1.48641
+  Total   : 2.26634
+  DDOT    : 0.346853
+  WAXPBY  : 0.395293
+  SPARSEMV: 1.52214
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 33849.6
-  DDOT    : 14054.8
-  WAXPBY  : 16790.9
-  SPARSEMV: 43304.4
+  Total   : 33661.3
+  DDOT    : 13746.5
+  WAXPBY  : 18092.9
+  SPARSEMV: 42287.8
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=8, Size=200 200 200
 Initial Residual = 59483.8
@@ -5435,20 +5435,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.43306
-  DDOT    : 0.254583
-  WAXPBY  : 0.226322
-  SPARSEMV: 0.950199
+  Total   : 1.4376
+  DDOT    : 0.255073
+  WAXPBY  : 0.22412
+  SPARSEMV: 0.954994
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 53234.2
-  DDOT    : 18728.7
-  WAXPBY  : 31601
-  SPARSEMV: 67741.6
+  Total   : 53066.1
+  DDOT    : 18692.7
+  WAXPBY  : 31911.5
+  SPARSEMV: 67401.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=12, Size=200 200 200
 Initial Residual = 59483.8
@@ -5475,20 +5475,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.03591
-  DDOT    : 0.18602
-  WAXPBY  : 0.391503
-  SPARSEMV: 1.45625
+  Total   : 2.07967
+  DDOT    : 0.187855
+  WAXPBY  : 0.406009
+  SPARSEMV: 1.48377
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 37471.2
-  DDOT    : 25631.7
-  WAXPBY  : 18268.1
-  SPARSEMV: 44201.1
+  Total   : 36682.7
+  DDOT    : 25381.3
+  WAXPBY  : 17615.4
+  SPARSEMV: 43381.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=16, Size=200 200 200
 Initial Residual = 59483.8
@@ -5515,20 +5515,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.31442
+  Total   : 1.31558
   DDOT    : 0.134213
-  WAXPBY  : 0.213227
-  SPARSEMV: 0.964831
+  WAXPBY  : 0.214376
+  SPARSEMV: 0.965011
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 58039.4
+  Total   : 57988.1
   DDOT    : 35525.6
-  WAXPBY  : 33541.7
-  SPARSEMV: 66714.3
+  WAXPBY  : 33361.9
+  SPARSEMV: 66701.8
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=24, Size=200 200 200
 Initial Residual = 59483.8
@@ -5555,20 +5555,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.04729
-  DDOT    : 0.146749
-  WAXPBY  : 0.375794
-  SPARSEMV: 1.52262
+  Total   : 2.11079
+  DDOT    : 0.158729
+  WAXPBY  : 0.386082
+  SPARSEMV: 1.56387
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 37263
-  DDOT    : 32490.9
-  WAXPBY  : 19031.7
-  SPARSEMV: 42274.4
+  Total   : 36141.8
+  DDOT    : 30038.6
+  WAXPBY  : 18524.6
+  SPARSEMV: 41159.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=32, Size=200 200 200
 Initial Residual = 59483.8
@@ -5595,20 +5595,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.24082
-  DDOT    : 0.074922
-  WAXPBY  : 0.196986
-  SPARSEMV: 0.966746
+  Total   : 1.22614
+  DDOT    : 0.071548
+  WAXPBY  : 0.194366
+  SPARSEMV: 0.958151
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 61482.1
-  DDOT    : 63639.5
-  WAXPBY  : 36307.1
-  SPARSEMV: 66582.1
+  Total   : 62217.8
+  DDOT    : 66640.6
+  WAXPBY  : 36796.6
+  SPARSEMV: 67179.4
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=1, Size=200 200 200
 Initial Residual = 59483.8
@@ -5635,20 +5635,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 16.943
-  DDOT    : 1.99689
-  WAXPBY  : 2.03655
-  SPARSEMV: 12.9074
+  Total   : 16.9098
+  DDOT    : 1.99449
+  WAXPBY  : 2.03637
+  SPARSEMV: 12.8768
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 4502.63
-  DDOT    : 2387.71
-  WAXPBY  : 3511.81
-  SPARSEMV: 4986.91
+  Total   : 4511.46
+  DDOT    : 2390.59
+  WAXPBY  : 3512.14
+  SPARSEMV: 4998.76
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=2, Size=200 200 200
 Initial Residual = 59483.8
@@ -5675,20 +5675,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.46054
-  DDOT    : 1.0051
-  WAXPBY  : 0.977159
-  SPARSEMV: 6.47606
+  Total   : 8.4513
+  DDOT    : 1.00546
+  WAXPBY  : 0.975166
+  SPARSEMV: 6.46841
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 9016.92
-  DDOT    : 4743.82
-  WAXPBY  : 7319.18
-  SPARSEMV: 9939.38
+  Total   : 9026.78
+  DDOT    : 4742.1
+  WAXPBY  : 7334.14
+  SPARSEMV: 9951.14
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=3, Size=200 200 200
 Initial Residual = 59483.8
@@ -5715,20 +5715,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.61836
-  DDOT    : 0.669597
-  WAXPBY  : 0.611812
-  SPARSEMV: 4.33494
+  Total   : 5.6075
+  DDOT    : 0.670376
+  WAXPBY  : 0.601416
+  SPARSEMV: 4.33365
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 13578.3
-  DDOT    : 7120.7
-  WAXPBY  : 11689.9
-  SPARSEMV: 14848.6
+  Total   : 13604.6
+  DDOT    : 7112.43
+  WAXPBY  : 11891.9
+  SPARSEMV: 14853.1
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=4, Size=200 200 200
 Initial Residual = 59483.8
@@ -5755,20 +5755,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.19122
-  DDOT    : 0.503827
-  WAXPBY  : 0.416608
-  SPARSEMV: 3.26868
+  Total   : 4.18956
+  DDOT    : 0.504948
+  WAXPBY  : 0.416495
+  SPARSEMV: 3.26607
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 18201.9
-  DDOT    : 9463.57
-  WAXPBY  : 17167.2
-  SPARSEMV: 19692.3
+  Total   : 18209.1
+  DDOT    : 9442.56
+  WAXPBY  : 17171.9
+  SPARSEMV: 19708.1
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=6, Size=200 200 200
 Initial Residual = 59483.8
@@ -5795,20 +5795,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.95948
-  DDOT    : 0.343433
-  WAXPBY  : 0.378317
-  SPARSEMV: 2.23551
+  Total   : 2.97354
+  DDOT    : 0.345016
+  WAXPBY  : 0.37979
+  SPARSEMV: 2.24665
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 25777.5
-  DDOT    : 13883.3
-  WAXPBY  : 18904.8
-  SPARSEMV: 28793.4
+  Total   : 25655.7
+  DDOT    : 13819.6
+  WAXPBY  : 18831.5
+  SPARSEMV: 28650.6
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=8, Size=200 200 200
 Initial Residual = 59483.8
@@ -5835,20 +5835,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.20319
-  DDOT    : 0.258583
-  WAXPBY  : 0.246553
-  SPARSEMV: 1.69602
+  Total   : 2.2092
+  DDOT    : 0.259392
+  WAXPBY  : 0.248989
+  SPARSEMV: 1.69879
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 34626.2
-  DDOT    : 18439
-  WAXPBY  : 29008
-  SPARSEMV: 37952.4
+  Total   : 34531.9
+  DDOT    : 18381.4
+  WAXPBY  : 28724.2
+  SPARSEMV: 37890.5
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=12, Size=200 200 200
 Initial Residual = 59483.8
@@ -5875,20 +5875,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.21146
-  DDOT    : 0.230721
-  WAXPBY  : 0.36476
-  SPARSEMV: 1.61383
+  Total   : 2.20467
+  DDOT    : 0.227015
+  WAXPBY  : 0.362682
+  SPARSEMV: 1.61284
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 34496.7
-  DDOT    : 20665.7
-  WAXPBY  : 19607.4
-  SPARSEMV: 39885.2
+  Total   : 34603
+  DDOT    : 21003
+  WAXPBY  : 19719.8
+  SPARSEMV: 39909.8
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=16, Size=200 200 200
 Initial Residual = 59483.8
@@ -5915,20 +5915,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.64357
-  DDOT    : 0.164358
-  WAXPBY  : 0.227426
-  SPARSEMV: 1.24962
+  Total   : 1.63885
+  DDOT    : 0.164559
+  WAXPBY  : 0.228872
+  SPARSEMV: 1.2433
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 46416
-  DDOT    : 29009.8
-  WAXPBY  : 31447.6
-  SPARSEMV: 51509.9
+  Total   : 46549.6
+  DDOT    : 28974.4
+  WAXPBY  : 31248.9
+  SPARSEMV: 51772.1
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=24, Size=200 200 200
 Initial Residual = 59483.8
@@ -5955,20 +5955,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.2351
-  DDOT    : 0.193492
-  WAXPBY  : 0.361831
-  SPARSEMV: 1.67749
+  Total   : 2.24076
+  DDOT    : 0.194027
+  WAXPBY  : 0.364558
+  SPARSEMV: 1.68002
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 34131.8
-  DDOT    : 24641.8
-  WAXPBY  : 19766.1
-  SPARSEMV: 38371.6
+  Total   : 34045.6
+  DDOT    : 24573.9
+  WAXPBY  : 19618.3
+  SPARSEMV: 38313.9
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=32, Size=200 200 200
 Initial Residual = 59483.8
@@ -5995,20 +5995,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.59003
-  DDOT    : 0.126734
-  WAXPBY  : 0.212712
-  SPARSEMV: 1.24836
+  Total   : 1.5949
+  DDOT    : 0.127824
+  WAXPBY  : 0.212935
+  SPARSEMV: 1.25191
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 47979
-  DDOT    : 37622.1
-  WAXPBY  : 33622.9
-  SPARSEMV: 51562.1
+  Total   : 47832.6
+  DDOT    : 37301.3
+  WAXPBY  : 33587.7
+  SPARSEMV: 51415.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=1, Size=200 200 200
 Initial Residual = 59483.8
@@ -6035,20 +6035,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.82353
-  DDOT    : 1.99718
-  WAXPBY  : 2.0223
-  SPARSEMV: 4.80199
+  Total   : 8.9314
+  DDOT    : 1.99675
+  WAXPBY  : 2.00231
+  SPARSEMV: 4.93015
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 8645.98
-  DDOT    : 2387.37
-  WAXPBY  : 3536.57
-  SPARSEMV: 13404.4
+  Total   : 8541.55
+  DDOT    : 2387.87
+  WAXPBY  : 3571.87
+  SPARSEMV: 13056
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=2, Size=200 200 200
 Initial Residual = 59483.8
@@ -6075,20 +6075,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.4796
-  DDOT    : 1.01138
-  WAXPBY  : 0.95203
-  SPARSEMV: 2.51398
+  Total   : 4.49959
+  DDOT    : 1.00475
+  WAXPBY  : 0.948001
+  SPARSEMV: 2.54474
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 17030.1
-  DDOT    : 4714.34
-  WAXPBY  : 7512.37
-  SPARSEMV: 25604
+  Total   : 16954.4
+  DDOT    : 4745.46
+  WAXPBY  : 7544.3
+  SPARSEMV: 25294.5
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=3, Size=200 200 200
 Initial Residual = 59483.8
@@ -6115,20 +6115,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.95926
-  DDOT    : 0.674123
-  WAXPBY  : 0.600384
-  SPARSEMV: 1.68271
+  Total   : 3.0076
+  DDOT    : 0.672809
+  WAXPBY  : 0.59701
+  SPARSEMV: 1.73584
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 25779.5
-  DDOT    : 7072.89
-  WAXPBY  : 11912.4
-  SPARSEMV: 38252.5
+  Total   : 25365
+  DDOT    : 7086.71
+  WAXPBY  : 11979.7
+  SPARSEMV: 37081.7
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=4, Size=200 200 200
 Initial Residual = 59483.8
@@ -6155,20 +6155,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.24291
-  DDOT    : 0.506999
-  WAXPBY  : 0.429071
-  SPARSEMV: 1.30299
+  Total   : 2.29222
+  DDOT    : 0.506743
+  WAXPBY  : 0.457253
+  SPARSEMV: 1.32617
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 34013
-  DDOT    : 9404.36
-  WAXPBY  : 16668.6
-  SPARSEMV: 49400.3
+  Total   : 33281.3
+  DDOT    : 9409.11
+  WAXPBY  : 15641.2
+  SPARSEMV: 48536.6
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=6, Size=200 200 200
 Initial Residual = 59483.8
@@ -6195,20 +6195,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.09294
-  DDOT    : 0.340754
-  WAXPBY  : 0.41005
-  SPARSEMV: 1.33805
+  Total   : 2.10699
+  DDOT    : 0.342318
+  WAXPBY  : 0.373068
+  SPARSEMV: 1.38959
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 36450.2
-  DDOT    : 13992.5
-  WAXPBY  : 17441.8
-  SPARSEMV: 48105.9
+  Total   : 36207
+  DDOT    : 13928.6
+  WAXPBY  : 19170.8
+  SPARSEMV: 46321.6
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=8, Size=200 200 200
 Initial Residual = 59483.8
@@ -6235,20 +6235,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.33175
-  DDOT    : 0.2541
-  WAXPBY  : 0.227439
-  SPARSEMV: 0.848369
+  Total   : 1.33223
+  DDOT    : 0.254522
+  WAXPBY  : 0.227302
+  SPARSEMV: 0.848446
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 57284.1
-  DDOT    : 18764.3
-  WAXPBY  : 31445.8
-  SPARSEMV: 75872.6
+  Total   : 57263.5
+  DDOT    : 18733.2
+  WAXPBY  : 31464.7
+  SPARSEMV: 75865.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=12, Size=200 200 200
 Initial Residual = 59483.8
@@ -6275,20 +6275,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.84089
-  DDOT    : 0.183391
-  WAXPBY  : 0.376617
-  SPARSEMV: 1.27877
+  Total   : 1.85974
+  DDOT    : 0.18388
+  WAXPBY  : 0.379916
+  SPARSEMV: 1.29387
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 41440.7
-  DDOT    : 25999.1
-  WAXPBY  : 18990.1
-  SPARSEMV: 50335.9
+  Total   : 41020.8
+  DDOT    : 25930
+  WAXPBY  : 18825.2
+  SPARSEMV: 49748.3
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=16, Size=200 200 200
 Initial Residual = 59483.8
@@ -6315,20 +6315,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.171
-  DDOT    : 0.133836
-  WAXPBY  : 0.205755
-  SPARSEMV: 0.829058
+  Total   : 1.16996
+  DDOT    : 0.133932
+  WAXPBY  : 0.210508
+  SPARSEMV: 0.82346
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 65147.6
-  DDOT    : 35625.7
-  WAXPBY  : 34759.8
-  SPARSEMV: 77639.9
+  Total   : 65205.5
+  DDOT    : 35600.2
+  WAXPBY  : 33975
+  SPARSEMV: 78167.7
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=24, Size=200 200 200
 Initial Residual = 59483.8
@@ -6355,20 +6355,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.77301
-  DDOT    : 0.125356
-  WAXPBY  : 0.356002
-  SPARSEMV: 1.28956
+  Total   : 1.85433
+  DDOT    : 0.139017
+  WAXPBY  : 0.372293
+  SPARSEMV: 1.34092
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 43027.5
-  DDOT    : 38035.7
-  WAXPBY  : 20089.8
-  SPARSEMV: 49914.5
+  Total   : 41140.4
+  DDOT    : 34298
+  WAXPBY  : 19210.7
+  SPARSEMV: 48003
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=32, Size=200 200 200
 Initial Residual = 59483.8
@@ -6395,20 +6395,20 @@ Number of iterations: 149
 Final residual: 7.98286e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.09556
-  DDOT    : 0.070546
-  WAXPBY  : 0.186056
-  SPARSEMV: 0.836946
+  Total   : 1.08162
+  DDOT    : 0.070272
+  WAXPBY  : 0.182228
+  SPARSEMV: 0.827097
 FLOPS Summary: 
   Total   : 7.6288e+10
   DDOT    : 4.768e+09
   WAXPBY  : 7.152e+09
   SPARSEMV: 6.4368e+10
 MFLOPS Summary: 
-  Total   : 69633.8
-  DDOT    : 67587.1
-  WAXPBY  : 38440
-  SPARSEMV: 76908.2
+  Total   : 70531.1
+  DDOT    : 67850.6
+  WAXPBY  : 39247.5
+  SPARSEMV: 77824
 ----------------------------------------------------------
 ==========================================================
 MATRIX SIZE: 250 250 250
@@ -6438,20 +6438,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 17.8494
-  DDOT    : 3.89903
-  WAXPBY  : 4.07216
-  SPARSEMV: 9.87361
+  Total   : 17.8612
+  DDOT    : 3.90249
+  WAXPBY  : 4.0904
+  SPARSEMV: 9.86585
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 8347.61
-  DDOT    : 2388.41
-  WAXPBY  : 3430.31
-  SPARSEMV: 12732.8
+  Total   : 8342.1
+  DDOT    : 2386.3
+  WAXPBY  : 3415.01
+  SPARSEMV: 12742.8
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=2, Size=250 250 250
 Initial Residual = 83106.9
@@ -6478,20 +6478,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 9.10146
-  DDOT    : 1.96456
-  WAXPBY  : 1.99823
-  SPARSEMV: 5.13416
+  Total   : 9.13402
+  DDOT    : 1.96993
+  WAXPBY  : 1.98998
+  SPARSEMV: 5.17157
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 16371
-  DDOT    : 4740.24
-  WAXPBY  : 6990.57
-  SPARSEMV: 24486.7
+  Total   : 16312.6
+  DDOT    : 4727.33
+  WAXPBY  : 7019.56
+  SPARSEMV: 24309.6
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=3, Size=250 250 250
 Initial Residual = 83106.9
@@ -6518,20 +6518,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 6.13212
-  DDOT    : 1.31684
-  WAXPBY  : 1.25665
-  SPARSEMV: 3.55602
+  Total   : 6.16017
+  DDOT    : 1.3158
+  WAXPBY  : 1.27458
+  SPARSEMV: 3.56725
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 24298.3
-  DDOT    : 7071.85
-  WAXPBY  : 11115.9
-  SPARSEMV: 35353.8
+  Total   : 24187.6
+  DDOT    : 7077.44
+  WAXPBY  : 10959.5
+  SPARSEMV: 35242.5
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=4, Size=250 250 250
 Initial Residual = 83106.9
@@ -6558,20 +6558,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.68295
-  DDOT    : 0.99892
-  WAXPBY  : 0.91383
-  SPARSEMV: 2.76759
+  Total   : 4.72605
+  DDOT    : 0.991474
+  WAXPBY  : 0.907397
+  SPARSEMV: 2.8246
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 31817.6
-  DDOT    : 9322.57
-  WAXPBY  : 15285.9
-  SPARSEMV: 45425.4
+  Total   : 31527.4
+  DDOT    : 9392.58
+  WAXPBY  : 15394.3
+  SPARSEMV: 44508.5
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=6, Size=250 250 250
 Initial Residual = 83106.9
@@ -6598,20 +6598,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.58114
-  DDOT    : 0.666589
-  WAXPBY  : 0.935969
-  SPARSEMV: 2.97441
+  Total   : 4.56864
+  DDOT    : 0.673259
+  WAXPBY  : 0.922365
+  SPARSEMV: 2.97044
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 32524.6
-  DDOT    : 13970.4
-  WAXPBY  : 14924.4
-  SPARSEMV: 42266.8
+  Total   : 32613.7
+  DDOT    : 13832
+  WAXPBY  : 15144.5
+  SPARSEMV: 42323.2
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=8, Size=250 250 250
 Initial Residual = 83106.9
@@ -6638,20 +6638,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.61904
-  DDOT    : 0.507071
-  WAXPBY  : 0.715735
-  SPARSEMV: 2.39365
+  Total   : 3.61036
+  DDOT    : 0.508129
+  WAXPBY  : 0.718266
+  SPARSEMV: 2.3814
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 41171.1
-  DDOT    : 18365.3
-  WAXPBY  : 19516.7
-  SPARSEMV: 52521.7
+  Total   : 41270.1
+  DDOT    : 18327
+  WAXPBY  : 19447.9
+  SPARSEMV: 52791.9
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=12, Size=250 250 250
 Initial Residual = 83106.9
@@ -6678,20 +6678,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.35869
-  DDOT    : 0.387454
-  WAXPBY  : 0.952928
-  SPARSEMV: 3.01562
+  Total   : 4.35724
+  DDOT    : 0.387955
+  WAXPBY  : 0.951379
+  SPARSEMV: 3.01519
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 34184.6
-  DDOT    : 24035.1
-  WAXPBY  : 14658.8
-  SPARSEMV: 41689.1
+  Total   : 34196
+  DDOT    : 24004.1
+  WAXPBY  : 14682.6
+  SPARSEMV: 41695.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=16, Size=250 250 250
 Initial Residual = 83106.9
@@ -6718,20 +6718,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.46586
-  DDOT    : 0.30731
-  WAXPBY  : 0.699136
-  SPARSEMV: 2.45663
+  Total   : 3.48989
+  DDOT    : 0.308451
+  WAXPBY  : 0.701187
+  SPARSEMV: 2.4776
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 42990.7
-  DDOT    : 30303.3
-  WAXPBY  : 19980
-  SPARSEMV: 51175.4
+  Total   : 42694.7
+  DDOT    : 30191.2
+  WAXPBY  : 19921.6
+  SPARSEMV: 50742.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=24, Size=250 250 250
 Initial Residual = 83106.9
@@ -6758,20 +6758,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.44558
-  DDOT    : 0.392061
-  WAXPBY  : 0.960827
-  SPARSEMV: 3.08986
+  Total   : 4.48916
+  DDOT    : 0.405966
+  WAXPBY  : 0.961847
+  SPARSEMV: 3.1186
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 33516.4
-  DDOT    : 23752.7
-  WAXPBY  : 14538.3
-  SPARSEMV: 40687.5
+  Total   : 33191.1
+  DDOT    : 22939.1
+  WAXPBY  : 14522.8
+  SPARSEMV: 40312.5
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=32, Size=250 250 250
 Initial Residual = 83106.9
@@ -6798,20 +6798,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.43856
-  DDOT    : 0.283028
-  WAXPBY  : 0.678565
-  SPARSEMV: 2.47412
+  Total   : 3.43073
+  DDOT    : 0.282069
+  WAXPBY  : 0.681498
+  SPARSEMV: 2.46435
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 43332.1
-  DDOT    : 32903.1
-  WAXPBY  : 20585.7
-  SPARSEMV: 50813.4
+  Total   : 43431
+  DDOT    : 33015
+  WAXPBY  : 20497.1
+  SPARSEMV: 51015
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=1, Size=250 250 250
 Initial Residual = 83106.9
@@ -6838,20 +6838,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 18.1625
-  DDOT    : 3.89862
-  WAXPBY  : 4.08125
-  SPARSEMV: 10.1801
+  Total   : 18.2211
+  DDOT    : 3.90911
+  WAXPBY  : 4.0872
+  SPARSEMV: 10.2222
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 8203.74
-  DDOT    : 2388.67
-  WAXPBY  : 3422.67
-  SPARSEMV: 12349.4
+  Total   : 8177.35
+  DDOT    : 2382.26
+  WAXPBY  : 3417.68
+  SPARSEMV: 12298.6
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=2, Size=250 250 250
 Initial Residual = 83106.9
@@ -6878,20 +6878,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 9.17181
-  DDOT    : 1.96334
-  WAXPBY  : 1.99976
-  SPARSEMV: 5.20619
+  Total   : 9.22278
+  DDOT    : 1.96474
+  WAXPBY  : 1.99243
+  SPARSEMV: 5.26308
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 16245.4
-  DDOT    : 4743.2
-  WAXPBY  : 6985.23
-  SPARSEMV: 24148
+  Total   : 16155.6
+  DDOT    : 4739.81
+  WAXPBY  : 7010.9
+  SPARSEMV: 23886.9
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=3, Size=250 250 250
 Initial Residual = 83106.9
@@ -6918,20 +6918,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 6.40692
-  DDOT    : 1.31962
-  WAXPBY  : 1.27975
-  SPARSEMV: 3.80495
+  Total   : 6.3103
+  DDOT    : 1.31573
+  WAXPBY  : 1.29335
+  SPARSEMV: 3.69863
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 23256.1
-  DDOT    : 7056.94
-  WAXPBY  : 10915.2
-  SPARSEMV: 33040.8
+  Total   : 23612.2
+  DDOT    : 7077.8
+  WAXPBY  : 10800.4
+  SPARSEMV: 33990.6
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=4, Size=250 250 250
 Initial Residual = 83106.9
@@ -6958,20 +6958,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.65315
-  DDOT    : 0.992486
-  WAXPBY  : 0.925418
-  SPARSEMV: 2.73241
+  Total   : 4.76538
+  DDOT    : 0.992651
+  WAXPBY  : 0.94007
+  SPARSEMV: 2.82615
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 32021.3
-  DDOT    : 9383
-  WAXPBY  : 15094.5
-  SPARSEMV: 46010.2
+  Total   : 31267.2
+  DDOT    : 9381.44
+  WAXPBY  : 14859.3
+  SPARSEMV: 44484.1
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=6, Size=250 250 250
 Initial Residual = 83106.9
@@ -6998,20 +6998,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.51746
-  DDOT    : 0.666386
-  WAXPBY  : 0.948998
-  SPARSEMV: 2.89947
+  Total   : 4.5021
+  DDOT    : 0.67218
+  WAXPBY  : 0.928262
+  SPARSEMV: 2.89899
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 32983.1
-  DDOT    : 13974.6
-  WAXPBY  : 14719.5
-  SPARSEMV: 43359.2
+  Total   : 33095.7
+  DDOT    : 13854.2
+  WAXPBY  : 15048.3
+  SPARSEMV: 43366.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=8, Size=250 250 250
 Initial Residual = 83106.9
@@ -7038,20 +7038,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.52423
-  DDOT    : 0.505897
-  WAXPBY  : 0.754155
-  SPARSEMV: 2.25753
+  Total   : 3.46938
+  DDOT    : 0.506578
+  WAXPBY  : 0.721527
+  SPARSEMV: 2.23709
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 42278.7
-  DDOT    : 18407.9
-  WAXPBY  : 18522.4
-  SPARSEMV: 55688.6
+  Total   : 42947.2
+  DDOT    : 18383.2
+  WAXPBY  : 19360
+  SPARSEMV: 56197.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=12, Size=250 250 250
 Initial Residual = 83106.9
@@ -7078,20 +7078,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.39995
-  DDOT    : 0.40436
-  WAXPBY  : 0.974235
-  SPARSEMV: 3.01863
+  Total   : 4.39944
+  DDOT    : 0.409215
+  WAXPBY  : 0.975405
+  SPARSEMV: 3.01218
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 33864
-  DDOT    : 23030.2
-  WAXPBY  : 14338.2
-  SPARSEMV: 41647.6
+  Total   : 33867.9
+  DDOT    : 22757
+  WAXPBY  : 14321
+  SPARSEMV: 41736.8
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=16, Size=250 250 250
 Initial Residual = 83106.9
@@ -7118,20 +7118,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.30838
-  DDOT    : 0.306977
-  WAXPBY  : 0.700516
-  SPARSEMV: 2.2982
+  Total   : 3.32542
+  DDOT    : 0.310514
+  WAXPBY  : 0.704431
+  SPARSEMV: 2.30781
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 45037.2
-  DDOT    : 30336.1
-  WAXPBY  : 19940.7
-  SPARSEMV: 54703.2
+  Total   : 44806.4
+  DDOT    : 29990.6
+  WAXPBY  : 19829.8
+  SPARSEMV: 54475.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=24, Size=250 250 250
 Initial Residual = 83106.9
@@ -7158,20 +7158,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.52601
-  DDOT    : 0.403094
-  WAXPBY  : 0.97287
-  SPARSEMV: 3.14727
+  Total   : 4.5431
+  DDOT    : 0.41428
+  WAXPBY  : 0.964599
+  SPARSEMV: 3.16144
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 32920.8
-  DDOT    : 23102.6
-  WAXPBY  : 14358.3
-  SPARSEMV: 39945.4
+  Total   : 32797
+  DDOT    : 22478.8
+  WAXPBY  : 14481.4
+  SPARSEMV: 39766.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=32, Size=250 250 250
 Initial Residual = 83106.9
@@ -7198,20 +7198,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.34488
-  DDOT    : 0.282221
-  WAXPBY  : 0.674014
-  SPARSEMV: 2.38587
+  Total   : 3.36057
+  DDOT    : 0.285306
+  WAXPBY  : 0.690369
+  SPARSEMV: 2.38215
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 44545.7
-  DDOT    : 32997.2
-  WAXPBY  : 20724.7
-  SPARSEMV: 52693.1
+  Total   : 44337.8
+  DDOT    : 32640.4
+  WAXPBY  : 20233.7
+  SPARSEMV: 52775.4
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=1, Size=250 250 250
 Initial Residual = 83106.9
@@ -7238,20 +7238,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 33.524
-  DDOT    : 3.89885
-  WAXPBY  : 4.07801
-  SPARSEMV: 25.5372
+  Total   : 33.4969
+  DDOT    : 3.89919
+  WAXPBY  : 4.10297
+  SPARSEMV: 25.4899
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 4444.58
-  DDOT    : 2388.52
-  WAXPBY  : 3425.38
-  SPARSEMV: 4922.96
+  Total   : 4448.18
+  DDOT    : 2388.31
+  WAXPBY  : 3404.54
+  SPARSEMV: 4932.1
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=2, Size=250 250 250
 Initial Residual = 83106.9
@@ -7278,20 +7278,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 16.8248
-  DDOT    : 1.96183
-  WAXPBY  : 2.01853
-  SPARSEMV: 12.8417
+  Total   : 16.7886
+  DDOT    : 1.96147
+  WAXPBY  : 2.01516
+  SPARSEMV: 12.8055
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 8855.96
-  DDOT    : 4746.84
-  WAXPBY  : 6920.28
-  SPARSEMV: 9789.86
+  Total   : 8875.07
+  DDOT    : 4747.71
+  WAXPBY  : 6931.83
+  SPARSEMV: 9817.55
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=3, Size=250 250 250
 Initial Residual = 83106.9
@@ -7318,20 +7318,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 11.2036
-  DDOT    : 1.31278
-  WAXPBY  : 1.31175
-  SPARSEMV: 8.57644
+  Total   : 11.2163
+  DDOT    : 1.31507
+  WAXPBY  : 1.31158
+  SPARSEMV: 8.58686
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 13299.3
-  DDOT    : 7093.71
-  WAXPBY  : 10649
-  SPARSEMV: 14658.6
+  Total   : 13284.3
+  DDOT    : 7081.37
+  WAXPBY  : 10650.3
+  SPARSEMV: 14640.8
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=4, Size=250 250 250
 Initial Residual = 83106.9
@@ -7358,20 +7358,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.40284
-  DDOT    : 0.989953
-  WAXPBY  : 0.947127
-  SPARSEMV: 6.4629
+  Total   : 8.40058
+  DDOT    : 0.989785
+  WAXPBY  : 0.949735
+  SPARSEMV: 6.45841
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 17732.1
-  DDOT    : 9407.01
-  WAXPBY  : 14748.6
-  SPARSEMV: 19452.4
+  Total   : 17736.9
+  DDOT    : 9408.61
+  WAXPBY  : 14708.1
+  SPARSEMV: 19465.9
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=6, Size=250 250 250
 Initial Residual = 83106.9
@@ -7398,20 +7398,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 6.03794
-  DDOT    : 0.669371
-  WAXPBY  : 0.971761
-  SPARSEMV: 4.39405
+  Total   : 6.04077
+  DDOT    : 0.670557
+  WAXPBY  : 0.971894
+  SPARSEMV: 4.39566
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 24677.3
-  DDOT    : 13912.3
-  WAXPBY  : 14374.7
-  SPARSEMV: 28611.1
+  Total   : 24665.7
+  DDOT    : 13887.7
+  WAXPBY  : 14372.7
+  SPARSEMV: 28600.7
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=8, Size=250 250 250
 Initial Residual = 83106.9
@@ -7438,20 +7438,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.73968
-  DDOT    : 0.513236
-  WAXPBY  : 0.802568
-  SPARSEMV: 3.42119
+  Total   : 4.50892
+  DDOT    : 0.506996
+  WAXPBY  : 0.658866
+  SPARSEMV: 3.34044
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 31436.7
-  DDOT    : 18144.7
-  WAXPBY  : 17405.1
-  SPARSEMV: 36747.1
+  Total   : 33045.6
+  DDOT    : 18368
+  WAXPBY  : 21201.2
+  SPARSEMV: 37635.3
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=12, Size=250 250 250
 Initial Residual = 83106.9
@@ -7478,20 +7478,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.47048
-  DDOT    : 0.460657
-  WAXPBY  : 1.0561
-  SPARSEMV: 2.95091
+  Total   : 4.45794
+  DDOT    : 0.461262
+  WAXPBY  : 1.04534
+  SPARSEMV: 2.94858
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 33329.8
-  DDOT    : 20215.7
-  WAXPBY  : 13226.7
-  SPARSEMV: 42603.4
+  Total   : 33423.5
+  DDOT    : 20189.2
+  WAXPBY  : 13362.9
+  SPARSEMV: 42637
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=16, Size=250 250 250
 Initial Residual = 83106.9
@@ -7518,20 +7518,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.31012
-  DDOT    : 0.343055
-  WAXPBY  : 0.652868
-  SPARSEMV: 2.31145
+  Total   : 3.31449
+  DDOT    : 0.344482
+  WAXPBY  : 0.655048
+  SPARSEMV: 2.31226
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 45013.5
-  DDOT    : 27145.8
-  WAXPBY  : 21396
-  SPARSEMV: 54389.6
+  Total   : 44954.1
+  DDOT    : 27033.3
+  WAXPBY  : 21324.8
+  SPARSEMV: 54370.5
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=24, Size=250 250 250
 Initial Residual = 83106.9
@@ -7558,20 +7558,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.69366
-  DDOT    : 0.417637
-  WAXPBY  : 1.02455
-  SPARSEMV: 3.24846
+  Total   : 4.65314
+  DDOT    : 0.411659
+  WAXPBY  : 1.00565
+  SPARSEMV: 3.23307
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 31745
-  DDOT    : 22298.1
-  WAXPBY  : 13634
-  SPARSEMV: 38701
+  Total   : 32021.4
+  DDOT    : 22621.9
+  WAXPBY  : 13890.3
+  SPARSEMV: 38885.3
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=32, Size=250 250 250
 Initial Residual = 83106.9
@@ -7598,20 +7598,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.43379
-  DDOT    : 0.31087
-  WAXPBY  : 0.633313
-  SPARSEMV: 2.48681
+  Total   : 3.43894
+  DDOT    : 0.310563
+  WAXPBY  : 0.63265
+  SPARSEMV: 2.49298
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 43392.3
-  DDOT    : 29956.3
-  WAXPBY  : 22056.6
-  SPARSEMV: 50554.3
+  Total   : 43327.3
+  DDOT    : 29985.9
+  WAXPBY  : 22079.7
+  SPARSEMV: 50429
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=1, Size=250 250 250
 Initial Residual = 83106.9
@@ -7638,20 +7638,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 17.0407
-  DDOT    : 3.89756
-  WAXPBY  : 4.08612
-  SPARSEMV: 9.05451
+  Total   : 17.1373
+  DDOT    : 3.90153
+  WAXPBY  : 4.07698
+  SPARSEMV: 9.15432
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 8743.77
-  DDOT    : 2389.32
-  WAXPBY  : 3418.59
-  SPARSEMV: 13884.7
+  Total   : 8694.47
+  DDOT    : 2386.88
+  WAXPBY  : 3426.25
+  SPARSEMV: 13733.3
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=2, Size=250 250 250
 Initial Residual = 83106.9
@@ -7678,20 +7678,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.64392
-  DDOT    : 1.96416
-  WAXPBY  : 1.98776
-  SPARSEMV: 4.68945
+  Total   : 8.72225
+  DDOT    : 1.967
+  WAXPBY  : 1.97966
+  SPARSEMV: 4.77304
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 17237.5
-  DDOT    : 4741.2
-  WAXPBY  : 7027.39
-  SPARSEMV: 26808.9
+  Total   : 17082.8
+  DDOT    : 4734.36
+  WAXPBY  : 7056.15
+  SPARSEMV: 26339.3
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=3, Size=250 250 250
 Initial Residual = 83106.9
@@ -7718,20 +7718,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.98504
-  DDOT    : 1.31314
-  WAXPBY  : 1.26556
-  SPARSEMV: 3.40365
+  Total   : 5.95248
+  DDOT    : 1.31601
+  WAXPBY  : 1.28932
+  SPARSEMV: 3.34457
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 24895.4
-  DDOT    : 7091.76
-  WAXPBY  : 11037.6
-  SPARSEMV: 36936.5
+  Total   : 25031.6
+  DDOT    : 7076.33
+  WAXPBY  : 10834.2
+  SPARSEMV: 37588.9
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=4, Size=250 250 250
 Initial Residual = 83106.9
@@ -7758,20 +7758,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.39692
-  DDOT    : 0.998389
-  WAXPBY  : 0.927941
-  SPARSEMV: 2.46441
+  Total   : 4.43535
+  DDOT    : 0.990037
+  WAXPBY  : 0.934799
+  SPARSEMV: 2.50789
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 33887.4
-  DDOT    : 9327.53
-  WAXPBY  : 15053.5
-  SPARSEMV: 51013.8
+  Total   : 33593.7
+  DDOT    : 9406.21
+  WAXPBY  : 14943.1
+  SPARSEMV: 50129.2
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=6, Size=250 250 250
 Initial Residual = 83106.9
@@ -7798,20 +7798,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.17857
-  DDOT    : 0.664946
-  WAXPBY  : 0.930886
-  SPARSEMV: 2.57999
+  Total   : 4.20079
+  DDOT    : 0.674077
+  WAXPBY  : 0.920079
+  SPARSEMV: 2.60398
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 35658.1
-  DDOT    : 14004.9
-  WAXPBY  : 15005.9
-  SPARSEMV: 48728.4
+  Total   : 35469.5
+  DDOT    : 13815.2
+  WAXPBY  : 15182.1
+  SPARSEMV: 48279.5
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=8, Size=250 250 250
 Initial Residual = 83106.9
@@ -7838,20 +7838,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.26709
-  DDOT    : 0.506293
-  WAXPBY  : 0.720053
-  SPARSEMV: 2.03814
+  Total   : 3.2545
+  DDOT    : 0.507474
+  WAXPBY  : 0.725544
+  SPARSEMV: 2.01897
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 45606.3
-  DDOT    : 18393.5
-  WAXPBY  : 19399.6
-  SPARSEMV: 61683
+  Total   : 45782.8
+  DDOT    : 18350.7
+  WAXPBY  : 19252.8
+  SPARSEMV: 62268.7
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=12, Size=250 250 250
 Initial Residual = 83106.9
@@ -7878,20 +7878,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.94498
-  DDOT    : 0.379802
-  WAXPBY  : 0.935699
-  SPARSEMV: 2.62674
+  Total   : 3.96705
+  DDOT    : 0.382247
+  WAXPBY  : 0.938954
+  SPARSEMV: 2.64314
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 37769.5
-  DDOT    : 24519.4
-  WAXPBY  : 14928.7
-  SPARSEMV: 47861.1
+  Total   : 37559.4
+  DDOT    : 24362.5
+  WAXPBY  : 14876.9
+  SPARSEMV: 47564.1
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=16, Size=250 250 250
 Initial Residual = 83106.9
@@ -7918,20 +7918,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.07757
-  DDOT    : 0.296392
-  WAXPBY  : 0.697827
-  SPARSEMV: 2.08052
+  Total   : 3.08661
+  DDOT    : 0.30157
+  WAXPBY  : 0.701537
+  SPARSEMV: 2.08079
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 48414.8
-  DDOT    : 31419.5
-  WAXPBY  : 20017.5
-  SPARSEMV: 60426.7
+  Total   : 48273.1
+  DDOT    : 30880.1
+  WAXPBY  : 19911.6
+  SPARSEMV: 60418.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=24, Size=250 250 250
 Initial Residual = 83106.9
@@ -7958,20 +7958,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.11692
-  DDOT    : 0.37186
-  WAXPBY  : 0.958373
-  SPARSEMV: 2.78393
+  Total   : 4.15648
+  DDOT    : 0.385392
+  WAXPBY  : 0.959305
+  SPARSEMV: 2.80905
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 36192.1
-  DDOT    : 25043
-  WAXPBY  : 14575.5
-  SPARSEMV: 45158.8
+  Total   : 35847.7
+  DDOT    : 24163.7
+  WAXPBY  : 14561.3
+  SPARSEMV: 44754.9
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=32, Size=250 250 250
 Initial Residual = 83106.9
@@ -7998,20 +7998,20 @@ Number of iterations: 149
 Final residual: 9.19866e-139
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.08747
-  DDOT    : 0.273516
-  WAXPBY  : 0.667672
-  SPARSEMV: 2.1436
+  Total   : 3.10133
+  DDOT    : 0.275409
+  WAXPBY  : 0.676696
+  SPARSEMV: 2.14651
 FLOPS Summary: 
   Total   : 1.49e+11
   DDOT    : 9.3125e+09
   WAXPBY  : 1.39688e+10
   SPARSEMV: 1.25719e+11
 MFLOPS Summary: 
-  Total   : 48259.5
-  DDOT    : 34047.4
-  WAXPBY  : 20921.6
-  SPARSEMV: 58648.4
+  Total   : 48044
+  DDOT    : 33813.3
+  WAXPBY  : 20642.6
+  SPARSEMV: 58568.9
 ----------------------------------------------------------
 ==========================================================
 MATRIX SIZE: 300 300 300
@@ -8041,20 +8041,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 31.0402
-  DDOT    : 6.70315
-  WAXPBY  : 7.17309
-  SPARSEMV: 17.1607
+  Total   : 31.0058
+  DDOT    : 6.71773
+  WAXPBY  : 7.1785
+  SPARSEMV: 17.1063
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 8294.78
-  DDOT    : 2400.66
-  WAXPBY  : 3365.08
-  SPARSEMV: 12659.3
+  Total   : 8303.98
+  DDOT    : 2395.45
+  WAXPBY  : 3362.54
+  SPARSEMV: 12699.5
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=2, Size=300 300 300
 Initial Residual = 109226
@@ -8081,20 +8081,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 15.7575
-  DDOT    : 3.37778
-  WAXPBY  : 3.52671
-  SPARSEMV: 8.8481
+  Total   : 15.796
+  DDOT    : 3.39029
+  WAXPBY  : 3.52261
+  SPARSEMV: 8.87978
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 16339.6
-  DDOT    : 4764.08
-  WAXPBY  : 6844.34
-  SPARSEMV: 24552.4
+  Total   : 16299.8
+  DDOT    : 4746.49
+  WAXPBY  : 6852.31
+  SPARSEMV: 24464.8
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=3, Size=300 300 300
 Initial Residual = 109226
@@ -8121,20 +8121,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 10.6881
-  DDOT    : 2.26782
-  WAXPBY  : 2.32101
-  SPARSEMV: 6.09598
+  Total   : 10.6941
+  DDOT    : 2.27305
+  WAXPBY  : 2.32049
+  SPARSEMV: 6.09713
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 24089.6
-  DDOT    : 7095.8
-  WAXPBY  : 10399.8
-  SPARSEMV: 35636.9
+  Total   : 24076.2
+  DDOT    : 7079.47
+  WAXPBY  : 10402.1
+  SPARSEMV: 35630.2
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=4, Size=300 300 300
 Initial Residual = 109226
@@ -8161,20 +8161,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.15217
-  DDOT    : 1.71401
-  WAXPBY  : 1.71245
-  SPARSEMV: 4.71847
+  Total   : 8.16716
+  DDOT    : 1.71159
+  WAXPBY  : 1.72267
+  SPARSEMV: 4.72943
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 31583.2
-  DDOT    : 9388.54
-  WAXPBY  : 14095.6
-  SPARSEMV: 46040.8
+  Total   : 31525.3
+  DDOT    : 9401.76
+  WAXPBY  : 14011.9
+  SPARSEMV: 45934.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=6, Size=300 300 300
 Initial Residual = 109226
@@ -8201,20 +8201,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.33505
-  DDOT    : 1.15925
-  WAXPBY  : 1.88742
-  SPARSEMV: 5.28291
+  Total   : 8.32558
+  DDOT    : 1.16075
+  WAXPBY  : 1.90368
+  SPARSEMV: 5.25784
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 30890.3
-  DDOT    : 13881.4
-  WAXPBY  : 12788.9
-  SPARSEMV: 41121.6
+  Total   : 30925.4
+  DDOT    : 13863.5
+  WAXPBY  : 12679.6
+  SPARSEMV: 41317.8
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=8, Size=300 300 300
 Initial Residual = 109226
@@ -8241,20 +8241,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 6.36614
-  DDOT    : 0.880132
-  WAXPBY  : 1.33307
-  SPARSEMV: 4.1496
+  Total   : 6.36248
+  DDOT    : 0.878207
+  WAXPBY  : 1.33043
+  SPARSEMV: 4.1487
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 40444
-  DDOT    : 18283.6
-  WAXPBY  : 18107.1
-  SPARSEMV: 52352.6
+  Total   : 40467.2
+  DDOT    : 18323.7
+  WAXPBY  : 18143
+  SPARSEMV: 52363.8
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=12, Size=300 300 300
 Initial Residual = 109226
@@ -8281,20 +8281,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.17532
-  DDOT    : 0.751835
-  WAXPBY  : 1.88324
-  SPARSEMV: 5.53678
+  Total   : 8.12555
+  DDOT    : 0.753327
+  WAXPBY  : 1.87474
+  SPARSEMV: 5.49228
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 31493.8
-  DDOT    : 21403.6
-  WAXPBY  : 12817.3
-  SPARSEMV: 39236.1
+  Total   : 31686.7
+  DDOT    : 21361.2
+  WAXPBY  : 12875.4
+  SPARSEMV: 39554.1
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=16, Size=300 300 300
 Initial Residual = 109226
@@ -8321,20 +8321,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 6.19918
-  DDOT    : 0.550573
-  WAXPBY  : 1.32816
-  SPARSEMV: 4.31694
+  Total   : 6.15611
+  DDOT    : 0.554364
+  WAXPBY  : 1.3263
+  SPARSEMV: 4.27197
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 41533.2
-  DDOT    : 29227.7
-  WAXPBY  : 18174
-  SPARSEMV: 50323.1
+  Total   : 41823.8
+  DDOT    : 29027.9
+  WAXPBY  : 18199.5
+  SPARSEMV: 50852.9
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=24, Size=300 300 300
 Initial Residual = 109226
@@ -8361,20 +8361,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.29156
-  DDOT    : 0.738038
-  WAXPBY  : 1.91269
-  SPARSEMV: 5.63731
+  Total   : 8.30059
+  DDOT    : 0.738078
+  WAXPBY  : 1.90871
+  SPARSEMV: 5.65032
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 31052.3
-  DDOT    : 21803.8
-  WAXPBY  : 12619.9
-  SPARSEMV: 38536.5
+  Total   : 31018.5
+  DDOT    : 21802.6
+  WAXPBY  : 12646.2
+  SPARSEMV: 38447.7
 ----------------------------------------------------------
 STARTING: Format=csr, Threads=32, Size=300 300 300
 Initial Residual = 109226
@@ -8401,20 +8401,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 6.22716
-  DDOT    : 0.534207
-  WAXPBY  : 1.35044
-  SPARSEMV: 4.33881
+  Total   : 6.20846
+  DDOT    : 0.536507
+  WAXPBY  : 1.35449
+  SPARSEMV: 4.31392
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 41346.6
-  DDOT    : 30123.2
-  WAXPBY  : 17874.1
-  SPARSEMV: 50069.5
+  Total   : 41471.2
+  DDOT    : 29994
+  WAXPBY  : 17820.7
+  SPARSEMV: 50358.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=1, Size=300 300 300
 Initial Residual = 109226
@@ -8441,20 +8441,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 31.4765
-  DDOT    : 6.74138
-  WAXPBY  : 7.21254
-  SPARSEMV: 17.5041
+  Total   : 31.4476
+  DDOT    : 6.73472
+  WAXPBY  : 7.14229
+  SPARSEMV: 17.5654
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 8179.82
-  DDOT    : 2387.05
-  WAXPBY  : 3346.67
-  SPARSEMV: 12410.9
+  Total   : 8187.32
+  DDOT    : 2389.41
+  WAXPBY  : 3379.59
+  SPARSEMV: 12367.6
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=2, Size=300 300 300
 Initial Residual = 109226
@@ -8481,20 +8481,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 15.8652
-  DDOT    : 3.37191
-  WAXPBY  : 3.55531
-  SPARSEMV: 8.93444
+  Total   : 15.9086
+  DDOT    : 3.39081
+  WAXPBY  : 3.52391
+  SPARSEMV: 8.98811
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 16228.8
-  DDOT    : 4772.38
-  WAXPBY  : 6789.27
-  SPARSEMV: 24315.1
+  Total   : 16184.4
+  DDOT    : 4745.77
+  WAXPBY  : 6849.77
+  SPARSEMV: 24169.9
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=3, Size=300 300 300
 Initial Residual = 109226
@@ -8521,20 +8521,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 11.1479
-  DDOT    : 2.26308
-  WAXPBY  : 2.29451
-  SPARSEMV: 6.58692
+  Total   : 10.7934
+  DDOT    : 2.26946
+  WAXPBY  : 2.3259
+  SPARSEMV: 6.19466
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 23096.1
-  DDOT    : 7110.67
-  WAXPBY  : 10519.9
-  SPARSEMV: 32980.8
+  Total   : 23854.7
+  DDOT    : 7090.67
+  WAXPBY  : 10377.9
+  SPARSEMV: 35069.2
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=4, Size=300 300 300
 Initial Residual = 109226
@@ -8561,20 +8561,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.04213
-  DDOT    : 1.71646
-  WAXPBY  : 1.71189
-  SPARSEMV: 4.61033
+  Total   : 8.32766
+  DDOT    : 1.72293
+  WAXPBY  : 1.70321
+  SPARSEMV: 4.89808
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 32015.4
-  DDOT    : 9375.09
-  WAXPBY  : 14100.2
-  SPARSEMV: 47120.7
+  Total   : 30917.7
+  DDOT    : 9339.91
+  WAXPBY  : 14172.1
+  SPARSEMV: 44352.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=6, Size=300 300 300
 Initial Residual = 109226
@@ -8601,20 +8601,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.13548
-  DDOT    : 1.15829
-  WAXPBY  : 1.87343
-  SPARSEMV: 5.10025
+  Total   : 8.10418
+  DDOT    : 1.1548
+  WAXPBY  : 1.89459
+  SPARSEMV: 5.0515
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 31648
-  DDOT    : 13892.8
-  WAXPBY  : 12884.4
-  SPARSEMV: 42594.4
+  Total   : 31770.3
+  DDOT    : 13934.9
+  WAXPBY  : 12740.5
+  SPARSEMV: 43005.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=8, Size=300 300 300
 Initial Residual = 109226
@@ -8641,20 +8641,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 6.06037
-  DDOT    : 0.880926
-  WAXPBY  : 1.32337
-  SPARSEMV: 3.85271
+  Total   : 6.04612
+  DDOT    : 0.880366
+  WAXPBY  : 1.31684
+  SPARSEMV: 3.84336
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 42484.6
-  DDOT    : 18267.1
-  WAXPBY  : 18239.8
-  SPARSEMV: 56386.7
+  Total   : 42584.6
+  DDOT    : 18278.8
+  WAXPBY  : 18330.2
+  SPARSEMV: 56523.9
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=12, Size=300 300 300
 Initial Residual = 109226
@@ -8681,20 +8681,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.89702
-  DDOT    : 0.738084
-  WAXPBY  : 1.88023
-  SPARSEMV: 5.2753
+  Total   : 7.86335
+  DDOT    : 0.734672
+  WAXPBY  : 1.88158
+  SPARSEMV: 5.24366
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 32603.7
-  DDOT    : 21802.4
-  WAXPBY  : 12837.8
-  SPARSEMV: 41181
+  Total   : 32743.3
+  DDOT    : 21903.7
+  WAXPBY  : 12828.6
+  SPARSEMV: 41429.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=16, Size=300 300 300
 Initial Residual = 109226
@@ -8721,20 +8721,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.8004
-  DDOT    : 0.539345
-  WAXPBY  : 1.32075
-  SPARSEMV: 3.93679
+  Total   : 5.80153
+  DDOT    : 0.53825
+  WAXPBY  : 1.31925
+  SPARSEMV: 3.94057
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 44388.6
-  DDOT    : 29836.2
-  WAXPBY  : 18275.9
-  SPARSEMV: 55182.5
+  Total   : 44380
+  DDOT    : 29896.9
+  WAXPBY  : 18296.8
+  SPARSEMV: 55129.5
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=24, Size=300 300 300
 Initial Residual = 109226
@@ -8761,20 +8761,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.09578
-  DDOT    : 0.736892
-  WAXPBY  : 1.92856
-  SPARSEMV: 5.42683
+  Total   : 8.10007
+  DDOT    : 0.742094
+  WAXPBY  : 1.93245
+  SPARSEMV: 5.42206
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 31803.2
-  DDOT    : 21837.7
-  WAXPBY  : 12516.1
-  SPARSEMV: 40031.1
+  Total   : 31786.4
+  DDOT    : 21684.6
+  WAXPBY  : 12490.9
+  SPARSEMV: 40066.4
 ----------------------------------------------------------
 STARTING: Format=ell8, Threads=32, Size=300 300 300
 Initial Residual = 109226
@@ -8801,20 +8801,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.96671
-  DDOT    : 0.537172
-  WAXPBY  : 1.34542
-  SPARSEMV: 4.08047
+  Total   : 5.99315
+  DDOT    : 0.551161
+  WAXPBY  : 1.35017
+  SPARSEMV: 4.0883
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 43151.4
-  DDOT    : 29956.9
-  WAXPBY  : 17940.9
-  SPARSEMV: 53239.4
+  Total   : 42961
+  DDOT    : 29196.6
+  WAXPBY  : 17877.7
+  SPARSEMV: 53137.5
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=1, Size=300 300 300
 Initial Residual = 109226
@@ -8841,20 +8841,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 56.954
-  DDOT    : 6.69157
-  WAXPBY  : 7.17531
-  SPARSEMV: 43.0738
+  Total   : 56.9929
+  DDOT    : 6.70334
+  WAXPBY  : 7.20162
+  SPARSEMV: 43.0824
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 4520.7
-  DDOT    : 2404.82
-  WAXPBY  : 3364.03
-  SPARSEMV: 5043.48
+  Total   : 4517.62
+  DDOT    : 2400.59
+  WAXPBY  : 3351.74
+  SPARSEMV: 5042.47
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=2, Size=300 300 300
 Initial Residual = 109226
@@ -8881,20 +8881,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 28.5223
-  DDOT    : 3.37469
-  WAXPBY  : 3.53181
-  SPARSEMV: 21.6102
+  Total   : 28.61
+  DDOT    : 3.38295
+  WAXPBY  : 3.54896
+  SPARSEMV: 21.6728
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 9027.05
-  DDOT    : 4768.43
-  WAXPBY  : 6834.45
-  SPARSEMV: 10052.8
+  Total   : 8999.37
+  DDOT    : 4756.79
+  WAXPBY  : 6801.42
+  SPARSEMV: 10023.7
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=3, Size=300 300 300
 Initial Residual = 109226
@@ -8921,10 +8921,10 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 19.137
-  DDOT    : 2.26313
-  WAXPBY  : 2.32809
-  SPARSEMV: 14.5424
+  Total   : 19.1371
+  DDOT    : 2.27351
+  WAXPBY  : 2.32733
+  SPARSEMV: 14.5329
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
@@ -8932,9 +8932,9 @@ FLOPS Summary:
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
   Total   : 13454.1
-  DDOT    : 7110.51
-  WAXPBY  : 10368.1
-  SPARSEMV: 14938.5
+  DDOT    : 7078.04
+  WAXPBY  : 10371.5
+  SPARSEMV: 14948.2
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=4, Size=300 300 300
 Initial Residual = 109226
@@ -8961,20 +8961,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 14.3496
-  DDOT    : 1.71139
-  WAXPBY  : 1.72177
-  SPARSEMV: 10.913
+  Total   : 14.354
+  DDOT    : 1.70922
+  WAXPBY  : 1.7155
+  SPARSEMV: 10.9241
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 17942.8
-  DDOT    : 9402.91
-  WAXPBY  : 14019.3
-  SPARSEMV: 19906.8
+  Total   : 17937.2
+  DDOT    : 9414.82
+  WAXPBY  : 14070.5
+  SPARSEMV: 19886.6
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=6, Size=300 300 300
 Initial Residual = 109226
@@ -9001,20 +9001,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 10.5609
-  DDOT    : 1.15064
-  WAXPBY  : 1.96496
-  SPARSEMV: 7.44194
+  Total   : 10.5143
+  DDOT    : 1.1567
+  WAXPBY  : 1.9356
+  SPARSEMV: 7.41867
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 24379.7
-  DDOT    : 13985.2
-  WAXPBY  : 12284.2
-  SPARSEMV: 29191.6
+  Total   : 24487.7
+  DDOT    : 13912
+  WAXPBY  : 12470.6
+  SPARSEMV: 29283.2
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=8, Size=300 300 300
 Initial Residual = 109226
@@ -9041,20 +9041,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.98353
-  DDOT    : 0.876302
-  WAXPBY  : 1.46396
-  SPARSEMV: 5.63978
+  Total   : 8.02827
+  DDOT    : 0.878588
+  WAXPBY  : 1.4744
+  SPARSEMV: 5.67187
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 32250.4
-  DDOT    : 18363.5
-  WAXPBY  : 16488.1
-  SPARSEMV: 38519.6
+  Total   : 32070.7
+  DDOT    : 18315.8
+  WAXPBY  : 16371.4
+  SPARSEMV: 38301.6
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=12, Size=300 300 300
 Initial Residual = 109226
@@ -9081,20 +9081,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.92482
-  DDOT    : 0.79586
-  WAXPBY  : 2.00115
-  SPARSEMV: 5.12431
+  Total   : 7.89263
+  DDOT    : 0.79266
+  WAXPBY  : 1.9925
+  SPARSEMV: 5.10395
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 32489.3
-  DDOT    : 20219.6
-  WAXPBY  : 12062.1
-  SPARSEMV: 42394.4
+  Total   : 32621.8
+  DDOT    : 20301.3
+  WAXPBY  : 12114.5
+  SPARSEMV: 42563.5
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=16, Size=300 300 300
 Initial Residual = 109226
@@ -9121,20 +9121,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.85869
-  DDOT    : 0.592917
-  WAXPBY  : 1.48324
-  SPARSEMV: 3.77891
+  Total   : 5.8559
+  DDOT    : 0.591777
+  WAXPBY  : 1.47994
+  SPARSEMV: 3.7807
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 43947
-  DDOT    : 27140.4
-  WAXPBY  : 16273.8
-  SPARSEMV: 57488.1
+  Total   : 43968
+  DDOT    : 27192.7
+  WAXPBY  : 16310.1
+  SPARSEMV: 57460.8
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=24, Size=300 300 300
 Initial Residual = 109226
@@ -9161,20 +9161,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.12265
-  DDOT    : 0.748256
-  WAXPBY  : 2.11403
-  SPARSEMV: 5.2568
+  Total   : 8.10757
+  DDOT    : 0.747318
+  WAXPBY  : 2.11758
+  SPARSEMV: 5.23913
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 31698
-  DDOT    : 21506
-  WAXPBY  : 11418
-  SPARSEMV: 41325.9
+  Total   : 31757
+  DDOT    : 21533
+  WAXPBY  : 11398.8
+  SPARSEMV: 41465.3
 ----------------------------------------------------------
 STARTING: Format=ell7, Threads=32, Size=300 300 300
 Initial Residual = 109226
@@ -9201,20 +9201,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 6.02015
-  DDOT    : 0.544717
-  WAXPBY  : 1.44751
-  SPARSEMV: 4.02418
+  Total   : 6.01822
+  DDOT    : 0.53557
+  WAXPBY  : 1.43741
+  SPARSEMV: 4.04165
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 42768.4
-  DDOT    : 29541.9
-  WAXPBY  : 16675.6
-  SPARSEMV: 53984.1
+  Total   : 42782.1
+  DDOT    : 30046.5
+  WAXPBY  : 16792.7
+  SPARSEMV: 53750.9
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=1, Size=300 300 300
 Initial Residual = 109226
@@ -9241,20 +9241,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 30.268
-  DDOT    : 6.72735
-  WAXPBY  : 7.17833
-  SPARSEMV: 16.3553
+  Total   : 30.3522
+  DDOT    : 6.73279
+  WAXPBY  : 7.16657
+  SPARSEMV: 16.4496
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 8506.42
-  DDOT    : 2392.03
-  WAXPBY  : 3362.62
-  SPARSEMV: 13282.7
+  Total   : 8482.81
+  DDOT    : 2390.09
+  WAXPBY  : 3368.14
+  SPARSEMV: 13206.5
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=2, Size=300 300 300
 Initial Residual = 109226
@@ -9281,20 +9281,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 15.226
-  DDOT    : 3.37468
-  WAXPBY  : 3.55892
-  SPARSEMV: 8.28908
+  Total   : 15.2655
+  DDOT    : 3.38975
+  WAXPBY  : 3.52088
+  SPARSEMV: 8.35167
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 16910
-  DDOT    : 4768.45
-  WAXPBY  : 6782.39
-  SPARSEMV: 26208.2
+  Total   : 16866.2
+  DDOT    : 4747.25
+  WAXPBY  : 6855.67
+  SPARSEMV: 26011.8
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=3, Size=300 300 300
 Initial Residual = 109226
@@ -9321,20 +9321,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 10.5752
-  DDOT    : 2.26651
-  WAXPBY  : 2.3011
-  SPARSEMV: 6.00234
+  Total   : 10.2232
+  DDOT    : 2.26699
+  WAXPBY  : 2.32201
+  SPARSEMV: 5.63089
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 24346.7
-  DDOT    : 7099.9
-  WAXPBY  : 10489.8
-  SPARSEMV: 36192.9
+  Total   : 25185.2
+  DDOT    : 7098.4
+  WAXPBY  : 10395.3
+  SPARSEMV: 38580.4
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=4, Size=300 300 300
 Initial Residual = 109226
@@ -9361,20 +9361,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.66957
-  DDOT    : 1.70846
-  WAXPBY  : 1.71479
-  SPARSEMV: 4.24267
+  Total   : 7.78426
+  DDOT    : 1.71338
+  WAXPBY  : 1.71069
+  SPARSEMV: 4.35674
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 33570.6
-  DDOT    : 9419.02
-  WAXPBY  : 14076.4
-  SPARSEMV: 51204.1
+  Total   : 33076
+  DDOT    : 9391.93
+  WAXPBY  : 14110.1
+  SPARSEMV: 49863.5
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=6, Size=300 300 300
 Initial Residual = 109226
@@ -9401,20 +9401,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.71063
-  DDOT    : 1.15782
-  WAXPBY  : 1.92679
-  SPARSEMV: 4.62269
+  Total   : 7.63971
+  DDOT    : 1.15904
+  WAXPBY  : 1.92879
+  SPARSEMV: 4.54427
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 33391.8
-  DDOT    : 13898.5
-  WAXPBY  : 12527.6
-  SPARSEMV: 46994.7
+  Total   : 33701.8
+  DDOT    : 13883.9
+  WAXPBY  : 12514.6
+  SPARSEMV: 47805.7
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=8, Size=300 300 300
 Initial Residual = 109226
@@ -9441,20 +9441,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.75295
-  DDOT    : 0.879527
-  WAXPBY  : 1.38674
-  SPARSEMV: 3.48329
+  Total   : 5.76659
+  DDOT    : 0.880956
+  WAXPBY  : 1.40514
+  SPARSEMV: 3.47723
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 44754.8
-  DDOT    : 18296.2
-  WAXPBY  : 17406.3
-  SPARSEMV: 62366.9
+  Total   : 44649
+  DDOT    : 18266.5
+  WAXPBY  : 17178.4
+  SPARSEMV: 62475.6
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=12, Size=300 300 300
 Initial Residual = 109226
@@ -9481,20 +9481,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.50227
-  DDOT    : 0.764308
-  WAXPBY  : 1.92207
-  SPARSEMV: 4.81237
+  Total   : 7.4927
+  DDOT    : 0.76833
+  WAXPBY  : 1.91942
+  SPARSEMV: 4.7997
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 34319.2
-  DDOT    : 21054.3
-  WAXPBY  : 12558.4
-  SPARSEMV: 45142.4
+  Total   : 34363.1
+  DDOT    : 20944.1
+  WAXPBY  : 12575.7
+  SPARSEMV: 45261.6
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=16, Size=300 300 300
 Initial Residual = 109226
@@ -9521,20 +9521,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.50198
-  DDOT    : 0.564991
-  WAXPBY  : 1.35189
-  SPARSEMV: 3.58146
+  Total   : 5.48649
+  DDOT    : 0.568332
+  WAXPBY  : 1.34849
+  SPARSEMV: 3.56624
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 46796.2
-  DDOT    : 28481.9
-  WAXPBY  : 17855
-  SPARSEMV: 60657.4
+  Total   : 46928.4
+  DDOT    : 28314.4
+  WAXPBY  : 17900
+  SPARSEMV: 60916.2
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=24, Size=300 300 300
 Initial Residual = 109226
@@ -9561,20 +9561,20 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.62166
-  DDOT    : 0.73238
-  WAXPBY  : 1.93642
-  SPARSEMV: 4.94944
+  Total   : 7.61596
+  DDOT    : 0.738711
+  WAXPBY  : 1.92407
+  SPARSEMV: 4.94972
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 33781.6
-  DDOT    : 21972.2
-  WAXPBY  : 12465.3
-  SPARSEMV: 43892.2
+  Total   : 33806.9
+  DDOT    : 21783.9
+  WAXPBY  : 12545.3
+  SPARSEMV: 43889.7
 ----------------------------------------------------------
 STARTING: Format=tiled, Threads=32, Size=300 300 300
 Initial Residual = 109226
@@ -9601,18 +9601,18 @@ Number of iterations: 149
 Final residual: 1.02384e-138
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.59447
-  DDOT    : 0.529083
-  WAXPBY  : 1.36718
-  SPARSEMV: 3.69455
+  Total   : 5.65562
+  DDOT    : 0.552016
+  WAXPBY  : 1.37574
+  SPARSEMV: 3.72428
 FLOPS Summary: 
   Total   : 2.57472e+11
   DDOT    : 1.6092e+10
   WAXPBY  : 2.4138e+10
   SPARSEMV: 2.17242e+11
 MFLOPS Summary: 
-  Total   : 46022.6
-  DDOT    : 30414.9
-  WAXPBY  : 17655.3
-  SPARSEMV: 58800.7
+  Total   : 45525
+  DDOT    : 29151.3
+  WAXPBY  : 17545.4
+  SPARSEMV: 58331.3
 ----------------------------------------------------------

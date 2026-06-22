@@ -135,10 +135,10 @@ DUMP_CPP = dump_matrix.cpp generate_matrix.cpp HPC_Sparse_Matrix.cpp
 DUMP_OBJ = $(DUMP_CPP:.cpp=.o)
 
 dump_matrix: $(DUMP_OBJ)
-	$(LINKER) $(CPP_OPT_FLAGS) $(DUMP_OBJ) $(LIB_PATHS) -o dump_matrix
+	$(LINKER) $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(DUMP_OBJ) $(LIB_PATHS) -o dump_matrix
 
 test:
 	@echo "Not implemented yet..."
 
 clean:
-	@rm -f *.o *.s *.ii *.bc *~ $(TARGET) $(TARGET).exe test_HPCPCG dump_matrix
+	@rm -f *.o *.s *.ii *.bc *~ $(TARGET) $(TARGET).exe test_HPCPCG

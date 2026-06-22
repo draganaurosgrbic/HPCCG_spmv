@@ -17,6 +17,17 @@ FORMAT_COLORS = {
     'tiled': '#C44E52',
 }
 
+# These figures are typically placed at half-textwidth (~3.25in) in the
+# thesis. Font sizes here are a moderate increase over matplotlib defaults;
+# legibility after the shrink mainly comes from giving the figure enough
+# vertical room (see figsize below) and moving the legend out of the way,
+# not from inflating fonts past what the canvas can fit without overlap.
+TITLE_FONTSIZE = 18
+LABEL_FONTSIZE = 16
+TICK_FONTSIZE = 14
+LEGEND_FONTSIZE = 14
+ANNOTATION_FONTSIZE = 12
+
 
 def parse_log(log_file, metric):
     data = defaultdict(lambda: defaultdict(dict))
@@ -61,7 +72,7 @@ def plot_size(size, fmt_data, metric, out_dir):
     bar_width = 0.18
     x = np.arange(len(threads))
 
-    fig, ax = plt.subplots(figsize=(max(12, len(threads) * 1.8), 6))
+    fig, ax = plt.subplots(figsize=(max(12, len(threads) * 1.8), 7.5))
 
     all_bars = []
     for i, fmt in enumerate(FORMATS):
@@ -88,7 +99,7 @@ def plot_size(size, fmt_data, metric, out_dir):
             else:
                 label = f'{val/1000:.2f}G'
             ax.text(bar.get_x() + bar.get_width() / 2, y, label,
-                    ha='center', va='bottom', fontsize=7,
+                    ha='center', va='bottom', fontsize=ANNOTATION_FONTSIZE,
                     color='black', fontweight='bold', rotation=90)
         else:
             if csr_val and csr_val != 0:
@@ -100,28 +111,30 @@ def plot_size(size, fmt_data, metric, out_dir):
                 sign = '+' if improvement >= 0 else ''
                 ax.text(bar.get_x() + bar.get_width() / 2, y,
                         f'{sign}{improvement:.1f}%',
-                        ha='center', va='bottom', fontsize=7,
+                        ha='center', va='bottom', fontsize=ANNOTATION_FONTSIZE,
                         color=color, fontweight='bold', rotation=90)
 
     ax.set_xticks(x)
     ax.set_xticklabels([str(t) for t in threads])
-    ax.set_xlabel('Number of OpenMP Threads')
+    ax.set_xlabel('Number of OpenMP Threads', fontsize=LABEL_FONTSIZE)
+    ax.tick_params(axis='both', labelsize=TICK_FONTSIZE)
 
     if metric == 'time':
-        ax.set_ylabel('Wall-Clock Time (seconds)')
+        ax.set_ylabel('Wall-Clock Time (seconds)', fontsize=LABEL_FONTSIZE)
         title_metric = 'Wall-Clock Time'
     else:
-        ax.set_ylabel('Performance (MFLOPS)')
+        ax.set_ylabel('Performance (MFLOPS)', fontsize=LABEL_FONTSIZE)
         title_metric = 'MFLOPS'
 
     size_label = 'x'.join(size.split())
     size_short = size.split()[0]
-    ax.set_title(f'SpMV {title_metric} — Matrix {size_label}')
-    ax.legend(loc='upper left' if metric == 'mflops' else 'upper right')
+    ax.set_title(f'SpMV {title_metric} — Matrix {size_label}', fontsize=TITLE_FONTSIZE, pad=14)
+    ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.18), ncol=len(FORMATS),
+              fontsize=LEGEND_FONTSIZE, frameon=False)
 
     plt.tight_layout()
     filename = os.path.join(out_dir, f'spmv_{metric}_{size_short}.pdf')
-    plt.savefig(filename, format='pdf')
+    plt.savefig(filename, format='pdf', bbox_inches='tight')
     plt.close()
     print(f'Saved: {filename}')
 

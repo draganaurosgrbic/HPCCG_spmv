@@ -2,6 +2,7 @@
 *.o
 *.s
 *.ii
+*.bc
 a.out
 
 test_HPCCG
@@ -9,3 +10,4 @@ dump_matrix
 
 !aurora/HPC_sparsemv.s
 !polaris/HPC_sparsemv.s
+!frontier/HPC_sparsemv.s

@@ -3,3 +3,5 @@ cd /lustre/orion/csc617/scratch/dg76/chapter_4/HPCCG_spmv/frontier
 sbatch benchmark_frontier.sh
 squeue -u dg76
 
+sbatch profile_instructions_frontier.sh
+sbatch profile_cache_frontier.sh

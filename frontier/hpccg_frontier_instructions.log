@@ -1,0 +1,2529 @@
+==========================================================
+MATRIX SIZE: 300 300 300 (fixed)
+==========================================================
+STARTING: Format=csr, Threads=1, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 40.7236
+  DDOT    : 3.18667
+  WAXPBY  : 9.4839
+  SPARSEMV: 28.038
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 6322.43
+  DDOT    : 5049.79
+  WAXPBY  : 2545.15
+  SPARSEMV: 7748.13
+[ perf record: Woken up 268 times to write data ]
+[ perf record: Captured and wrote 66.878 MB perf_csr_300_300_300_t1_4910696.data (740577 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              57.89%
+Instructions:        70.52%
+L1D Misses:          61.04%
+LLC Misses:          65.78%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=2, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 19.7673
+  DDOT    : 1.60647
+  WAXPBY  : 4.58043
+  SPARSEMV: 13.565
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 13025.2
+  DDOT    : 10017
+  WAXPBY  : 5269.82
+  SPARSEMV: 16014.9
+[ perf record: Woken up 232 times to write data ]
+[ perf record: Captured and wrote 57.759 MB perf_csr_300_300_300_t2_4910696.data (717515 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              54.93%
+Instructions:        69.44%
+L1D Misses:          60.93%
+LLC Misses:          63.95%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=3, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 3
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 13.6971
+  DDOT    : 1.08719
+  WAXPBY  : 3.05301
+  SPARSEMV: 9.54143
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 18797.6
+  DDOT    : 14801.4
+  WAXPBY  : 7906.31
+  SPARSEMV: 22768.3
+[ perf record: Woken up 234 times to write data ]
+[ perf record: Captured and wrote 58.457 MB perf_csr_300_300_300_t3_4910696.data (724007 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              49.05%
+Instructions:        67.49%
+L1D Misses:          60.82%
+LLC Misses:          61.43%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=4, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 10.0262
+  DDOT    : 0.783257
+  WAXPBY  : 2.25115
+  SPARSEMV: 6.97576
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 25679.9
+  DDOT    : 20545
+  WAXPBY  : 10722.5
+  SPARSEMV: 31142.4
+[ perf record: Woken up 228 times to write data ]
+[ perf record: Captured and wrote 57.779 MB perf_csr_300_300_300_t4_4910696.data (719155 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              51.13%
+Instructions:        67.84%
+L1D Misses:          60.93%
+LLC Misses:          61.66%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=6, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 6
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 8.88147
+  DDOT    : 0.720696
+  WAXPBY  : 2.12799
+  SPARSEMV: 6.01616
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 28989.8
+  DDOT    : 22328.4
+  WAXPBY  : 11343.1
+  SPARSEMV: 36109.7
+[ perf record: Woken up 285 times to write data ]
+[ perf record: Captured and wrote 71.589 MB perf_csr_300_300_300_t6_4910696.data (899777 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              46.30%
+Instructions:        64.34%
+L1D Misses:          60.92%
+LLC Misses:          60.07%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=8, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.41864
+  DDOT    : 0.499439
+  WAXPBY  : 1.57982
+  SPARSEMV: 4.32247
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 40113.2
+  DDOT    : 32220.2
+  WAXPBY  : 15278.9
+  SPARSEMV: 50258.8
+[ perf record: Woken up 287 times to write data ]
+[ perf record: Captured and wrote 74.165 MB perf_csr_300_300_300_t8_4910696.data (925629 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              49.74%
+Instructions:        67.28%
+L1D Misses:          60.88%
+LLC Misses:          59.02%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=12, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 12
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.41502
+  DDOT    : 0.499811
+  WAXPBY  : 1.46455
+  SPARSEMV: 4.43265
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 40135.8
+  DDOT    : 32196.2
+  WAXPBY  : 16481.5
+  SPARSEMV: 49009.5
+[ perf record: Woken up 391 times to write data ]
+[ perf record: Captured and wrote 102.753 MB perf_csr_300_300_300_t12_4910696.data (1302731 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              48.94%
+Instructions:        63.89%
+L1D Misses:          60.89%
+LLC Misses:          61.90%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=16, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.16846
+  DDOT    : 0.461574
+  WAXPBY  : 1.38474
+  SPARSEMV: 4.30395
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 41740.1
+  DDOT    : 34863.3
+  WAXPBY  : 17431.4
+  SPARSEMV: 50475
+[ perf record: Woken up 503 times to write data ]
+[ perf record: Captured and wrote 129.079 MB perf_csr_300_300_300_t16_4910696.data (1645215 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              49.05%
+Instructions:        61.94%
+L1D Misses:          60.86%
+LLC Misses:          62.30%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=24, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 24
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.19042
+  DDOT    : 0.469714
+  WAXPBY  : 1.37909
+  SPARSEMV: 4.32324
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 41592
+  DDOT    : 34259.1
+  WAXPBY  : 17502.8
+  SPARSEMV: 50249.8
+[ perf record: Woken up 683 times to write data ]
+[ perf record: Captured and wrote 185.039 MB perf_csr_300_300_300_t24_4910696.data (2386270 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              51.10%
+Instructions:        58.41%
+L1D Misses:          60.92%
+LLC Misses:          59.41%
+----------------------------------------------------------
+STARTING: Format=csr, Threads=32, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.23366
+  DDOT    : 0.475754
+  WAXPBY  : 1.39024
+  SPARSEMV: 4.34907
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 41303.5
+  DDOT    : 33824.2
+  WAXPBY  : 17362.5
+  SPARSEMV: 49951.3
+[ perf record: Woken up 822 times to write data ]
+Warning:
+10 out of order events recorded.
+[ perf record: Captured and wrote 228.874 MB perf_csr_300_300_300_t32_4910696.data (3137590 samples) ]
+
+Results for: csr_spmv(csr_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              51.13%
+Instructions:        54.79%
+L1D Misses:          60.93%
+LLC Misses:          56.20%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=1, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 34.7133
+  DDOT    : 3.18518
+  WAXPBY  : 9.41008
+  SPARSEMV: 22.103
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 7417.09
+  DDOT    : 5052.15
+  WAXPBY  : 2565.12
+  SPARSEMV: 9828.63
+[ perf record: Woken up 229 times to write data ]
+[ perf record: Captured and wrote 57.672 MB perf_ell8_300_300_300_t1_4910696.data (645241 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              54.17%
+Instructions:        54.59%
+L1D Misses:          62.38%
+LLC Misses:          59.25%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=2, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 17.3082
+  DDOT    : 1.56563
+  WAXPBY  : 4.69312
+  SPARSEMV: 11.0341
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 14875.7
+  DDOT    : 10278.3
+  WAXPBY  : 5143.28
+  SPARSEMV: 19688.2
+[ perf record: Woken up 207 times to write data ]
+[ perf record: Captured and wrote 52.362 MB perf_ell8_300_300_300_t2_4910696.data (648464 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              53.04%
+Instructions:        54.05%
+L1D Misses:          62.45%
+LLC Misses:          57.96%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=3, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 3
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 11.6187
+  DDOT    : 1.07187
+  WAXPBY  : 3.08505
+  SPARSEMV: 7.446
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 22160.2
+  DDOT    : 15013
+  WAXPBY  : 7824.2
+  SPARSEMV: 29175.7
+[ perf record: Woken up 209 times to write data ]
+[ perf record: Captured and wrote 53.202 MB perf_ell8_300_300_300_t3_4910696.data (656603 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              51.28%
+Instructions:        53.83%
+L1D Misses:          62.40%
+LLC Misses:          59.68%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=4, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 8.60242
+  DDOT    : 0.779231
+  WAXPBY  : 2.24299
+  SPARSEMV: 5.5641
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 29930.2
+  DDOT    : 20651.1
+  WAXPBY  : 10761.5
+  SPARSEMV: 39043.5
+[ perf record: Woken up 209 times to write data ]
+[ perf record: Captured and wrote 53.007 MB perf_ell8_300_300_300_t4_4910696.data (654946 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              52.91%
+Instructions:        53.80%
+L1D Misses:          62.43%
+LLC Misses:          57.71%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=6, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 6
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 8.26032
+  DDOT    : 0.723428
+  WAXPBY  : 2.13658
+  SPARSEMV: 5.38373
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 31169.7
+  DDOT    : 22244.1
+  WAXPBY  : 11297.5
+  SPARSEMV: 40351.6
+[ perf record: Woken up 275 times to write data ]
+[ perf record: Captured and wrote 70.138 MB perf_ell8_300_300_300_t6_4910696.data (877596 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              48.41%
+Instructions:        49.68%
+L1D Misses:          62.39%
+LLC Misses:          58.52%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=8, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.18152
+  DDOT    : 0.503627
+  WAXPBY  : 1.60093
+  SPARSEMV: 4.05957
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 41651.9
+  DDOT    : 31952.2
+  WAXPBY  : 15077.5
+  SPARSEMV: 53513.6
+[ perf record: Woken up 284 times to write data ]
+[ perf record: Captured and wrote 74.444 MB perf_ell8_300_300_300_t8_4910696.data (925998 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              52.25%
+Instructions:        52.47%
+L1D Misses:          62.41%
+LLC Misses:          57.91%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=12, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 12
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.94672
+  DDOT    : 0.500451
+  WAXPBY  : 1.45676
+  SPARSEMV: 3.97124
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 43296.5
+  DDOT    : 32155
+  WAXPBY  : 16569.6
+  SPARSEMV: 54703.8
+[ perf record: Woken up 380 times to write data ]
+[ perf record: Captured and wrote 100.036 MB perf_ell8_300_300_300_t12_4910696.data (1265309 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              53.22%
+Instructions:        50.43%
+L1D Misses:          62.42%
+LLC Misses:          60.15%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=16, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.70929
+  DDOT    : 0.465154
+  WAXPBY  : 1.38703
+  SPARSEMV: 3.83878
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 45097
+  DDOT    : 34595
+  WAXPBY  : 17402.7
+  SPARSEMV: 56591.4
+[ perf record: Woken up 489 times to write data ]
+[ perf record: Captured and wrote 126.068 MB perf_ell8_300_300_300_t16_4910696.data (1606418 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              56.90%
+Instructions:        51.19%
+L1D Misses:          62.34%
+LLC Misses:          60.89%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=24, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 24
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.71052
+  DDOT    : 0.467246
+  WAXPBY  : 1.37034
+  SPARSEMV: 3.85436
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 45087.3
+  DDOT    : 34440.1
+  WAXPBY  : 17614.6
+  SPARSEMV: 56362.6
+[ perf record: Woken up 662 times to write data ]
+[ perf record: Captured and wrote 181.662 MB perf_ell8_300_300_300_t24_4910696.data (2330815 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              58.40%
+Instructions:        49.82%
+L1D Misses:          62.32%
+LLC Misses:          59.16%
+----------------------------------------------------------
+STARTING: Format=ell8, Threads=32, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.79292
+  DDOT    : 0.474235
+  WAXPBY  : 1.39289
+  SPARSEMV: 3.90735
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 44446
+  DDOT    : 33932.5
+  WAXPBY  : 17329.4
+  SPARSEMV: 55598.3
+[ perf record: Woken up 818 times to write data ]
+Warning:
+9 out of order events recorded.
+[ perf record: Captured and wrote 239.780 MB perf_ell8_300_300_300_t32_4910696.data (3073482 samples) ]
+
+Results for: ellpack8_spmv(ellpack8_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              58.29%
+Instructions:        47.67%
+L1D Misses:          62.16%
+LLC Misses:          54.72%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=1, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 64.0369
+  DDOT    : 3.24132
+  WAXPBY  : 9.29144
+  SPARSEMV: 51.4891
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 4020.68
+  DDOT    : 4964.64
+  WAXPBY  : 2597.88
+  SPARSEMV: 4219.18
+[ perf record: Woken up 351 times to write data ]
+[ perf record: Captured and wrote 88.192 MB perf_ell7_300_300_300_t1_4910696.data (1107200 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              71.02%
+Instructions:        59.90%
+L1D Misses:          81.21%
+LLC Misses:          93.05%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=2, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 33.1929
+  DDOT    : 1.59182
+  WAXPBY  : 4.70206
+  SPARSEMV: 26.8837
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 7756.85
+  DDOT    : 10109.2
+  WAXPBY  : 5133.49
+  SPARSEMV: 8080.82
+[ perf record: Woken up 361 times to write data ]
+[ perf record: Captured and wrote 90.840 MB perf_ell7_300_300_300_t2_4910696.data (1140978 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              69.11%
+Instructions:        58.67%
+L1D Misses:          81.36%
+LLC Misses:          92.95%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=3, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 3
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 21.3894
+  DDOT    : 1.07285
+  WAXPBY  : 3.14629
+  SPARSEMV: 17.1544
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 12037.4
+  DDOT    : 14999.2
+  WAXPBY  : 7671.9
+  SPARSEMV: 12663.9
+[ perf record: Woken up 350 times to write data ]
+[ perf record: Captured and wrote 87.953 MB perf_ell7_300_300_300_t3_4910696.data (1110060 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              71.10%
+Instructions:        59.22%
+L1D Misses:          81.20%
+LLC Misses:          93.10%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=4, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 16.4343
+  DDOT    : 0.795976
+  WAXPBY  : 2.28076
+  SPARSEMV: 13.3411
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 15666.8
+  DDOT    : 20216.7
+  WAXPBY  : 10583.3
+  SPARSEMV: 16283.6
+[ perf record: Woken up 354 times to write data ]
+[ perf record: Captured and wrote 89.411 MB perf_ell7_300_300_300_t4_4910696.data (1126731 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              69.13%
+Instructions:        57.86%
+L1D Misses:          81.28%
+LLC Misses:          93.26%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=6, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 6
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 11.6668
+  DDOT    : 0.755635
+  WAXPBY  : 2.2916
+  SPARSEMV: 8.60336
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 22068.8
+  DDOT    : 21296
+  WAXPBY  : 10533.2
+  SPARSEMV: 25250.8
+[ perf record: Woken up 369 times to write data ]
+[ perf record: Captured and wrote 94.403 MB perf_ell7_300_300_300_t6_4910696.data (1190432 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              64.02%
+Instructions:        56.88%
+L1D Misses:          81.19%
+LLC Misses:          92.62%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=8, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 9.13127
+  DDOT    : 0.582136
+  WAXPBY  : 1.69752
+  SPARSEMV: 6.83452
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 28196.7
+  DDOT    : 27643
+  WAXPBY  : 14219.6
+  SPARSEMV: 31786
+[ perf record: Woken up 385 times to write data ]
+[ perf record: Captured and wrote 99.285 MB perf_ell7_300_300_300_t8_4910696.data (1251337 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              64.44%
+Instructions:        57.79%
+L1D Misses:          81.25%
+LLC Misses:          92.46%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=12, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 12
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 7.26701
+  DDOT    : 0.559883
+  WAXPBY  : 1.59219
+  SPARSEMV: 5.09693
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 35430.3
+  DDOT    : 28741.7
+  WAXPBY  : 15160.3
+  SPARSEMV: 42622.2
+[ perf record: Woken up 440 times to write data ]
+[ perf record: Captured and wrote 115.671 MB perf_ell7_300_300_300_t12_4910696.data (1464914 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              59.40%
+Instructions:        55.76%
+L1D Misses:          81.26%
+LLC Misses:          91.31%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=16, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.46007
+  DDOT    : 0.553191
+  WAXPBY  : 1.58163
+  SPARSEMV: 4.30691
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 39855.9
+  DDOT    : 29089.4
+  WAXPBY  : 15261.4
+  SPARSEMV: 50440.4
+[ perf record: Woken up 523 times to write data ]
+[ perf record: Captured and wrote 135.590 MB perf_ell7_300_300_300_t16_4910696.data (1728243 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              56.16%
+Instructions:        54.92%
+L1D Misses:          81.52%
+LLC Misses:          83.66%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=24, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 24
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.11618
+  DDOT    : 0.555149
+  WAXPBY  : 1.58135
+  SPARSEMV: 3.9616
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 42096.9
+  DDOT    : 28986.8
+  WAXPBY  : 15264.2
+  SPARSEMV: 54837
+[ perf record: Woken up 688 times to write data ]
+[ perf record: Captured and wrote 186.025 MB perf_ell7_300_300_300_t24_4910696.data (2388502 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              54.90%
+Instructions:        52.94%
+L1D Misses:          81.46%
+LLC Misses:          83.90%
+----------------------------------------------------------
+STARTING: Format=ell7, Threads=32, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.37851
+  DDOT    : 0.563877
+  WAXPBY  : 1.57375
+  SPARSEMV: 4.22296
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 40365.5
+  DDOT    : 28538.1
+  WAXPBY  : 15337.9
+  SPARSEMV: 51443.1
+[ perf record: Woken up 581 times to write data ]
+Warning:
+2 out of order events recorded.
+[ perf record: Captured and wrote 245.049 MB perf_ell7_300_300_300_t32_4910696.data (3163246 samples) ]
+
+Results for: ellpack7_spmv(ellpack7_t*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              52.36%
+Instructions:        45.50%
+L1D Misses:          82.50%
+LLC Misses:          81.88%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=1, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 34.1196
+  DDOT    : 3.23632
+  WAXPBY  : 9.29246
+  SPARSEMV: 21.5758
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 7546.15
+  DDOT    : 4972.32
+  WAXPBY  : 2597.59
+  SPARSEMV: 10068.8
+[ perf record: Woken up 226 times to write data ]
+[ perf record: Captured and wrote 56.895 MB perf_tiled_300_300_300_t1_4910696.data (635530 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              53.31%
+Instructions:        51.67%
+L1D Misses:          61.06%
+LLC Misses:          58.59%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=2, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 17.051
+  DDOT    : 1.59527
+  WAXPBY  : 4.58788
+  SPARSEMV: 10.8524
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 15100.1
+  DDOT    : 10087.3
+  WAXPBY  : 5261.25
+  SPARSEMV: 20017.8
+[ perf record: Woken up 206 times to write data ]
+[ perf record: Captured and wrote 52.239 MB perf_tiled_300_300_300_t2_4910696.data (641599 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              51.56%
+Instructions:        51.20%
+L1D Misses:          60.98%
+LLC Misses:          57.81%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=3, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 3
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 11.4641
+  DDOT    : 1.0793
+  WAXPBY  : 3.09943
+  SPARSEMV: 7.26965
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 22458.9
+  DDOT    : 14909.7
+  WAXPBY  : 7787.89
+  SPARSEMV: 29883.4
+[ perf record: Woken up 207 times to write data ]
+[ perf record: Captured and wrote 52.482 MB perf_tiled_300_300_300_t3_4910696.data (648359 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              51.31%
+Instructions:        50.94%
+L1D Misses:          60.98%
+LLC Misses:          56.65%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=4, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 8.5619
+  DDOT    : 0.789969
+  WAXPBY  : 2.29513
+  SPARSEMV: 5.46095
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 30071.8
+  DDOT    : 20370.4
+  WAXPBY  : 10517
+  SPARSEMV: 39781
+[ perf record: Woken up 209 times to write data ]
+[ perf record: Captured and wrote 52.888 MB perf_tiled_300_300_300_t4_4910696.data (653686 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              51.83%
+Instructions:        50.67%
+L1D Misses:          61.02%
+LLC Misses:          57.41%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=6, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 6
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 7.96126
+  DDOT    : 0.730934
+  WAXPBY  : 2.1699
+  SPARSEMV: 5.04415
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 32340.6
+  DDOT    : 22015.7
+  WAXPBY  : 11124
+  SPARSEMV: 43068.1
+[ perf record: Woken up 266 times to write data ]
+[ perf record: Captured and wrote 67.733 MB perf_tiled_300_300_300_t6_4910696.data (848366 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              47.96%
+Instructions:        47.07%
+L1D Misses:          61.03%
+LLC Misses:          57.27%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=8, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.95113
+  DDOT    : 0.52154
+  WAXPBY  : 1.61556
+  SPARSEMV: 3.79674
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 43264.4
+  DDOT    : 30854.8
+  WAXPBY  : 14941
+  SPARSEMV: 57218
+[ perf record: Woken up 273 times to write data ]
+[ perf record: Captured and wrote 72.387 MB perf_tiled_300_300_300_t8_4910696.data (899565 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              50.70%
+Instructions:        49.73%
+L1D Misses:          61.02%
+LLC Misses:          57.00%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=12, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 12
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.70749
+  DDOT    : 0.520762
+  WAXPBY  : 1.48973
+  SPARSEMV: 3.67897
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 45111.2
+  DDOT    : 30900.9
+  WAXPBY  : 16202.9
+  SPARSEMV: 59049.7
+[ perf record: Woken up 363 times to write data ]
+[ perf record: Captured and wrote 97.083 MB perf_tiled_300_300_300_t12_4910696.data (1225680 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              51.41%
+Instructions:        47.92%
+L1D Misses:          61.13%
+LLC Misses:          59.75%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=16, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.49815
+  DDOT    : 0.491959
+  WAXPBY  : 1.44251
+  SPARSEMV: 3.54536
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 46828.9
+  DDOT    : 32710
+  WAXPBY  : 16733.3
+  SPARSEMV: 61275
+[ perf record: Woken up 459 times to write data ]
+[ perf record: Captured and wrote 122.115 MB perf_tiled_300_300_300_t16_4910696.data (1555796 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              54.06%
+Instructions:        48.20%
+L1D Misses:          61.13%
+LLC Misses:          60.13%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=24, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 24
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.48683
+  DDOT    : 0.490955
+  WAXPBY  : 1.43074
+  SPARSEMV: 3.54677
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 46925.5
+  DDOT    : 32776.9
+  WAXPBY  : 16871
+  SPARSEMV: 61250.6
+[ perf record: Woken up 620 times to write data ]
+[ perf record: Captured and wrote 176.954 MB perf_tiled_300_300_300_t24_4910696.data (2265697 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              55.24%
+Instructions:        46.86%
+L1D Misses:          61.13%
+LLC Misses:          58.00%
+----------------------------------------------------------
+STARTING: Format=tiled, Threads=32, Size=300 300 300
+WARNING: Kernel address maps (/proc/{kallsyms,modules}) are restricted,
+check /proc/sys/kernel/kptr_restrict and /proc/sys/kernel/perf_event_paranoid.
+
+Samples in kernel functions may not be resolved if a suitable vmlinux
+file is not found in the buildid cache or in the vmlinux path.
+
+Samples in kernel modules won't be resolved at all.
+
+If some relocation was applied (e.g. kexec) symbols may be misresolved
+even with a suitable vmlinux or kallsyms file.
+
+Couldn't record kernel reference relocation symbol
+Symbol resolution may be skewed if relocation was used (e.g. kexec).
+Check /proc/kallsyms permission or run as root.
+Initial Residual = 109226
+Iteration = 15   Residual = 1.65554e-11
+Iteration = 30   Residual = 8.85827e-26
+Iteration = 45   Residual = 5.03296e-40
+Iteration = 60   Residual = 2.90702e-54
+Iteration = 75   Residual = 1.69083e-68
+Iteration = 90   Residual = 9.86797e-83
+Iteration = 105   Residual = 5.7681e-97
+Iteration = 120   Residual = 3.37332e-111
+Iteration = 135   Residual = 1.97276e-125
+Iteration = 149   Residual = 1.02384e-138
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 149
+Final residual: 1.02384e-138
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.62106
+  DDOT    : 0.504542
+  WAXPBY  : 1.45272
+  SPARSEMV: 3.64509
+FLOPS Summary: 
+  Total   : 2.57472e+11
+  DDOT    : 1.6092e+10
+  WAXPBY  : 2.4138e+10
+  SPARSEMV: 2.17242e+11
+MFLOPS Summary: 
+  Total   : 45804.8
+  DDOT    : 31894.3
+  WAXPBY  : 16615.8
+  SPARSEMV: 59598.6
+[ perf record: Woken up 242 times to write data ]
+[ perf record: Captured and wrote 230.768 MB perf_tiled_300_300_300_t32_4910696.data (2972678 samples) ]
+
+Results for: ellpack7_tiled_spmv(ellpack7_tiled_t const*, double const*, double*) [clone .omp_outlined]
+--------------------------------------------------
+Cycles:              55.13%
+Instructions:        43.36%
+L1D Misses:          61.25%
+LLC Misses:          54.73%
+----------------------------------------------------------

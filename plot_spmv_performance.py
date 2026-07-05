@@ -63,10 +63,17 @@ def parse_log(log_file, metric):
     return data
 
 
-def plot_size(size, fmt_data, metric, out_dir):
-    threads = sorted(set(
+def plot_size(size, fmt_data, metric, out_dir, selected_threads=None):
+    all_threads = sorted(set(
         t for fmt in FORMATS for t in fmt_data.get(fmt, {}).keys()
     ))
+    if selected_threads:
+        threads = [t for t in all_threads if t in selected_threads]
+        if not threads:
+            print(f'Warning: no data for requested threads in size {size}, skipping.')
+            return
+    else:
+        threads = all_threads
 
     n_formats = len(FORMATS)
     bar_width = 0.18
@@ -129,8 +136,7 @@ def plot_size(size, fmt_data, metric, out_dir):
     size_label = 'x'.join(size.split())
     size_short = size.split()[0]
     ax.set_title(f'SpMV {title_metric} — Matrix {size_label}', fontsize=TITLE_FONTSIZE, pad=14)
-    ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.18), ncol=len(FORMATS),
-              fontsize=LEGEND_FONTSIZE, frameon=False)
+    ax.legend(loc='upper right', fontsize=LEGEND_FONTSIZE, frameon=True, framealpha=0.85)
 
     plt.tight_layout()
     filename = os.path.join(out_dir, f'spmv_{metric}_{size_short}.pdf')
@@ -140,18 +146,26 @@ def plot_size(size, fmt_data, metric, out_dir):
 
 
 def main():
-    if len(sys.argv) != 3 or sys.argv[2].lower() not in ('time', 'mflops'):
-        print('Usage: python3 plot_spmv_performance.py <log_file> <time|mflops>')
+    if len(sys.argv) < 3 or sys.argv[2].lower() not in ('time', 'mflops'):
+        print('Usage: python3 plot_spmv_performance.py <log_file> <time|mflops> [thread ...]')
         sys.exit(1)
 
     log_file = sys.argv[1]
     metric = sys.argv[2].lower()
     out_dir = os.path.dirname(os.path.abspath(log_file))
 
+    selected_threads = None
+    if len(sys.argv) > 3:
+        try:
+            selected_threads = set(int(t) for t in sys.argv[3:])
+        except ValueError:
+            print('Error: thread counts must be integers.')
+            sys.exit(1)
+
     data = parse_log(log_file, metric)
 
     for size in sorted(data.keys()):
-        plot_size(size, data[size], metric, out_dir)
+        plot_size(size, data[size], metric, out_dir, selected_threads)
 
 
 if __name__ == '__main__':

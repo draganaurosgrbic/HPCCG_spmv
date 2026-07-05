@@ -1,0 +1,22 @@
+\begin{table}[!ht]
+\centering
+\caption{L1D cache miss rates (\%) per SpMV format and matrix size (32~OpenMP threads). The $\Delta$\,CSR column shows the relative change in miss rate vs.\ CSR (negative values indicate fewer cache misses).}
+\label{tab:cache-l1d-t32}
+\resizebox{\textwidth}{!}{%
+\small
+\begin{tabular}{@{}l r | rr rr rr @{}}
+\toprule
+\textbf{Size} & \textbf{CSR} & \multicolumn{2}{c}{\textbf{ELLPACK-8}} & \multicolumn{2}{c}{\textbf{TransposedELLPACK}} & \multicolumn{2}{c}{\textbf{TILED}} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+ & \textbf{Miss\%} & \textbf{Miss\%} & \textbf{$\Delta$\,CSR} & \textbf{Miss\%} & \textbf{$\Delta$\,CSR} & \textbf{Miss\%} & \textbf{$\Delta$\,CSR} \\
+\midrule
+$50^3$ & $52.2\%$ & $55.3\%$ & $+6.1\%$ & $53.2\%$ & $+1.9\%$ & $55.2\%$ & $+5.9\%$ \\
+$100^3$ & $57.6\%$ & $59.0\%$ & $+2.4\%$ & $80.9\%$ & $+40.4\%$ & $56.6\%$ & $-1.8\%$ \\
+$150^3$ & $60.4\%$ & $61.2\%$ & $+1.4\%$ & $81.0\%$ & $+34.1\%$ & $59.0\%$ & $-2.4\%$ \\
+$200^3$ & $60.1\%$ & $58.5\%$ & $-2.7\%$ & $81.7\%$ & $+35.9\%$ & $56.6\%$ & $-5.9\%$ \\
+$250^3$ & $60.5\%$ & $61.7\%$ & $+2.0\%$ & $83.8\%$ & $+38.6\%$ & $59.3\%$ & $-2.0\%$ \\
+$300^3$ & $60.9\%$ & $62.4\%$ & $+2.5\%$ & $82.3\%$ & $+35.2\%$ & $61.3\%$ & $+0.7\%$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

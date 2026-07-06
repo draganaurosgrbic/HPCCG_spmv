@@ -84,10 +84,11 @@ def plot(rows, out_dir):
                     ha='center', va='bottom', fontsize=ANNOTATION_FONTSIZE,
                     color='black', fontweight='bold', rotation=90)
         else:
-            speedup = cusparse_val / val
-            color = '#2ca02c' if speedup >= 1.0 else '#d62728'
+            pct = (cusparse_val - val) / cusparse_val * 100
+            sign = '+' if pct >= 0 else ''
+            color = '#2ca02c' if pct >= 0 else '#d62728'
             ax.text(bar.get_x() + bar.get_width() / 2, y,
-                    f'{speedup:.2f}×',
+                    f'{sign}{pct:.1f}%',
                     ha='center', va='bottom', fontsize=ANNOTATION_FONTSIZE,
                     color=color, fontweight='bold', rotation=90)
 
